@@ -30,7 +30,7 @@
 				<div class="col-md">
 					<hr>
 					<h3>Design</h3>
-					<p>In order to achieve perfect pixel alignment on both retina and non-retina displays, many of the UI controls and other static UI elements are drawn using Core Graphics and/or Core Animation. Aside from drawing frames and glyphs, this allows for precise control over drawing shadows, lighting effects, and textures such as pinstripes.</p>
+					<p>In order to achieve perfect pixel alignment on both retina and non-retina displays, many of the UI controls and other static UI elements are drawn using Core Graphics and/or Core Animation.</p>
 				</div>
 			</div>
 			
@@ -51,7 +51,7 @@
 							</div>
 							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
 							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">The player controls are custom drawn NSButtons using Core Graphics. They adapt to all states an NSButton can have including Dark Mode. They behavior was also customized so that they can be clicked or held down (for fast forward or rewind).</small>
+								<small class="text-muted">The player controls are sub-classed from NSButton in order have to click and click-and-hold functionality. The NSButtonCell class is sub-classed to perform custom drawing for all the various states of a button including its dark mode variants.</small>
 							</div>
 						</div>
 					</div>
@@ -71,7 +71,7 @@
 							</div>
 							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
 							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">The LCD was designed to call attention to itself. Both the background and scrubber (NSSlider) are custom drawn elements using Core Graphics while the track information animates using Core Animation.</small>
+								<small class="text-muted">The LCD was designed to be the center of attention in the app as it displays the app’s current status. It was designed to take on the iTunes LCD look-and-feel albeit a bit more modern. The background and scrubber are both drawn using Core Graphics while the track information is using Core Animation.</small>
 							</div>
 						</div>
 					</div>
@@ -95,7 +95,7 @@
 							</div>
 							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
 							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">The player volume slider is another custom drawn NSSlider (using Core Graphics) to match the lighting and shadows of a physical control.</small>
+								<small class="text-muted">Just like the scrubber in the LCD, the volume slider is another sub-classed NSSlider and NSSliderCell to perform custom drawing using Core Animation to give it the appearance of a physical slider.</small>
 							</div>
 						</div>
 					</div>
@@ -117,7 +117,7 @@
 							
 							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
 							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">The wood trim gives it an additional touch of realism but also pays homage to another music app we are all familiar with: Dieter Rams’ Braun SK61 Record Player.</small>
+								<small class="text-muted">The wood trim gives Music an additional touch of realism but also pays homage to some of the world’s most gorgeous music players. Think B&O’s Beogram or Braun’s SK61 record player. Would you like that in light maple or dark walnut?</small>
 							</div>
 						</div>
 					</div>
@@ -130,8 +130,8 @@
 			<div class="row">
 				<div class="col-md">
 					<hr>
-					<h3>Platform feature integrations</h3>
-					<p> </p>
+					<h3>Platform Specific Features</h3>
+					<p><br></p>
 				</div>
 			</div>
 			
@@ -151,7 +151,7 @@
 								<p><span class="badge badge-secondary"> AppKit </span></p>
 							</div>
 							
-							<p class="text-muted">UI elements not only adapt to Dark Mode but also take on new characteristics. For example, the LCD Display takes on a pinstripe texture and a darker and the wood trim goes from Maple to Walnut for a darker appearance.</p>
+							<p class="text-muted">Dark Mode was given extra attention. All custom-drawn controls not only take on a dark appearance but also gain additional textures. For example, the LCD gains a pinstriped background while the wood trim goes from maple to walnut for a more dramatic look and feel.</p>
 						</div>
 					</div>
 				</div>
@@ -173,7 +173,7 @@
 								<p><span class="badge badge-secondary"> AVKit </span></p>
 							</div>
 							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">Music uses AVRoutePickerView, which is a view that displays controls for selecting playback routes to play music on your AirPlay compatible devices.</small>
+								<small class="text-muted">Music uses AVRoutePickerView which allows the user to stream their audio from Music to their AirPlay compatible devices. No setup necessary.</small>
 							</div>
 						</div>
 					</div>
@@ -192,7 +192,7 @@
 								<p><span class="badge badge-secondary"> Media Player </span></p>
 							</div>
 							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">Control the Music app using the Now Playing widget, keyboard media controls, Touch Bar, or even Siri!</small>
+								<small class="text-muted">Music is a “Now Playable” app which allows the app to be controlled by the Now Playing widget, keyboard media controls, Touch Bar, or even Siri!</small>
 							</div>
 						</div>
 					</div>
@@ -205,7 +205,7 @@
 				<div class="col-md">
 					<hr>
 					<h3>Extras</h3>
-					<p> </p>
+					<p><br></p>
 				</div>
 			</div>
 			
@@ -246,7 +246,7 @@
 							</div>
 							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
 							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">When in full screen, some music apps cover the window’s toolbar when bringing up the app’s menu bar. Not Music. In fact, by using your standard NSToolbar, the toolbar is anchored to your app’s menu so no empty title bar ends up obstructing your toolbar.</small>
+								<small class="text-muted">Music addresses a problem that is common in other music apps that seriously hinders usability. By using a standard NSToolbar, bringing down the app’s menu bar in full screen mode will not obscure the toolbar.</small>
 							</div>
 						</div>
 					</div>
