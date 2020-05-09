@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="custom.css">
+
+		<title>Music - Design</title>
+	</head>
+
+	<body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<div class="container" style="margin-top: 7.5%; margin-bottom: 7.5%;">
+			<div class="row">
+				<div class="col-md">
+					<h2>Music - Design</h2>
+					<p>In order to achieve perfect pixel alignment on both retina and non-retina display, many of the UI controls and other static UI elements are drawn using Core Graphics and/or Core Animation. Aside from drawing frames and glyphs, this allows for precise control over drawing shadows, lighting effects, and textures such as pinstripes.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md">
+					<p></p>
+					<p></p>
+				</div>
+			</div>
+
+			<!-- App Cards Start -->
+			<div class="row">
+				<div class="col-md">
+					<div class="card mb-4 shadow-sm">
+						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
+							<img srcset="../../images/playercontrols.png,
+										 ../../images/playercontrols@2x.png 2x"
+										src="../../images/playercontrols@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="">
+						</div>
+						<div class="card-body">
+							<div class="d-flex justify-content-between align-items-center">
+								<h6 class="card-text">Player Controls</h6>
+								<p><span class="badge badge-primary"> Core Graphics </span></p>
+							</div>
+							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
+							<div class="d-flex justify-content-between align-items-center">
+								<small class="text-muted">The player controls are custom drawn NSButtons using Core Graphics. They adapt to all states an NSButton can have including Dark Mode. They behavior was also customized so that they can be clicked or held down (for fast forward or rewind).</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md">
+					<div class="card mb-4 shadow-sm">
+						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
+							<img srcset="../../images/playerlcd.png,
+										 ../../images/playerlcd@2x.png 2x"
+										src="../../images/playerlcd@2x.png" class="mx-auto d-block" style="width: 100%;" alt="">
+						</div>
+						<div class="card-body">
+							<div class="d-flex justify-content-between align-items-center">
+								<h6 class="card-text">LCD Display</h6>
+								<p><span class="badge badge-info"> Core Animation </span></p>
+							</div>
+							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
+							<div class="d-flex justify-content-between align-items-center">
+								<small class="text-muted">The LCD was designed to call attention to itself. Both the background and scrubber (NSSlider) are custom drawn elements using Core Graphics while the track information animates using Core Animation.</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- App Cards End -->
+			
+			<!-- App Cards Start -->
+			<div class="row">
+				<div class="col-md">
+					<div class="card mb-4 shadow-sm">
+						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
+							<img srcset="../../images/playervol.png,
+										 ../../images/playervol@2x.png 2x"
+										src="../../images/playervol@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="">
+						</div>
+						<div class="card-body">
+							<div class="d-flex justify-content-between align-items-center">
+								<h6 class="card-text">Volume Slider</h6>
+								<p><span class="badge badge-primary"> Core Graphics </span></p>
+							</div>
+							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
+							<div class="d-flex justify-content-between align-items-center">
+								<small class="text-muted">The player volume slider is another custom drawn NSSlider (using Core Graphics) to match the lighting and shadows of a physical control.</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md">
+					<div class="card mb-4 shadow-sm">
+						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
+							<img srcset="../../images/woodtrim.png,
+										 ../../images/woodtrim@2x.png 2x"
+										src="../../images/woodtrim@2x.png" class="mx-auto d-block" style="width: 100%;" alt="">
+						</div>
+						<div class="card-body">
+							
+							<div class="d-flex justify-content-between align-items-center">
+								<h6 class="card-text">Wood Trim</h6>
+								<p><span class="badge badge-secondary"> AppKit </span></p>
+							</div>
+							
+							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
+							<div class="d-flex justify-content-between align-items-center">
+								<small class="text-muted">The wood trim gives it an additional touch of realism but also pays homage to another music app we are all familiar with: Dieter Rams’ Braun SK61 Record Player.</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- App Cards End -->
+			
+			<div class="row">
+				<div class="col-md">
+					<div class="card mb-4 shadow-sm">
+						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
+							<img srcset="../../images/musicappdark.png,
+										../../images/musicappdark@2x.png 2x"
+										src="../../images/musicappdark@2x.png" class="mx-auto d-block" style="width: 100%;" alt="Music on macOS Catalina.">
+						</div>
+						<div class="card-body">
+							
+							<div class="d-flex justify-content-between align-items-center">
+								<h6 class="card-text">Dark Mode</h6>
+								<p><span class="badge badge-secondary"> AppKit </span></p>
+							</div>
+							
+							<p class="text-muted">UI elements not only adapt to Dark Mode but also take on new characteristics. For example, the LCD Display takes on a pinstripe texture and a darker and the wood trim goes from Maple to Walnut for a darker appearance.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- App Cards Start -->
+			<div class="row">
+				
+				<div class="col-md">
+					<div class="card mb-4 shadow-sm">
+						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
+							<img srcset="../../images/miniplayers.png,
+										 ../../images/miniplayers@2x.png 2x"
+										src="../../images/miniplayers@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="">
+						</div>
+						<div class="card-body">
+							<div class="d-flex justify-content-between align-items-center">
+								<h6 class="card-text">Mini Player</h6>
+								<p><span class="badge badge-secondary"> AppKit </span></p>
+							</div>
+							<!-- <p class="text-muted">Updated for macOS Catalina <sup><span class="badge badge-success"> New </span></sup></p> -->
+							<div class="d-flex justify-content-between align-items-center">
+								<small class="text-muted">No Music app is complete without a mini player. This mini player includes only the essential controls and track information and adapts to dark mode.</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md">
+					<div class="mb-4">
+						
+					</div>
+				</div>
+				
+			</div>
+			<!-- App Cards End -->
+			
+			<hr>
+
+			<!-- Footer Start -->
+			<div class="row">
+				<div class="col-md">
+					<small><b>© 2019-2020 Mario A Guzman</b></small>
+				</div>
+				<div class="col-sm">
+					<small><b>Personal</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://twitter.com/marioguzman">Twitter</a></li>
+						<li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<small><b>Downloads</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <b>macOS</b></a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <b>iOS</b></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Footer End -->
+
+		</div>
+	</body>
+</html>
