@@ -61,7 +61,7 @@
 			</div>
 		
 			<div class="row">
-				<div class="col-md" style="text-align: center; padding-bottom: 10pt;">
+				<div class="col-md" style="text-align: center; padding-bottom: 20pt;">
 					<h2>🎵 Music <span class="text-muted">for Macintosh</span></h2>
 					<p>Music started as a concept of re-imagining what a Media Player could be using AppKit. It was supposed to be nothing more than an exploratory exercise using standard, out-of-the-box controls. Over time, I re-created some of the look and feel of the original iTunes using Core Graphics and Core Animation and tested with actual content using the iTunesLibrary framework and AVFoundation. I never realized in the beginning that it would soon become my daily driver for enjoying my music.</p>
 					<a class="btn btn-primary" href="#demo"><b>Watch a Demo</b></a>
@@ -69,226 +69,154 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-md">
+				<div class="col-md" style="text-align: center;">
 					<hr>
-					<h3>Design</h3>
-					<p>In order to achieve perfect pixel alignment on both retina and non-retina displays, many of the UI controls and other static UI elements are drawn using Core Graphics and/or Core Animation.</p>
-				</div>
-			</div>
-			
-			
-			<!-- App Cards Start -->
-			<div class="row">
-				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/playercontrols.png,
-										 ../images/playercontrols@2x.png 2x"
-										src="../images/playercontrols@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="Player Controls">
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">Player Controls</h6>
-								<p><span class="badge badge-primary"> Core Graphics </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">The player controls are sub-classed from NSButton in order have to click and click-and-hold functionality. The NSButtonCell class is sub-classed to perform custom drawing for all the various states of a button including its dark mode variants.</small>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/playerlcd.png,
-										 ../images/playerlcd@2x.png 2x"
-										src="../images/playerlcd@2x.png" class="mx-auto d-block" style="width: 100%;" alt="Player LCD">
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">LCD Display</h6>
-								<p><span class="badge badge-info"> Core Animation </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">The LCD was designed to be the center of attention in the app as it displays the app’s current status. It was designed to take on the iTunes LCD look-and-feel albeit a bit more modern. The background and scrubber are both drawn using Core Graphics while the track information is using Core Animation.</small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- App Cards End -->
-			
-			<!-- App Cards Start -->
-			<div class="row">
-				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/playervol.png,
-										 ../images/playervol@2x.png 2x"
-										src="../images/playervol@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="Player Volume">
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">Volume Slider</h6>
-								<p><span class="badge badge-primary"> Core Graphics </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">Just like the scrubber in the LCD, the volume slider is another sub-classed NSSlider and NSSliderCell to perform custom drawing using Core Animation to give it the appearance of a physical slider.</small>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/woodtrim.png,
-										 ../images/woodtrim@2x.png 2x"
-										src="../images/woodtrim@2x.png" class="mx-auto d-block" style="width: 100%;" alt="Wood Trim">
-						</div>
-						<div class="card-body">
-							
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">Wood Trim</h6>
-								<p><span class="badge badge-secondary"> AppKit </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">The wood trim gives Music an additional touch of realism but also pays homage to some of the world’s most gorgeous music players. Think B&O’s Beogram or Braun’s SK61 record player. Would you like that in light maple or dark walnut?</small>
-							</div>
-						</div>
+					<div class="d-flex justify-content-between">
+						<p class="text-muted">In order to achieve perfect pixel alignment on both retina and non-retina displays, many of the UI controls and other static UI elements are drawn using Core Graphics or Core Animation.</p>
 					</div>
 				</div>
 			</div>
 			
-			<!-- App Cards End -->
-			
-			<div class="row">
+			<div class="row align-items-center">
 				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/musicappdark.png,
-										../images/musicappdark@2x.png 2x"
-										src="../images/musicappdark@2x.png" class="mx-auto d-block" style="width: 100%;" alt="Dark Mode">
-						</div>
-						<div class="card-body">
-							
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">Dark Mode</h6>
-								<p><span class="badge badge-secondary"> AppKit </span></p>
-							</div>
-							
-							<p class="text-muted">Dark Mode was given extra attention. All custom-drawn controls not only take on a dark appearance but also gain additional textures. For example, the LCD gains a pinstriped background while the wood trim goes from maple to walnut for a more dramatic look and feel.</p>
-						</div>
+					<img srcset="../images/music_toolbar.png, ../images/music_toolbar@2x.png 2x"
+						src="../images/music_toolbar@2x.png" 
+						class="mx-auto d-block" 
+						style="width: 100%; padding-bottom: 20pt;" 
+						alt="Dark Mode">
+				</div>
+			</div>
+		
+			<div class="row" style="padding-top: 20pt;">
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<h4 class="card-text">LCD Display</h4>
+						<p><span class="badge badge-info"> Core Animation </span></p>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">The LCD Display is composed of 3 primary elements: The background, the scrubber, and the track info. The background and scrubber are custom drawn using Core Graphics to achive an LCD look while the track info animates in a Marquee fashion using Core Animation.</small>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<h4 class="card-text">Player Controls</h4>
+						<p><span class="badge badge-primary"> Core Graphics </span></p>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">The player controls (NSButton, NSSlider) are subclassed so they can be re-drawn using Core Graphics to achive a physical look. The buttons also have a custom long-press functionality (for track seeking).</small>
 					</div>
 				</div>
 			</div>
 			
-			<!-- App Cards Start -->
-			<div class="row">
-				
+			<div class="row align-items-center">
 				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/airplay.png,
-										 ../images/airplay@2x.png 2x"
-										src="../images/airplay@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="AirPlay">
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">AirPlay</h6>
-								<p><span class="badge badge-secondary"> AVKit </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">Music uses AVRoutePickerView which allows the user to stream their audio from Music to their AirPlay compatible devices. No setup necessary.</small>
-							</div>
-						</div>
-					</div>
+					<img srcset="../images/mba_music_wood.png, ../images/mba_music_wood@2x.png 2x"
+						src="../images/mba_music_wood@2x.png" 
+						class="mx-auto d-block" 
+						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
+						alt="Dark Mode">
 				</div>
-				
-				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/nowplaying.png,
-										 ../images/nowplaying@2x.png 2x"
-										src="../images/nowplaying@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="Now Playing">
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">Now Playing</h6>
-								<p><span class="badge badge-secondary"> Media Player </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">Music is a “Now Playable” app which allows the app to be controlled by the Now Playing widget, keyboard media controls, Touch Bar, or even Siri!</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				
 			</div>
-			<!-- App Cards End -->
-			
-			<!-- App Cards Start -->
+		
 			<div class="row">
-				
-				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/miniplayers.png,
-										 ../images/miniplayers@2x.png 2x"
-										src="../images/miniplayers@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="Mini Player">
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">Mini Player</h6>
-								<p><span class="badge badge-secondary"> AppKit </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">No Music app is complete without a mini player. This mini player includes only the essential controls and track information and adapts to dark mode.</small>
-							</div>
-						</div>
-					</div>
+				<div class="col-md" style="text-align: center;">
+					<h4 class="card-text">Custom Wood Trim</h4>
+					<p class="text-muted">The wood trim gives Music an additional touch of realism but also pays homage to some of the world’s most gorgeous music players. Think B&O’s Beogram or Braun’s SK61 record player. Would you like that in light maple or dark walnut?</p>
 				</div>
-				
-				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							<img srcset="../images/fullscreen.png,
-										 ../images/fullscreen@2x.png 2x"
-										src="../images/fullscreen@2x.png" class="mx-auto d-block" style="width: 100%;"  alt="Full Screen">
-						</div>
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">Full Screen (that's actually useful!)</h6>
-								<p><span class="badge badge-secondary"> AppKit </span></p>
-							</div>
-							<div class="d-flex justify-content-between align-items-center">
-								<small class="text-muted">Music addresses a problem that is common in other music apps that seriously hinders usability. By using a standard NSToolbar, bringing down the app’s menu bar in full screen mode will not obscure the toolbar.</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				
 			</div>
-			<!-- App Cards End -->
+			
+			<div class="row align-items-center">
+				<div class="col-md">
+					<img srcset="../images/musicappdark.png, ../images/musicappdark@2x.png 2x"
+						src="../images/musicappdark@2x.png" 
+						class="mx-auto d-block" 
+						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
+						alt="Dark Mode">
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-md" style="text-align: center;">
+					<h4 class="card-text">Dark Mode</h4>
+					<p class="text-muted">Dark Mode was given extra attention. All custom-drawn controls not only take on a dark appearance but also gain additional textures. For example, the LCD gains a pinstriped background while the wood trim goes from maple to walnut for a more dramatic look and feel.</p>
+				</div>
+			</div>
+			
+			<div class="row align-items-center">
+				<div class="col-md">
+					<img srcset="../images/mba_music_fullscreen_alt.png, ../images/mba_music_fullscreen_alt@2x.png 2x"
+						src="../images/mba_music_fullscreen_alt@2x.png" 
+						class="mx-auto d-block" 
+						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
+						alt="Dark Mode">
+				</div>
+			</div>
+		
+			<div class="row" style="padding-top: 20pt; padding-bottom: 20pt;">
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<h4 class="card-text">Full Screen</h4>
+						<p><span class="badge badge-secondary"> AppKit </span></p>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">By using a standard NSToolbar, bringing down the app’s menu bar in full screen mode will not obscure the toolbar.</small>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<h4 class="card-text">AirPlay</h4>
+						<p><span class="badge badge-secondary"> AVKit </span></p>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">Music uses AVRoutePickerView which allows the user to stream their audio from Music to their AirPlay compatible devices. No setup necessary.</small>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 20pt;">
+				<div class="col-md">
+					<img srcset="../images/miniplayers.png, ../images/miniplayers@2x.png 2x"
+						src="../images/miniplayers@2x.png" 
+						class="mx-auto d-block" 
+						style="width: 100%;"  
+						alt="Mini Player">
+				</div>
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<h4 class="card-text">Mini Player</h4>
+						<p><span class="badge badge-secondary"> AppKit </span></p>
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<small class="text-muted">No Music app is complete without a mini player. This mini player includes only the essential controls and track information and adapts to dark mode.</small>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 20pt;">
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<h4 class="card-text">Now Playing</h4>
+						<p><span class="badge badge-secondary"> AppKit </span></p>
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<small class="text-muted">Music is a “Now Playable” app which allows the app to be controlled by the Now Playing widget, keyboard media controls, Touch Bar, or even Siri!.</small>
+					</div>
+				</div>
+				<div class="col-md">
+					<img srcset="../images/nowplaying.png, ../images/nowplaying@2x.png 2x"
+						src="../images/nowplaying@2x.png" 
+						class="mx-auto d-block"
+						style=" padding-top: 20pt;"
+						alt="Mini Player">
+				</div>
+			</div>
+			
+			<hr>
 			
 			<div class="row">
 				<div class="col-md">
-					<div class="card mb-4 shadow-sm">
-						<div style="background-color: rgba(0, 0, 0, .125); border-radius: .20rem .20rem 0 0;">
-							
-							<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/416753361?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-							
-						</div>
-						
-						<div class="card-body">
-							<div class="d-flex justify-content-between align-items-center">
-								<h6 class="card-text">
-									<a name="demo" href="https://vimeo.com/416753361">Music on macOS Demo</a> from <a href="https://vimeo.com/user17931151">Mario Guzman</a> on <a href="https://vimeo.com">Vimeo</a>.
-								</h6>
-							</div>
-						</div>
-					</div>
+					<div style="padding:62.5% 0 0 0; position:relative;"><iframe src="https://player.vimeo.com/video/416753361?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;"  allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+					<a id="demo" href="https://vimeo.com/416753361">Music on macOS Demo</a> from <a href="https://vimeo.com/user17931151">Mario Guzman</a> on <a href="https://vimeo.com">Vimeo</a>.
 				</div>
 			</div>
 			
