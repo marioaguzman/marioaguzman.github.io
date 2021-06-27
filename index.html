@@ -24,6 +24,31 @@
 		<meta name="twitter:image" content="https://marioaguzman.github.io/pdxtransit/images/og_img_pdxt_devices.png">
 		
 		<title>Mario Guzman</title>
+		
+		<style>
+			.aquabg {
+    			background-image: url('musicwidget/images/aquabg.png');
+    			background-position: center center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+			}
+			@media /* only for retina displays */
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min--moz-device-pixel-ratio: 2),
+			only screen and (min-device-pixel-ratio: 2),
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min-resolution: 192dpi),
+			only screen and (min-resolution: 2dppx) {
+    		.aquabg {
+        			background-image: url('musicwidget/images/aquabg@2x.png');
+    			}
+			}
+			
+			.text-shadow {
+				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+			}
+		</style>
+		
 	</head>
 
 	<body>
@@ -73,28 +98,24 @@
 				</div>
 			</div>
 			
-			<hr>
+			<br>
 			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="musicwidget/images/MW_LibrarySong.png, musicwidget/images/MW_LibrarySong@2x.png 2x, musicwidget/images/MW_LibrarySong@3x.png 3x" 
+			<div class="row align-items-center" style="text-align: center;">
+				<div class="col-md aquabg">
+					<img srcset="musicwidget/images/MW_LibrarySong.png, 
+						musicwidget/images/MW_LibrarySong@2x.png 2x, 
+						musicwidget/images/MW_LibrarySong@3x.png 3x" 
 						src="musicwidget/images/MW_LibrarySong@2x.png" 
 						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 20pt; margin-bottom: 10pt;" 
 						alt="Music Widget">
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-md" style="text-align: center; padding-bottom: 10pt;">
-					<h2>🎵 Music Widget <span class="text-muted">for macOS</span></h2>
-					<p>A mini player remote for Apple Music on macOS.<br>A replica of the <i>classic</i> iTunes widget for Dashboard.</p>
+					<h2 class="text-light text-shadow">🎵 Music Widget for macOS</h2>
+					<p class="text-light text-shadow">A mini player remote for Apple Music on macOS.<br>A replica of the <i>classic</i> iTunes widget for Dashboard.</p>
 					<a class="btn btn-info" href="https://marioaguzman.github.io/musicwidget"><b>Download the Beta *</b></a>
-					<p></p>
-					<small class="text-muted">Requires macOS Big Sur. Not tested on macOS Monterey Beta.</small>
+					<p class="text-light text-shadow" style="margin-top: 20pt; margin-bottom: 25pt; font-size: 10pt;">Requires macOS Big Sur. Not tested on macOS Monterey Beta.</p>
 				</div>
 			</div>
 			
-			<hr>
+			<br>
 			
 			<div class="row align-items-center">
 				<div class="col-md">
