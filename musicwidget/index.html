@@ -94,24 +94,23 @@
 		<!-- END Header Nav. -->
 		
 		<div class="container" style="margin-top: 0pt; margin-top: 7.5%; margin-bottom: 7.5%;">
-		
-			<div class="row align-items-center" style="text-align: center; margin-bottom: 10pt;">
+			
+			<div class="row">
 				<div class="col-md">
-					<img srcset="images/MW_LibrarySong.png, 
-						images/MW_LibrarySong@2x.png 2x, 
-						images/MW_LibrarySong@3x.png 3x" 
-						src="musicwidget/images/MW_LibrarySong@2x.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="Music Widget playing &quot;Speed of Sound&quot; by Coldplay">
-					<h2>🎵 Music Widget for macOS</h2>
-					<p class="text-muted">A mini player remote for Apple Music.
-						<br>A take on the <i>classic</i> iTunes widget.</p>
-					<a class="btn btn-primary" href="#download"><b>Download the Beta *</b></a>
+					<div style="text-align: center; margin-bottom: 40pt;">
+						<img srcset="images/MW_LibrarySong.png, 
+							images/MW_LibrarySong@2x.png 2x, 
+							images/MW_LibrarySong@3x.png 3x" 
+							src="musicwidget/images/MW_LibrarySong@2x.png" 
+							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+							alt="Music Widget playing &quot;Speed of Sound&quot; by Coldplay">
+						<h2>🎵 Music Widget for macOS</h2>
+						<p class="text-muted">A mini player remote for Apple Music.<br>A take on the <i>classic</i> iTunes widget.</p>
+						<a class="btn btn-primary" href="#download"><b>Download the Beta</b></a>
+					</div>
 				</div>
 			</div>
 			
-			<br>
-		
 			<div class="row " style="padding-top: 20pt;">
 				<div class="col-md">
 					<div class="d-flex justify-content-between align-items-center">
@@ -169,7 +168,7 @@
 						alt="Music Widget App Icon">
 					</div>
 					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">▶️ Dock Icon</h4>
+						<h4 class="card-text">💻 Dock Icon</h4>
 						<br>
 					</div>
 					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
@@ -178,46 +177,34 @@
 				</div>
 			</div>
 			
-			<div id="download" class="row align-items-center" style="margin-bottom: 20pt;">
-				<div class="col-md aquabg" style="text-align: center; padding-top: 30pt; padding-bottom: 25pt;">
-					<img srcset="images/AppIcon_128.png, images/AppIcon_128@2x.png 2x, images/AppIcon_128@3x.png 3x" 
-						src="images/AppIcon_128@2x.png" 
-						style="max-width: 100%;" 
-						alt="Music Widget App Icon">
-					<h4 class="text-light text-shadow">Want to take it for a spin?</h4>
-					<a class="btn btn-light" style="margin-top: 10pt; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);" href="https://marioaguzman.github.io/downloads/MusicWidget.zip"><b>Download the Beta *</b></a>
-					<p></p>
-					<p class="text-light text-shadow"><small>Requires macOS Big Sur. Not tested on macOS Monterey Beta.</small></p>
+			<br id="download">
+			
+			<div class="row">
+				<div class="col-md aquabg">
+					<div style="text-align: center; margin-top: 40pt; margin-bottom: 40pt;">
+						<img srcset="images/AppIcon_128.png, images/AppIcon_128@2x.png 2x, images/AppIcon_128@3x.png 3x" 
+							 src="images/AppIcon_128@2x.png" 
+							 style="max-width: 100%;" 
+							 alt="Music Widget App Icon">
+						<h4 class="text-light text-shadow">Want to take it for a spin?</h4>
+						<div style="margin-top: 20pt;">
+							<a class="btn btn-light" style="box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);" href="https://marioaguzman.github.io/downloads/MusicWidget.zip"><b>Download the Beta</b> <span class="text-muted"><sup>1</sup></span></a>
+							<p class="text-light text-shadow"><small>Requires macOS Big Sur</small></p>
+						</div>
+					</div>
 				</div>
 			</div>
 			
 			<div class="row">
-				<div class="col-md" style="text-align: center; margin: 10pt;">
-					<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="marioguzman" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-					<br>
-					<p class="text-muted">Help support independent developers like myself continue to work on projects like Mini Widget. Buy me a coffee?</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md" style="text-align: center; margin-top: 10pt; margin-bottom: 10pt;">
-					<h4 class="card-text">🛠 Technical stuff for the nerds</h4>
-					<p class="text-muted">Music Widget uses Scripting Bridge and Distributed Notification Center to send and receive commands with Apple Music on macOS. 99%** of the UI is written in Core Graphics and Core Animation to achieve crisp UI that is also optimized for non-Retina Displays. Having said that, Music Widget is completely a native  app; written completely with Swift and AppKit.</p>
-					<p class="text-muted">Requires macOS Big Sur and Apple Music. Does not work with Spotify on macOS.</p>
-				</div>
-			</div>
-			
-			<div class="row align-items-center">
-				<div class="col-md " style="text-align: center;">
-					<br>
-					<p class="text-muted" style="font-size: 9pt;">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md" style="text-align: center;">
-					<br>
-					<p><b>If you have feedback, feature requests, or want to report any bugs, tweet the developer directly <a href="https://www.twitter.com/marioguzman">@marioguzman</a>.</b></p>
+				<div class="col-md">
+					<div style="margin: 10pt; text-align: center;">
+						<br>
+						<script src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="marioguzman" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+					</div>
+					<div style="margin: 10pt; text-align: center;">
+						<p class="text-muted">Help support independent developers like myself to
+											  continue work on projects like Mini Widget. Buy me a coffee?</p>
+					</div>
 				</div>
 			</div>
 			
@@ -225,7 +212,33 @@
 			
 			<div class="row">
 				<div class="col-md">
-					<small class="text-muted">Apple Music is a registered trademark of Apple Inc.<br>* Music Widget is notarized<br>** Shuffle and Repeat buttons are images.</small>
+					<div>
+						<h4 class="card-text">🛠 Technical stuff for the nerds</h4>
+						<p>Music Widget uses Scripting Bridge and Distributed Notification Center to send and receive commands with Apple Music on macOS. 99%<span class="text-muted"><sup>2</sup></span> of the UI is written in Core Graphics and Core Animation to achieve crisp UI that is also optimized for non-Retina Displays. Music Widget is completely a native app; written with Swift and AppKit.</p>
+						<p>Requires macOS Big Sur and Apple Music.<span class="text-muted"><sup>3</sup></span></p>
+						<p>If you have feedback, feature requests, or want to report any bugs,
+						  	tweet the developer directly <a href="https://www.twitter.com/marioguzman">@marioguzman</a>.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md">
+					<div>
+						<p class="text-muted">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="row">
+				<div class="col-md">
+					<small class="text-muted">Apple Music is a registered trademark of Apple Inc.
+										<br><sup>1</sup> Music Widget is notarized
+										<br><sup>2</sup> Shuffle and Repeat buttons are images.
+										<br><sup>3</sup> Apple Music subscription not required. Does not work with Spotify for macOS.</small>
+										<br><p> </p>
 				</div>
 			</div>
 			
