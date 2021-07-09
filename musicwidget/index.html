@@ -47,6 +47,27 @@
     			}
 			}
 			
+			.darkbg {
+    			background-image: url('images/darkbg.png');
+    			background-position: center center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			border-radius: 25pt;
+    			margin-left: 10pt;
+    			margin-right: 10pt;
+			}
+			@media /* only for retina displays */
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min--moz-device-pixel-ratio: 2),
+			only screen and (min-device-pixel-ratio: 2),
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min-resolution: 192dpi),
+			only screen and (min-resolution: 2dppx) {
+    		.darkbg {
+        			background-image: url('images/darkbg@2x.png');
+    			}
+			}
+			
 			.text-shadow {
 				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 			}
@@ -159,6 +180,25 @@
 				</div>
 			</div>
 			
+			<p><br></p>
+			
+			<div class="row">
+				<div class="col-md darkbg">
+					<div style="text-align: center; margin-top: 40pt; margin-bottom: 40pt;">
+						<img srcset="images/MW_DarkMode.png, images/MW_DarkMode@2x.png 2x, images/MW_DarkMode@3x.png 3x" 
+							src="images/MW_DarkMode@2x.png" 
+							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+							alt="Music Widget in Dark Mode">
+						<h4 class="text-light text-shadow">Dark Mode</h4>
+						<div style="margin-left: 20pt; margin-right: 20pt;">
+							<p class="text-light text-shadow">Music Widget boasts an original Dark Mode design since Mac OS X did not have a Dark Mode option back in 2005.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<p><br></p>
+			
 			<div class="row" style="padding-top: 20pt;">
 				<div class="col-md">
 					<div class="d-flex justify-content-between align-items-center">
@@ -189,28 +229,6 @@
 					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
 						<small class="text-muted">The app icon in the dock changes to match the player state. It's the little things...</small>
 					</div>
-				</div>
-			</div>
-			
-			<div class="row" style="padding-top: 20pt;">
-			
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<img srcset="images/MW_DarkMode.png, images/MW_DarkMode@2x.png 2x, images/MW_DarkMode@3x.png 3x" 
-						src="images/MW_DarkMode@2x.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="Music Widget in Dark Mode">
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">🌙 Dark Mode</h4>
-						<br>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">While a Dark Mode iTunes Widget never existed in 2005, Music Widget has an original Dark Mode design.</small>
-					</div>
-				</div>
-				
-				<div class="col-md"> 
 				</div>
 			</div>
 			
