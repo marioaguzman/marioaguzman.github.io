@@ -1,23 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>Music Widget Changelog</title>
-        <link>https://marioaguzman.github.io/musicwidget/updater/musicwidgetappcast.xml</link>
+        <title>Music Widget</title>
+        <link>https://marioaguzman.github.io/musicwidget</link>
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
-            <title>Version 1.1</title>
-            <link>https://marioaguzman.github.io</link>
-            <sparkle:version>1.1</sparkle:version>
-            <sparkle:releaseNotesLink>https://marioaguzman.github.io/musicwidget/updater/releasenotes.html</sparkle:releaseNotesLink>
-            <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="2740553" type="application/octet-stream" sparkle:edSignature="cT7MVk+IwuaxqaWzIjHimqNIL0ozIODS4TlT4p4GIKa7PhnTVh3TclPsyoJr0tEBJXCopmODLGFqlQfSsH2IAw=="/>
-        </item>
-        <item>
             <title>1.1</title>
+            <description>
+                <![CDATA[ <ul><li>Test Item One</li><li>Test Item Two</li></ul> ]]>
+            </description>
             <pubDate>Sat, 10 Jul 2021 00:15:33 -0700</pubDate>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="11" sparkle:shortVersionString="1.1" length="2740553" type="application/octet-stream" sparkle:edSignature="cT7MVk+IwuaxqaWzIjHimqNIL0ozIODS4TlT4p4GIKa7PhnTVh3TclPsyoJr0tEBJXCopmODLGFqlQfSsH2IAw=="/>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="11" sparkle:shortVersionString="1.2" length="2740810" type="application/octet-stream" sparkle:edSignature="Gz30TgrfUNaMSSFpRw+6yWZV/R1JC4I5U9j6L420RiXVzURNBXGFRqFt5G4d7EJvujforoMVrKx1X4+UCbGRAA=="/>
+        </item>
+        <item>
+            <title>1.2</title>
+            <description>
+                <![CDATA[ <ul><li>Test Item One</li><li>Test Item Two</li></ul> ]]>
+            </description>
+            <pubDate>Sat, 10 Jul 2021 14:07:58 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="11" sparkle:shortVersionString="1.2" length="2740810" type="application/octet-stream" sparkle:edSignature="Gz30TgrfUNaMSSFpRw+6yWZV/R1JC4I5U9j6L420RiXVzURNBXGFRqFt5G4d7EJvujforoMVrKx1X4+UCbGRAA=="/>
         </item>
     </channel>
 </rss>
