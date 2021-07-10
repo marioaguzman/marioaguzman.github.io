@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Sparkle Test App Changelog</title>
-    <link>http://sparkle-project.org/files/sparkletestcast.xml</link>
+    <link>https://marioaguzman.github.io/musicwidget/updater/sparkletestcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
       <item>
         <title>Version 2.0</title>
-        <link>https://sparkle-project.org</link>
+        <link>https://marioaguzman.github.io</link>
         <sparkle:version>2.0</sparkle:version>
         <description>
           <![CDATA[
