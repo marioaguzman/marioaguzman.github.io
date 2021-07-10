@@ -9,9 +9,7 @@
             <title>Version 1.1</title>
             <link>https://marioaguzman.github.io</link>
             <sparkle:version>1.1</sparkle:version>
-            <description><![CDATA[
-            <h2>This is just a test</h2>
-          ]]></description>
+            <description><![CDATA[ <!doctypehtml><p>This is an example update<ul><li><strong>New:</strong> This is a bullet point item.<li><strong>New:</strong> This is another bullet point item.</ul><p> ]]></description>
             <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="2740553" type="application/octet-stream" sparkle:edSignature="cT7MVk+IwuaxqaWzIjHimqNIL0ozIODS4TlT4p4GIKa7PhnTVh3TclPsyoJr0tEBJXCopmODLGFqlQfSsH2IAw=="/>
         </item>
