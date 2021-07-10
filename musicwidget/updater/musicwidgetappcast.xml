@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Sparkle Test App Changelog</title>
-    <link>https://marioaguzman.github.io/musicwidget/updater/sparkletestcast.xml</link>
+    <title>Music Widget Changelog</title>
+    <link>https://marioaguzman.github.io/musicwidget/updater/musicwidgetappcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
       <item>
-        <title>Version 2.0</title>
+        <title>Version 1.1</title>
         <link>https://marioaguzman.github.io</link>
-        <sparkle:version>2.0</sparkle:version>
+        <sparkle:version>1.1</sparkle:version>
         <description>
           <![CDATA[
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Suspendisse sed felis ac ante ultrices rhoncus. Etiam quis elit vel nibh placerat facilisis in id leo.</li>
-              <li>Vestibulum nec tortor odio, nec malesuada libero. Cras vel convallis nunc.</li>
-              <li>Suspendisse tristique massa eget velit consequat tincidunt. Praesent sodales hendrerit pretium.</li>
+              <li>This is just a test!</li>
             </ul>
           ]]>
         </description>
-        <pubDate>Sat, 26 Jul 2014 15:20:11 +0000</pubDate>
-        <enclosure url="https://sparkle-project.org/files/Sparkle%20Test%20App.zip" length="107758" type="application/octet-stream" sparkle:edSignature="7cLALFUHSwvEJWSkV8aMreoBe4fhRa4FncC5NoThKxwThL6FDR7hTiPJh1fo2uagnPogisnQsgFgq6mGkt2RBw==" />
+        <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+        <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="2740553" type="application/octet-stream" sparkle:edSignature="cT7MVk+IwuaxqaWzIjHimqNIL0ozIODS4TlT4p4GIKa7PhnTVh3TclPsyoJr0tEBJXCopmODLGFqlQfSsH2IAw==" />
       </item>
   </channel>
 </rss>
