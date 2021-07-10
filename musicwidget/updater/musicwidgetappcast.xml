@@ -5,5 +5,11 @@
         <link>https://marioaguzman.github.io/musicwidget</link>
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
+        <item>
+            <title>1.0</title>
+            <pubDate>Sat, 10 Jul 2021 15:53:47 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="1" sparkle:shortVersionString="1.0" length="2759926" type="application/octet-stream" sparkle:edSignature="TsafcPGf+AveBPYVJ8t43M5XJCnABj2vGLzcL1m7Jc6feXWI6mCEVz9OonvjpR/9oq1PzYvJ5J9QJBBqKTUGDQ=="/>
+        </item>
     </channel>
 </rss>
