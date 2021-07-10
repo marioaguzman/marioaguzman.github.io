@@ -11,5 +11,11 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="1" sparkle:shortVersionString="1.0" length="2759926" type="application/octet-stream" sparkle:edSignature="TsafcPGf+AveBPYVJ8t43M5XJCnABj2vGLzcL1m7Jc6feXWI6mCEVz9OonvjpR/9oq1PzYvJ5J9QJBBqKTUGDQ=="/>
         </item>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Sat, 10 Jul 2021 16:04:37 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="2" sparkle:shortVersionString="1.0.1" length="2759931" type="application/octet-stream" sparkle:edSignature="77ajwf6ZtYQ0KBNk/KJ9RUkin9AwxT7wUFtc8IGIK24rqTxUti+v9dCoEY7Z/a+HfuaUlYy/Hq8KFhISOEcXDQ=="/>
+        </item>
     </channel>
 </rss>
