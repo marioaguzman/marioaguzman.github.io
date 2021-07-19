@@ -11,5 +11,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="2" sparkle:shortVersionString="1.0" length="2759943" type="application/octet-stream" sparkle:edSignature="RnzFjV8KG9yU5L2noKtDWNBQHOePzxfB66BxK6H245e8aWiTeSW1iU1x7yHiAeQC7x3PkwgMBNxQeWQA/mefBw=="/>
         </item>
+        <item>
+            <title>1.1</title>
+            <description><![CDATA[
+                <p>• Added localization for Finnish, German, Spanish, and Spanish (Latin America).</p> <p>• Added additional content to the app's Help Book. Access this from the Help menu.</p> <p>• Minor performance tuning in the drawing (Core Graphics) code for the UI.</p> <p>• Enhanced UI in the Updates preferences pane.</p>
+            ]]></description>
+            <pubDate>Sun, 18 Jul 2021 22:23:50 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="3" sparkle:shortVersionString="1.1" length="3183517" type="application/octet-stream" sparkle:edSignature="3fy7D2orUXgA2OSIz1+CGfs7p9M5kbbFWeePZjUp1lGZ3RUkz/4SQDBOnuXCLrfdjNcq+ENbnJMLx1F82aNnAQ=="/>
+        </item>
     </channel>
 </rss>
