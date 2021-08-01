@@ -20,5 +20,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="3" sparkle:shortVersionString="1.1" length="3183517" type="application/octet-stream" sparkle:edSignature="3fy7D2orUXgA2OSIz1+CGfs7p9M5kbbFWeePZjUp1lGZ3RUkz/4SQDBOnuXCLrfdjNcq+ENbnJMLx1F82aNnAQ=="/>
         </item>
+        <item>
+            <title>1.2</title>
+            <description><![CDATA[
+                <p>• You can now use Music Widget to play another playlist from your Music library.</p> <p>• Added playback controls to the Dock app icon menu.</p> <p>• Added localization for Polish.</p> 
+            ]]></description>
+            <pubDate>Sun, 01 Aug 2021 16:34:05 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="4" sparkle:shortVersionString="1.2" length="3571742" type="application/octet-stream" sparkle:edSignature="21d6nYnmUiNehGc6XTo373im5zr3WAvilEudUxUE60ekeHtAZzbi0N9F0fdzmOXYr6b+1NtSlxN6XQCo1cUZCA=="/>
+        </item>
     </channel>
 </rss>
