@@ -47,5 +47,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="6" sparkle:shortVersionString="1.4" length="4079110" type="application/octet-stream" sparkle:edSignature="6ZoxiNiRpQzpN33oZTEsdmCILs6LMaJA/H1gXiNdPbOJEpHVYBqZBOHPwRrN9cDX3uQmeZPDOnUZmnQe7PadAw=="/>
         </item>
+        <item>
+            <title>1.5</title>
+            <description><![CDATA[
+                <ul style="font-size:14px;"><li>New: Option to always keep Dock icon in light mode</li><li>Update: Preferences has updated panel layouts</li><li>Update: Spanish localization has updated translations</li><li>Update: Help Book file has updated screenshots</li><li>Update: Tweaked the custom Core Graphics drawing for the LCD</li><li>Update: Playlist chooser UI has an updated layout</li></ul>
+            ]]></description>
+            <pubDate>Sat, 04 Sep 2021 14:49:09 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="7" sparkle:shortVersionString="1.5" length="4107331" type="application/octet-stream" sparkle:edSignature="KJctFTFuAax6INVkDSs05isw2yGoGm/+PVAgeeezJfSNCYj0sYno6loEl2lB/VYdnPR/kPekoRQtCtP2YkKhBQ=="/>
+        </item>
     </channel>
 </rss>
