@@ -65,5 +65,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="8" sparkle:shortVersionString="1.6" length="4107577" type="application/octet-stream" sparkle:edSignature="8x3v6gvxhnFgbFVRX0mhQvZ3ezNDGRtCppV8cyubhips5NzbeL0QEGIao447Hnx5CpGZO90T9alilSKAGRVCAA=="/>
         </item>
+        <item>
+            <title>1.7</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>The function to load playlists from Music using Scripting Bridge has been optimized and loading your playlists is now up to 60 times faster!</li><li>The Widget "Flip" animation has been altered so that the perspective transform you see mid-animation is more apparent; much like the original Dashboard Widgets!</li><li>The Help Book has been updated with release content from the last and current builds.</li></ul>
+            ]]></description>
+            <pubDate>Sun, 10 Oct 2021 14:00:14 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="9" sparkle:shortVersionString="1.7" length="4109726" type="application/octet-stream" sparkle:edSignature="uJguiS8+htefFLd47krG6B9gfpBY4Bz5wsgzvyDcAeD+SxooZeO+FlAtXZFjLbSXYQLbSCkxD4KLQsSx36RRCw=="/>
+        </item>
     </channel>
 </rss>
