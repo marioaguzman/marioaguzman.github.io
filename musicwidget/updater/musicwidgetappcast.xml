@@ -83,5 +83,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="10" sparkle:shortVersionString="1.8" length="4273774" type="application/octet-stream" sparkle:edSignature="MuXLX/SC4eZ/dkLLFkylMlmrmQAS0iIJy1Lkp3yOWHsKk+YpS5xNSjyfUGxpnxmMNHvdU1Cax7ON7H/NANaYCA=="/>
         </item>
+        <item>
+            <title>1.9</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Built with Xcode 13.1 and the macOS Monterey SDK.</li><li>Update: Using your trackpad to change the volume is now <b>far</b> more precise. Place your cursor over the control wheel and scroll vertically to adjust the volume using your mouse or trackpad.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 06 Nov 2021 12:41:48 -0700</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="11" sparkle:shortVersionString="1.9" length="4221626" type="application/octet-stream" sparkle:edSignature="1UelEQr/+rcqbJn+Fna6PScN9L3/19hsjEYObk98FDAv5PVhUv1wqBWOPfp196i5+/ztMS9XDWL2B4uR9QbtBA=="/>
+        </item>
     </channel>
 </rss>
