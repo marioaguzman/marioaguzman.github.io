@@ -92,5 +92,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="11" sparkle:shortVersionString="1.9" length="4221626" type="application/octet-stream" sparkle:edSignature="1UelEQr/+rcqbJn+Fna6PScN9L3/19hsjEYObk98FDAv5PVhUv1wqBWOPfp196i5+/ztMS9XDWL2B4uR9QbtBA=="/>
         </item>
+        <item>
+            <title>1.10</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>New: The animating (Now Playing) label in the LCD display was completely rewritten and is now more efficient and provides additional functionality.</li><li>Update: You can now click on the Now Playing label to loop through the available metadata such as track title, artist name, or album title.</li><li>Update: Additional updates to localization in all supported languages.</li><li>Update: Additional updates to the Help Book. The Help Book is accessible through the Help menu.</li></ul>
+            ]]></description>
+            <pubDate>Wed, 05 Jan 2022 19:48:42 -0800</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="12" sparkle:shortVersionString="1.10" length="4212250" type="application/octet-stream" sparkle:edSignature="K5gyJXC0einkY/mssrJeicFoOJxbUUgShG4fgvLhnRgqygxI/9h4aRnDdc8KgTqLn83zwYMjwNkMn/66kHm0Ag=="/>
+        </item>
     </channel>
 </rss>
