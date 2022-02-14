@@ -26,6 +26,9 @@
 		<title>Music Widget for macOS</title>
 		
 		<style>
+		
+			
+			
 			.aquabg {
     			background-image: url('images/aquabg.png');
     			background-position: center center;
@@ -71,6 +74,46 @@
 			.text-shadow {
 				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 			}
+			
+			#downloadbutton {
+				background-image: -webkit-image-set(
+					url("images/download.png") 1x,
+					url("images/download@2x.png") 2x,
+					url("images/download@3x.png") 3x);
+				background-image: image-set(
+					url("images/download.png") 1x, 
+					url("images/download@2x.png") 2x,
+					url("images/download@3x.png") 3x);
+			}
+			
+			#downloadbutton:hover {
+				background-image: -webkit-image-set(
+					url("images/download_hi.png") 1x,
+					url("images/download_hi@2x.png") 2x,
+					url("images/download_hi@3x.png") 3x);
+				background-image: image-set(
+					url("images/download_hi.png") 1x, 
+					url("images/download_hi@2x.png") 2x,
+					url("images/download_hi@3x.png") 3x);
+			}
+			
+			#downloadbutton:active {
+				background-image: -webkit-image-set(
+					url("images/download_lo.png") 1x,
+					url("images/download_lo@2x.png") 2x,
+					url("images/download_lo@3x.png") 3x);
+				background-image: image-set(
+					url("images/download_lo.png") 1x, 
+					url("images/download_lo@2x.png") 2x,
+					url("images/download_lo@3x.png") 3x);
+			}
+			
+			.downloadbutton_size {
+    			display:block;
+				height: 112px;
+				width:  244px;
+			}
+			
 		</style>
 		
 	</head>
@@ -134,6 +177,7 @@
 							 	style="max-width: 100%;" 
 							 	alt="Download Button">
 						</a>
+						
 					</div>
 				</div>
 			</div>
@@ -370,6 +414,8 @@
 				</div>
 			</div>
 			
+			<a id="downloadbutton" class="downloadbutton_size" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip"></a>
+						
 			<div class="row">
 				<div class="col-md">
 					<small><b>Personal</b></small>
