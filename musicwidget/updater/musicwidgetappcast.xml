@@ -101,5 +101,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="12" sparkle:shortVersionString="1.10" length="4212250" type="application/octet-stream" sparkle:edSignature="K5gyJXC0einkY/mssrJeicFoOJxbUUgShG4fgvLhnRgqygxI/9h4aRnDdc8KgTqLn83zwYMjwNkMn/66kHm0Ag=="/>
         </item>
+        <item>
+            <title>1.11</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>New: The volume ring from the original iTunes Dashboard widget is back! Drag vertically on the ring or scroll vertically within the ring's bounds to adjust volume.</li><li>New: Music Widget has additional keywords to make it more discoverable using Spotlight.</li><li>Fix: Addressed an issue where opening Music Widget would not initially display track information if streaming any Apple Music radio station.</li><li>Update: Adjusted the Preferences window for more a fluid display of content.</li><li>Update: There is now more topics in the Help Book including new information for adjusting volume and Dock Menu Items.</li></ul>
+            ]]></description>
+            <pubDate>Mon, 14 Feb 2022 20:53:13 -0800</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="13" sparkle:shortVersionString="1.11" length="4475826" type="application/octet-stream" sparkle:edSignature="aBpUY2ZUYkoB+n43cp/AynhNRHbL/fbcqJKAcLlso53K29HmnSUg+xcAeFJFYwv8K37b15QHxhOtV8QCx27XDQ=="/>
+        </item>
     </channel>
 </rss>
