@@ -110,5 +110,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="13" sparkle:shortVersionString="1.11" length="4475826" type="application/octet-stream" sparkle:edSignature="aBpUY2ZUYkoB+n43cp/AynhNRHbL/fbcqJKAcLlso53K29HmnSUg+xcAeFJFYwv8K37b15QHxhOtV8QCx27XDQ=="/>
         </item>
+        <item>
+            <title>1.12</title>
+            <description><![CDATA[
+                <h4>Music Widget v1.12</h4><ul style="font-size:13px;"><li>Addresses an issue affecting the new Volume Ring UI introduced in v1.11. At times, when dragging the ring to adjust volume, it would get "caught" and prevent volume adjustments.</li></ul><h4>Music Widget 1.11</h4><ul style="font-size:13px;"><li>Fix: Fixes an issue where dragging the volume ring might get "caught".</li><li>New: The volume ring from the original iTunes Dashboard widget is back! Drag vertically on the ring or scroll vertically within the ring's bounds to adjust volume.</li><li>New: Music Widget has additional keywords to make it more discoverable using Spotlight.</li><li>Fix: Addressed an issue where opening Music Widget would not initially display track information if streaming any Apple Music radio station.</li><li>Update: Adjusted the Preferences window for more a fluid display of content.</li><li>Update: There is now more topics in the Help Book including new information for adjusting volume and Dock Menu Items.</li></ul>
+            ]]></description>
+            <pubDate>Wed, 16 Feb 2022 19:34:29 -0800</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="14" sparkle:shortVersionString="1.12" length="4475931" type="application/octet-stream" sparkle:edSignature="n/4ZL1SxIWsbcnRmt8Ns7+QAdDx7QiaiDmPp4BhO0h7vUSgvQaFRWW8mSu1PfObZS7tTciMM6hMUbqIJXvyYAg=="/>
+        </item>
     </channel>
 </rss>
