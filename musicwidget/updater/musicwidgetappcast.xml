@@ -119,5 +119,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="14" sparkle:shortVersionString="1.12" length="4475931" type="application/octet-stream" sparkle:edSignature="n/4ZL1SxIWsbcnRmt8Ns7+QAdDx7QiaiDmPp4BhO0h7vUSgvQaFRWW8mSu1PfObZS7tTciMM6hMUbqIJXvyYAg=="/>
         </item>
+        <item>
+            <title>1.13</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>The Help Book is now fully searchable from the Help menu. Use the search bar in the Help menu to search for topics applicable to Music Widget (English only).</li></ul>
+            ]]></description>
+            <pubDate>Sat, 26 Feb 2022 11:18:29 -0800</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="15" sparkle:shortVersionString="1.13" length="4567474" type="application/octet-stream" sparkle:edSignature="ZX9p0/R1gyTVL4IeVMbblgK/gr+X/xhi7IuPeTe87UmRH2ZINekUBnAWmP7VG8ziaLljwnMTXyjc+1HZkCkRAw=="/>
+        </item>
     </channel>
 </rss>
