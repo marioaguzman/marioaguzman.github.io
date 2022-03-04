@@ -128,5 +128,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="15" sparkle:shortVersionString="1.13" length="4567474" type="application/octet-stream" sparkle:edSignature="ZX9p0/R1gyTVL4IeVMbblgK/gr+X/xhi7IuPeTe87UmRH2ZINekUBnAWmP7VG8ziaLljwnMTXyjc+1HZkCkRAw=="/>
         </item>
+        <item>
+            <title>1.14</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li><b>New</b>: Option to show/hide the volume buttons has been added to Preferences now that the Volume Ring was introduced in a previous release.</li><li><b>Update</b>: Preferences UI updated for a more fluid layout flow, especially for localized content.</li></ul>
+            ]]></description>
+            <pubDate>Thu, 03 Mar 2022 22:24:44 -0800</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="16" sparkle:shortVersionString="1.14" length="4567708" type="application/octet-stream" sparkle:edSignature="vfvMkuMz1KKy28+Cij3OFpQKDnXdcESrTmw9/0kOAhpje1n8DViUFJ+lrVO/IGOOtRnbWWFv8brrqk7kkNWGCg=="/>
+        </item>
     </channel>
 </rss>
