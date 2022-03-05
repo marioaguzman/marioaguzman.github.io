@@ -137,5 +137,14 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="16" sparkle:shortVersionString="1.14" length="4567708" type="application/octet-stream" sparkle:edSignature="vfvMkuMz1KKy28+Cij3OFpQKDnXdcESrTmw9/0kOAhpje1n8DViUFJ+lrVO/IGOOtRnbWWFv8brrqk7kkNWGCg=="/>
         </item>
+        <item>
+            <title>1.15</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li><b>Fix</b>: Resolved an issue where the Now Playing text would sometimes appear blurry on non-Retina displays.</li><li><b>Update</b>: Slight changes to the Now Playing LCD drawing code in order to appear smoother on non-Retina displays.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 05 Mar 2022 12:12:36 -0800</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="17" sparkle:shortVersionString="1.15" length="4568155" type="application/octet-stream" sparkle:edSignature="45qr5JUc8e8RdP00HrJOCroqqMBZreTDzlCCk/leySfpPwGgaln5oTAd6ySL3Lf+2n2yBIkMRYTeyojpkvhyDg=="/>
+        </item>
     </channel>
 </rss>
