@@ -1,469 +1,418 @@
 <!doctype html>
 <html lang="en">
-
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
-		<meta property="og:title" content="Music Widget for macOS" />
-		<meta property="og:type"  content="website" />
-		<meta property="og:image" content="https://marioaguzman.github.io/musicwidget/images/og_mw_tiger.png" />
-		<meta property="og:description" content="A mini player remote for Apple Music. A take on the classic iTunes widget." />
-		<meta property="og:site_name" content="marioaguzman.github.io" />
-		<meta property="og:url" content="https://marioaguzman.github.io/musicwidget/" />
-		
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@MarioGuzman">
-		<meta name="twitter:creator" content="@MarioGuzman">
-		<meta name="twitter:title" content="Music Widget for macOS">
-		<meta name="twitter:description" content="A mini player remote for Apple Music. A take on the classic iTunes widget.">
-		<meta name="twitter:image" content="https://marioaguzman.github.io/musicwidget/images/og_mw_tiger.png">
-		
-		<title>Music Widget for macOS</title>
-		
-		<style>
-		
-			
-			
-			.aquabg {
-    			background-image: url('images/aquabg.png');
-    			background-position: center center;
-    			background-repeat: no-repeat;
-    			background-size: cover;
-    			border-radius: 25pt;
-    			margin-left: 10pt;
-    			margin-right: 10pt;
-			}
-			@media /* only for retina displays */
-			only screen and (-webkit-min-device-pixel-ratio: 2),
-			only screen and (min--moz-device-pixel-ratio: 2),
-			only screen and (min-device-pixel-ratio: 2),
-			only screen and (-webkit-min-device-pixel-ratio: 2),
-			only screen and (min-resolution: 192dpi),
-			only screen and (min-resolution: 2dppx) {
-    		.aquabg {
-        			background-image: url('images/aquabg@2x.png');
-    			}
-			}
-			
-			.darkbg {
-    			background-image: url('images/darkbg.png');
-    			background-position: center center;
-    			background-repeat: no-repeat;
-    			background-size: cover;
-    			border-radius: 25pt;
-    			margin-left: 10pt;
-    			margin-right: 10pt;
-			}
-			@media /* only for retina displays */
-			only screen and (-webkit-min-device-pixel-ratio: 2),
-			only screen and (min--moz-device-pixel-ratio: 2),
-			only screen and (min-device-pixel-ratio: 2),
-			only screen and (-webkit-min-device-pixel-ratio: 2),
-			only screen and (min-resolution: 192dpi),
-			only screen and (min-resolution: 2dppx) {
-    		.darkbg {
-        			background-image: url('images/darkbg@2x.png');
-    			}
-			}
-			
-			.text-shadow {
-				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-			}
-			
-			#downloadbutton {
-				background-image: -webkit-image-set(
-					url("images/download.png") 1x,
-					url("images/download@2x.png") 2x,
-					url("images/download@3x.png") 3x);
-				background-image: image-set(
-					url("images/download.png") 1x, 
-					url("images/download@2x.png") 2x,
-					url("images/download@3x.png") 3x);
-			}
-			
-			#downloadbutton:hover {
-				background-image: -webkit-image-set(
-					url("images/download_hi.png") 1x,
-					url("images/download_hi@2x.png") 2x,
-					url("images/download_hi@3x.png") 3x);
-				background-image: image-set(
-					url("images/download_hi.png") 1x, 
-					url("images/download_hi@2x.png") 2x,
-					url("images/download_hi@3x.png") 3x);
-			}
-			
-			#downloadbutton:active {
-				background-image: -webkit-image-set(
-					url("images/download_lo.png") 1x,
-					url("images/download_lo@2x.png") 2x,
-					url("images/download_lo@3x.png") 3x);
-				background-image: image-set(
-					url("images/download_lo.png") 1x, 
-					url("images/download_lo@2x.png") 2x,
-					url("images/download_lo@3x.png") 3x);
-			}
-			
-			.downloadbutton_size {
-    			display:block;
-				height: 112px;
-				width:  244px;
-			}
-			
-		</style>
-		
-	</head>
-
-	<body>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-		<!-- START Header Nav. -->
-		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
-  			aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-
-  			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        			<li class="nav-item dropdown">
-        				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          					<h6 class="dropdown-header"><b>SPECIAL PROJECTS</b></h6>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>Music Widget</b></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Music</b> <small class="text-muted">Mac Preview</small></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html"><b>PDX Transit</b> <small class="text-muted">SwiftUI</small></a>
-          					<div class="dropdown-divider"></div>
-          					<h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>PDX Transit</b> <small class="text-muted">Macintosh</small></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
-        				</div>
-      				</li>
-      				<!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
-      				<li class="nav-item">
-        				<a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
-      				</li>
-      				<!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
-    			</ul>
-  			</div>
-		</nav>
-		<!-- END Header Nav. -->
-		
-		<div class="container" style="margin-top: 0pt; margin-top: 7.5%; margin-bottom: 7.5%;">
-			
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2">
-					<div style="text-align: center; margin-bottom: 25pt;">
-						<img srcset="images/MW_LibrarySong.png, 
-							images/MW_LibrarySong@2x.png 2x, 
-							images/MW_LibrarySong@3x.png 3x" 
-							src="musicwidget/images/MW_LibrarySong.png" 
-							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-							alt="Music Widget playing &quot;Speed of Sound&quot; by Coldplay">
-						<h2>Music Widget for macOS</h2>
-						<p class="text-muted" style="margin-bottom: 0pt;">A mini player remote for Apple Music.<br>A take on the <i>classic</i> iTunes widget.</p>
-						
-						<a href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">
-							<img srcset="images/dl_btn.png, images/dl_btn@2x.png 2x, images/dl_btn@3x.png 3x" 
-							 	src="images/dl_btn.png" 
-							 	style="max-width: 100%;" 
-							 	alt="Download Button">
-						</a>
-						
-						<hr>
-						
-						<h1 style="font-size: 50pt;">🇺🇦</h1>
-						<p class="text-muted">Music Widget is free, but if you find value in it, please consider donating to help those affected by the Conflict in Ukraine. Visit UNICEF's website for ways you can help:</p>
-						<p class="text-muted"><a href="https://www.unicef.org/emergencies/conflict-ukraine-pose-immediate-threat-children">UNICEF - Conflict in Ukraine</a></p>
-						
-					</div>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row " style="padding-top: 20pt;">
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<img srcset="images/MW_VolumeCtrl.png, images/MW_VolumeCtrl@2x.png 2x, images/MW_VolumeCtrl@3x.png 3x" 
-						src="images/MW_VolumeCtrl.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="Music Widget adjusting the volume">
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Basic Controls</h4>
-						<br>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">Music Widget has the same playback and volume controls as the original iTunes Dashboard Widget. It also has the same keyboard shortcuts as the Music app so there is nothing new for you to learn!</small>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<img srcset="images/MW_Playlists.png, images/MW_Playlists@2x.png 2x, images/MW_Playlists@3x.png 3x" 
-						src="images/MW_Playlists.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="Music Widget streaming Apple Music 1">
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Playlists</h4>
-						<br>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">Just like the original, Music Widget performs a beautiful and fluid flip animation to reveal the Playlist chooser. Simply click the Inspector button to get started.</small>
-					</div>
-				</div>
-			</div>
-			
-			<p><br></p>
-			
-			<div class="row darkbg">
-				<div class="col-lg-8 offset-lg-2">
-					<div style="text-align: center; margin-top: 40pt; margin-bottom: 40pt;">
-						<img srcset="images/MW_DarkMode.png, images/MW_DarkMode@2x.png 2x, images/MW_DarkMode@3x.png 3x" 
-							src="images/MW_DarkMode.png" 
-							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-							alt="Music Widget in Dark Mode">
-						<h4 class="text-light text-shadow">Dark Mode</h4>
-						<div style="margin-left: 20pt; margin-right: 20pt;">
-							<p class="text-light text-shadow">Although the original iTunes widget did not have a dark mode appearance in 2005, Music Widget has an original Dark Mode design to adapt to modern macOS.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<p><br></p>
-			
-			<div class="row " style="padding-top: 20pt;">
-			
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<img srcset="images/MW_AMLive.png, images/MW_AMLive@2x.png 2x, images/MW_AMLive@3x.png 3x" 
-						src="images/MW_AMLive.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="Music Widget streaming Apple Music 1">
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Live Streaming UI</h4>
-						<br>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">If you love streaming live audio like Apple Music One or other live stations like CNN, Music Widget displays a UI suitable for streaming audio.</small>
-					</div>
-				</div>
-				
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<img srcset="images/MW_LibrarySong.png, images/MW_LibrarySong@2x.png 2x, images/MW_LibrarySong@3x.png 3x" 
-						src="images/MW_LibrarySong.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="Music Widget Controls">
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Craftsmanship</h4>
-						<br>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">Fully native AppKit app, Music Widget is both lightweight and snappy. Practically the entire UI is drawn in code using Core Graphics & Core Animation<span class="text-muted"><sup>0</sup></span> in order to achieve crisp details for both Retina & non-Retina displays.</small>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2">
-					<div style="text-align: center; margin-top: 20pt; margin-bottom: 20pt;">
-						<video style="max-width: 70%; border-radius: 20pt; margin-bottom: 10pt;" playsinline autoplay loop muted>
-							<source src="images/MW_Scrolling_Marquee.mp4" type="video/mp4" />
-						</video>
-						<h4>Scrolling Marquee</h4>
-						<div style="margin-left: 20pt; margin-right: 20pt;">
-							<p>The 'Now Playing' display performs beautiful animations as it vertically scrolls through the current track information. If the track title, artist name, or album is too long to display, it will perform a scrolling marquee animation before animating away to the next item.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2">
-					<div style="text-align: center; margin-top: 20pt; margin-bottom: 20pt;">
-						<video style="max-width: 70%; border-radius: 20pt; margin-bottom: 10pt;" playsinline autoplay loop muted>
-							<source src="images/MW_Flip_Animation.mp4" type="video/mp4" />
-						</video>
-						<h4>Playlist "Flip"</h4>
-						<div style="margin-left: 20pt; margin-right: 20pt;">
-							<p>Just like the original, Music Widget performs a fluid flip animation to reveal the backside where you can pick a different playlist to play. Just click the 'Inspector' button to get started!</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row" style="padding-top: 20pt; text-align: center;">
-				<div class="col-md">
-					<p><i>"You can once again enjoy your music in retro OS X style."</i><br><b>The Verge</b><br><a href="https://www.theverge.com/tldr/2021/6/30/22557991/music-widget-mac-os-x-itunes-player-control-tiger-dashboard"><small>Read the article</small></a></p>
-					<p><i>"Music Widget brings back the 2005 iTunes nostalgia we didn't know we needed."</i><br><b>iMore</b><br><a href="https://www.imore.com/music-widget-brings-back-2005-itunes-nostalgia-we-didnt-know-we-needed"><small>Read the article</small></a></p>
-					<p><i>"Remember the iTunes Mini Player? Thanks to engineer Mario Guzman, it’s back."</i><br><b>The Awesomer</b><br><a href="https://theawesomer.com/music-widget-for-macos/"><small>Read the article</small></a></p>
-				</div>
-				<div class="col-md">
-					<p><i>"Mario Guzman recreates the old iTunes Dashboard widget for modern day Apple Music control."</i><br><b>Uncrate</b><br><a href="https://uncrate.com/music-widget/"><small>Read the article</small></a></p>
-					<p><i>"You can party like it’s 2005 with your tunes."</i><br><b>Cult of Mac</b><br><a href="https://www.cultofmac.com/746681/free-music-app-replicates-mac-os-x-itunes-widget-from-2005/"><small>Read the article</small></a></p>
-						<a id="download"></a>
-				</div>
-			</div>
-			
-			<br>
-			
-			<div class="row">
-				<div class="col-md aquabg">
-					<div style="text-align: center; margin-top: 40pt; margin-bottom: 30pt;">
-						<img srcset="images/AppIcon_128.png, images/AppIcon_128@2x.png 2x, images/AppIcon_128@3x.png 3x" 
-							 src="images/AppIcon_128.png" 
-							 style="max-width: 100%;" 
-							 alt="Music Widget App Icon">
-						<h4 class="text-light text-shadow" style="margin-bottom: 0pt;">Want to take it for a spin?</h4>
-						<small class="text-light text-shadow">100% AppKit Native. Universal Binary.</small>
-						<div style="">
-							<a href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">
-								<img srcset="images/dl_btn.png, images/dl_btn@2x.png 2x, images/dl_btn@3x.png 3x" 
-							 		src="images/dl_btn.png" 
-							 		style="max-width: 100%;" 
-							 		alt="Download Button">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md">
-					<div style="margin: 10pt; text-align: center;">
-						<br>
-						<a href="https://www.producthunt.com/posts/music-widget-for-apple-music-on-macos?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-music-widget-for-apple-music-on-macos" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=303698&theme=light" alt="Music Widget for Apple Music on macOS - A take on the classic iTunes Widget | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-						<p><br></p>
-					</div>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row" style="padding-top: 20pt;">
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<img srcset="images/universal_binary.png, images/universal_binary@2x.png 2x, images/universal_binary@3x.png 3x" 
-						src="images/universal_binary.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="Universal Binary: Supports Apple Silicon and Intel.">
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Universal Binary</h4>
-						<br>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">Music Widget is built for macOS Big Sur and Macintosh computers with Apple Silicon or Intel processors.</small>
-					</div>
-				</div>
-				
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<img srcset="images/flags.png, images/flags@2x.png 2x, images/flags@3x.png 3x" 
-						src="images/flags.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-						alt="International Flags">
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Hei. Hola. Hallo. Cześć...</h4>
-						<br>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">Music Widget is supported in English, German, Finnish, Polish, Spanish, and Spanish (Latin America).</small>
-					</div>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row">
-				<div class="col-md">
-					<div>
-						<h4 class="card-text">🛠 Technical stuff for the nerds</h4>
-						<p>Music Widget uses Scripting Bridge and Distributed Notification Center to send and receive commands with Apple Music on macOS. 99%<span class="text-muted"><sup>2</sup></span> of the UI is written in Core Graphics and Core Animation to achieve crisp UI that is also optimized for non-Retina Displays. Music Widget is a completely native app; written with Swift and AppKit.</p>
-						<p>Requires <b>macOS Big Sur</b> or newer and <b>Music.app</b>.<span class="text-muted"><sup>3</sup></span></p>
-						<p>If you have feedback, feature requests, or want to report any bugs,
-						  	tweet the developer directly <a href="https://www.twitter.com/marioguzman">@marioguzman</a>.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md">
-					<div>
-						<p class="text-muted">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-					</div>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row">
-				<div class="col-md">
-					<small class="text-muted">Apple Music and iTunes are registered trademarks of Apple Inc.
-										<br><sup>0</sup> With the Exception of the Shuffle and Repeat buttons. Images are used to render these on screen.
-										<br><sup>1</sup> Music Widget is notarized.
-										<br><sup>2</sup> Shuffle and Repeat buttons are images.
-										<br><sup>3</sup> Apple Music subscription not required. Not compatible with Spotify.</small>
-										<br><p> </p>
-				</div>
-			</div>
-			
-			<!-- Footer Start -->
-			<div class="row">
-				<div class="col-md">
-					<small><b>© 2019-2022 Mario A Guzman</b></small>
-				</div>
-			</div>
-			
-			<!-- <a id="downloadbutton" class="downloadbutton_size" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip"></a> -->
-						
-			<div class="row">
-				<div class="col-md">
-					<small><b>Personal</b></small>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
-						<li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
-						<li><a class="text-muted" href="https://stackoverflow.com/story/marioguzman">Stack Overflow</a></li>
-						<li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
-					</ul>
-				</div>
-				<div class="col-sm">
-					<small><b>Projects</b></small>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music <small class="text-muted">Mac Preview</small></a></li>
-					</ul>
-				</div>
-				<div class="col-sm">
-					<small><b>Downloads</b></small>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">Music Widget <small class="text-muted">Macintosh</small></a></li>
-						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
-						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- Footer End -->
-
-		</div>
-	</body>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta property="og:title" content="Music Widget for macOS" />
+        <meta property="og:type"  content="website" />
+        <meta property="og:image" content="https://marioaguzman.github.io/musicwidget/images/og_mw_tiger.png" />
+        <meta property="og:description" content="A mini player remote for Apple Music. A take on the classic iTunes widget." />
+        <meta property="og:site_name" content="marioaguzman.github.io" />
+        <meta property="og:url" content="https://marioaguzman.github.io/musicwidget/" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@MarioGuzman">
+        <meta name="twitter:creator" content="@MarioGuzman">
+        <meta name="twitter:title" content="Music Widget for macOS">
+        <meta name="twitter:description" content="A mini player remote for Apple Music. A take on the classic iTunes widget.">
+        <meta name="twitter:image" content="https://marioaguzman.github.io/musicwidget/images/og_mw_tiger.png">
+        <title>Music Widget for macOS</title>
+        <style>
+            .aquabg {
+            background-image: url('images/aquabg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+            }
+            @media /* only for retina displays */
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+            .aquabg {
+            background-image: url('images/aquabg@2x.png');
+            }
+            }
+            .darkbg {
+            background-image: url('images/darkbg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+            }
+            @media /* only for retina displays */
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+            .darkbg {
+            background-image: url('images/darkbg@2x.png');
+            }
+            }
+            .text-shadow {
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            }
+            #downloadbutton {
+            background-image: -webkit-image-set(
+            url("images/download.png") 1x,
+            url("images/download@2x.png") 2x,
+            url("images/download@3x.png") 3x);
+            background-image: image-set(
+            url("images/download.png") 1x, 
+            url("images/download@2x.png") 2x,
+            url("images/download@3x.png") 3x);
+            }
+            #downloadbutton:hover {
+            background-image: -webkit-image-set(
+            url("images/download_hi.png") 1x,
+            url("images/download_hi@2x.png") 2x,
+            url("images/download_hi@3x.png") 3x);
+            background-image: image-set(
+            url("images/download_hi.png") 1x, 
+            url("images/download_hi@2x.png") 2x,
+            url("images/download_hi@3x.png") 3x);
+            }
+            #downloadbutton:active {
+            background-image: -webkit-image-set(
+            url("images/download_lo.png") 1x,
+            url("images/download_lo@2x.png") 2x,
+            url("images/download_lo@3x.png") 3x);
+            background-image: image-set(
+            url("images/download_lo.png") 1x, 
+            url("images/download_lo@2x.png") 2x,
+            url("images/download_lo@3x.png") 3x);
+            }
+            .downloadbutton_size {
+            display:block;
+            height: 112px;
+            width:  244px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- START Header Nav. -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header"><b>SPECIAL PROJECTS</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>Music Widget</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Music</b> <small class="text-muted">Mac Preview</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html"><b>PDX Transit</b> <small class="text-muted">SwiftUI</small></a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>PDX Transit</b> <small class="text-muted">Macintosh</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
+                        </div>
+                    </li>
+                    <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
+                    </li>
+                    <!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+                </ul>
+            </div>
+        </nav>
+        <!-- END Header Nav. -->
+        <div class="container" style="margin-top: 0pt; margin-top: 7.5%; margin-bottom: 7.5%;">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div style="text-align: center; margin-bottom: 25pt;">
+                        <img srcset="images/MW_LibrarySong.png, 
+                            images/MW_LibrarySong@2x.png 2x, 
+                            images/MW_LibrarySong@3x.png 3x" 
+                            src="musicwidget/images/MW_LibrarySong.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music Widget playing &quot;Speed of Sound&quot; by Coldplay">
+                        <h2>Music Widget for macOS</h2>
+                        <p class="text-muted" style="margin-bottom: 0pt;">A mini player remote for Apple Music.<br>A take on the <i>classic</i> iTunes widget.</p>
+                        <a href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">
+                        <img srcset="images/dl_btn.png, images/dl_btn@2x.png 2x, images/dl_btn@3x.png 3x" 
+                            src="images/dl_btn.png" 
+                            style="max-width: 100%;" 
+                            alt="Download Button">
+                        </a>
+                        <hr>
+                        <h1 style="font-size: 50pt;">🇺🇦</h1>
+                        <p class="text-muted">Music Widget is free, but if you find value in it, please consider donating to help those affected by the Conflict in Ukraine. Visit UNICEF's website for ways you can help:</p>
+                        <p class="text-muted"><a href="https://www.unicef.org/emergencies/conflict-ukraine-pose-immediate-threat-children">UNICEF - Conflict in Ukraine</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row " style="padding-top: 20pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" srcset="images/MW_VolumeCtrl.png, images/MW_VolumeCtrl@2x.png 2x, images/MW_VolumeCtrl@3x.png 3x" 
+                            src="images/MW_VolumeCtrl.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music Widget adjusting the volume">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Basic Controls</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Music Widget has the same playback and volume controls as the original iTunes Dashboard Widget. It also has the same keyboard shortcuts as the Music app so there is nothing new for you to learn!</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" srcset="images/MW_Playlists.png, images/MW_Playlists@2x.png 2x, images/MW_Playlists@3x.png 3x" 
+                            src="images/MW_Playlists.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music Widget streaming Apple Music 1">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Playlists</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Just like the original, Music Widget performs a beautiful and fluid flip animation to reveal the Playlist chooser. Simply click the Inspector button to get started.</small>
+                    </div>
+                </div>
+            </div>
+            <p><br></p>
+            <div class="row darkbg">
+                <div class="col-lg-8 offset-lg-2">
+                    <div style="text-align: center; margin-top: 40pt; margin-bottom: 40pt;">
+                        <img loading="lazy" srcset="images/MW_DarkMode.png, images/MW_DarkMode@2x.png 2x, images/MW_DarkMode@3x.png 3x" 
+                            src="images/MW_DarkMode.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music Widget in Dark Mode">
+                        <h4 class="text-light text-shadow">Dark Mode</h4>
+                        <div style="margin-left: 20pt; margin-right: 20pt;">
+                            <p class="text-light text-shadow">Although the original iTunes widget did not have a dark mode appearance in 2005, Music Widget has an original Dark Mode design to adapt to modern macOS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p><br></p>
+            <div class="row " style="padding-top: 20pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" srcset="images/MW_AMLive.png, images/MW_AMLive@2x.png 2x, images/MW_AMLive@3x.png 3x" 
+                            src="images/MW_AMLive.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music Widget streaming Apple Music 1">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Live Streaming UI</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">If you love streaming live audio like Apple Music One or other live stations like CNN, Music Widget displays a UI suitable for streaming audio.</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" srcset="images/MW_LibrarySong.png, images/MW_LibrarySong@2x.png 2x, images/MW_LibrarySong@3x.png 3x" 
+                            src="images/MW_LibrarySong.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music Widget Controls">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Craftsmanship</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Fully native AppKit app, Music Widget is both lightweight and snappy. Practically the entire UI is drawn in code using Core Graphics & Core Animation<span class="text-muted"><sup>0</sup></span> in order to achieve crisp details for both Retina & non-Retina displays.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div style="text-align: center; margin-top: 20pt; margin-bottom: 20pt;">
+                        <video style="max-width: 70%; border-radius: 20pt; margin-bottom: 10pt;" playsinline autoplay loop muted>
+                            <source src="images/MW_Scrolling_Marquee.mp4" type="video/mp4" />
+                        </video>
+                        <h4>Scrolling Marquee</h4>
+                        <div style="margin-left: 20pt; margin-right: 20pt;">
+                            <p>The 'Now Playing' display performs beautiful animations as it vertically scrolls through the current track information. If the track title, artist name, or album is too long to display, it will perform a scrolling marquee animation before animating away to the next item.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div style="text-align: center; margin-top: 20pt; margin-bottom: 20pt;">
+                        <video style="max-width: 70%; border-radius: 20pt; margin-bottom: 10pt;" playsinline autoplay loop muted>
+                            <source src="images/MW_Flip_Animation.mp4" type="video/mp4" />
+                        </video>
+                        <h4>Playlist "Flip"</h4>
+                        <div style="margin-left: 20pt; margin-right: 20pt;">
+                            <p>Just like the original, Music Widget performs a fluid flip animation to reveal the backside where you can pick a different playlist to play. Just click the 'Inspector' button to get started!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="padding-top: 20pt; text-align: center;">
+                <div class="col-md">
+                    <p><i>"You can once again enjoy your music in retro OS X style."</i><br><b>The Verge</b><br><a href="https://www.theverge.com/tldr/2021/6/30/22557991/music-widget-mac-os-x-itunes-player-control-tiger-dashboard"><small>Read the article</small></a></p>
+                    <p><i>"Music Widget brings back the 2005 iTunes nostalgia we didn't know we needed."</i><br><b>iMore</b><br><a href="https://www.imore.com/music-widget-brings-back-2005-itunes-nostalgia-we-didnt-know-we-needed"><small>Read the article</small></a></p>
+                    <p><i>"Remember the iTunes Mini Player? Thanks to engineer Mario Guzman, it’s back."</i><br><b>The Awesomer</b><br><a href="https://theawesomer.com/music-widget-for-macos/"><small>Read the article</small></a></p>
+                </div>
+                <div class="col-md">
+                    <p><i>"Mario Guzman recreates the old iTunes Dashboard widget for modern day Apple Music control."</i><br><b>Uncrate</b><br><a href="https://uncrate.com/music-widget/"><small>Read the article</small></a></p>
+                    <p><i>"You can party like it’s 2005 with your tunes."</i><br><b>Cult of Mac</b><br><a href="https://www.cultofmac.com/746681/free-music-app-replicates-mac-os-x-itunes-widget-from-2005/"><small>Read the article</small></a></p>
+                    <a id="download"></a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md aquabg">
+                    <div style="text-align: center; margin-top: 40pt; margin-bottom: 30pt;">
+                        <img loading="lazy" srcset="images/AppIcon_128.png, images/AppIcon_128@2x.png 2x, images/AppIcon_128@3x.png 3x" 
+                            src="images/AppIcon_128.png" 
+                            style="max-width: 100%;" 
+                            alt="Music Widget App Icon">
+                        <h4 class="text-light text-shadow" style="margin-bottom: 0pt;">Want to take it for a spin?</h4>
+                        <small class="text-light text-shadow">100% AppKit Native. Universal Binary.</small>
+                        <div style="">
+                            <a href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">
+                            <img loading="lazy" srcset="images/dl_btn.png, images/dl_btn@2x.png 2x, images/dl_btn@3x.png 3x" 
+                                src="images/dl_btn.png" 
+                                style="max-width: 100%;" 
+                                alt="Download Button">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div style="margin: 10pt; text-align: center;">
+                        <br>
+                        <a href="https://www.producthunt.com/posts/music-widget-for-apple-music-on-macos?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-music-widget-for-apple-music-on-macos" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=303698&theme=light" alt="Music Widget for Apple Music on macOS - A take on the classic iTunes Widget | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+                        <p><br></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="padding-top: 20pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" srcset="images/universal_binary.png, images/universal_binary@2x.png 2x, images/universal_binary@3x.png 3x" 
+                            src="images/universal_binary.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Universal Binary: Supports Apple Silicon and Intel.">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Universal Binary</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Music Widget is built for macOS Big Sur and Macintosh computers with Apple Silicon or Intel processors.</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" srcset="images/flags.png, images/flags@2x.png 2x, images/flags@3x.png 3x" 
+                            src="images/flags.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="International Flags">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Hei. Hola. Hallo. Cześć...</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Music Widget is supported in English, German, Finnish, Polish, Spanish, and Spanish (Latin America).</small>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md">
+                    <div>
+                        <h4 class="card-text">🛠 Technical stuff for the nerds</h4>
+                        <p>Music Widget uses Scripting Bridge and Distributed Notification Center to send and receive commands with Apple Music on macOS. 99%<span class="text-muted"><sup>2</sup></span> of the UI is written in Core Graphics and Core Animation to achieve crisp UI that is also optimized for non-Retina Displays. Music Widget is a completely native app; written with Swift and AppKit.</p>
+                        <p>Requires <b>macOS Big Sur</b> or newer and <b>Music.app</b>.<span class="text-muted"><sup>3</sup></span></p>
+                        <p>If you have feedback, feature requests, or want to report any bugs,
+                            tweet the developer directly <a href="https://www.twitter.com/marioguzman">@marioguzman</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div>
+                        <p class="text-muted">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md">
+                    <small class="text-muted">Apple Music and iTunes are registered trademarks of Apple Inc.
+                    <br><sup>0</sup> With the Exception of the Shuffle and Repeat buttons. Images are used to render these on screen.
+                    <br><sup>1</sup> Music Widget is notarized.
+                    <br><sup>2</sup> Shuffle and Repeat buttons are images.
+                    <br><sup>3</sup> Apple Music subscription not required. Not compatible with Spotify.</small>
+                    <br>
+                    <p> </p>
+                </div>
+            </div>
+            <!-- Footer Start -->
+            <div class="row">
+                <div class="col-md">
+                    <small><b>© 2019-2022 Mario A Guzman</b></small>
+                </div>
+            </div>
+            <!-- <a id="downloadbutton" class="downloadbutton_size" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip"></a> -->
+            <div class="row">
+                <div class="col-md">
+                    <small><b>Personal</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+                        <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+                        <li><a class="text-muted" href="https://stackoverflow.com/story/marioguzman">Stack Overflow</a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Projects</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music <small class="text-muted">Mac Preview</small></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Downloads</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">Music Widget <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+    </body>
 </html>
