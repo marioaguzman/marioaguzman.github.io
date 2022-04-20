@@ -146,5 +146,16 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" sparkle:version="17" sparkle:shortVersionString="1.15" length="4568155" type="application/octet-stream" sparkle:edSignature="45qr5JUc8e8RdP00HrJOCroqqMBZreTDzlCCk/leySfpPwGgaln5oTAd6ySL3Lf+2n2yBIkMRYTeyojpkvhyDg=="/>
         </item>
+        <item>
+            <title>1.16</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li><b>Update</b>: Updated the component that updates Music Widget, "Sparkle", to version 2.x.</li></ul>
+            ]]></description>
+            <pubDate>Tue, 19 Apr 2022 19:15:20 -0700</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4858531" type="application/octet-stream" sparkle:edSignature="9sUbFCaCPl+2SwC+DOnagUWk0dFTF8+EPuPd+A2g83seDEu3/qbvehx/RBOl1VBKw5g+jn2XZse1eUR8I/ZpDQ=="/>
+        </item>
     </channel>
 </rss>
