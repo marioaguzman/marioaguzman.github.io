@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Music MiniPlayer</title>
+        <link>https://marioaguzman.github.io/musicminiplayer</link>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+        <item>
+            <title>1.0</title>
+            <pubDate>Sun, 01 May 2022 09:55:45 -0700</pubDate>
+            <sparkle:version>0</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="2099566" type="application/octet-stream" sparkle:edSignature="/DO7ch/sHXEwzvFKzAjUjGBfwxn6hykgqC8e9dgANzKXjUoV4R3/kZvZBg/UzHxn65NF+LG7zW0/dW5twG/UCQ=="/>
+        </item>
+    </channel>
+</rss>
