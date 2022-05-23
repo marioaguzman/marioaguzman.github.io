@@ -27,7 +27,7 @@
 		
 		<style>
 			.aquabg {
-    			background-image: url('musicwidget/images/aquabg.png');
+    			background-image: url('musicminiplayer/images/darkbg.png');
     			background-position: center center;
     			background-repeat: no-repeat;
     			background-size: cover;
@@ -43,7 +43,7 @@
 			only screen and (min-resolution: 192dpi),
 			only screen and (min-resolution: 2dppx) {
     		.aquabg {
-        			background-image: url('musicwidget/images/aquabg@2x.png');
+        			background-image: url('musicminiplayer/images/darkbg@2x.png');
     			}
 			}
 			
@@ -59,54 +59,47 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		
-		<!-- START Header Nav. -->
-		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
-  			aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-
-  			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        			<li class="nav-item dropdown">
-        				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          					<h6 class="dropdown-header"><b>SPECIAL PROJECTS</b></h6>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>Music Widget</b></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Music</b> <small class="text-muted">Mac Preview</small></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html"><b>PDX Transit</b> <small class="text-muted">SwiftUI</small></a>
-          					<div class="dropdown-divider"></div>
-          					<h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>PDX Transit</b> <small class="text-muted">Macintosh</small></a>
-          					<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
-        				</div>
-      				</li>
-      				<!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
-      				<li class="nav-item">
-        				<a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
-      				</li>
-      				<!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
-    			</ul>
-  			</div>
-		</nav>
-		<!-- END Header Nav. -->
 		
+        <!-- START Header Nav. -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header"><b>MUSIC</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>Music Widget</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>Music MiniPlayer</b></a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>PDX Transit</b> <small class="text-muted">Macintosh</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header"><b>SPECIAL PROJECTS</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Music</b> <small class="text-muted">Mac Preview</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html"><b>PDX Transit</b> <small class="text-muted">SwiftUI</small></a>
+                        </div>
+                    </li>
+                    <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
+                    </li>
+                    <!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+                </ul>
+            </div>
+        </nav>
+        <!-- END Header Nav. -->
+        
 		<div class="container" style="margin-top: 5%; margin-bottom: 5%;">
 		
 			<div class="row">
-				<div class="col-md" style="text-align: center;">
-					<p>🇺🇦 Please consider donating to help those affected by the Conflict in Ukraine.<br>Visit UNICEF's website for ways you can help:</p>
-					<a href="https://www.unicef.org/emergencies/conflict-ukraine-pose-immediate-threat-children"><p>UNICEF - Conflict in Ukraine</p></a>
-				</div>
-			</div>
-			
-			<hr>
-			<br>
-			
-			<div class="row">
-				<div class="col-md">
+				<div class="col-lg-10 offset-lg-1">
 					<h2>Hello</h2>
 					<p>I'm a software engineer in Portland, OR with a degree in Computer Science from <a href="https://www.cpp.edu">Cal Poly Pomona</a>. I spend most of my time developing for Apple Platforms writing in Objective-C and Swift. Oh, and also <a href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">SwiftUI</a>.</p>
 				</div>
@@ -114,26 +107,39 @@
 			
 			<br>
 			
-			<div class="row align-items-center" style="margin-bottom: 20pt;">
-				<div class="col-md aquabg" style="text-align: center; padding-top: 30pt; padding-bottom: 30pt;">
-					<img srcset="musicwidget/images/MW_LibrarySong.png, 
-						musicwidget/images/MW_LibrarySong@2x.png 2x, 
-						musicwidget/images/MW_LibrarySong@3x.png 3x" 
-						src="musicwidget/images/MW_LibrarySong@2x.png" 
+			<div class="row" style="margin-bottom: 20pt;">
+				<div class="col-md aquabg align-items-center" style="text-align: center; padding-top: 30pt; padding-bottom: 30pt;">
+					<img 
+						srcset="musicminiplayer/images/MusicMiniPlayer_Controls.png, 
+								musicminiplayer/images/MusicMiniPlayer_Controls@2x.png 2x, 
+								musicminiplayer/images/MusicMiniPlayer_Controls@3x.png 3x" 
+						src="musicwidget/images/MusicMiniPlayer_Controls@2x.png" 
 						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 20pt; margin-bottom: 10pt;" 
 						alt="Music Widget">
-					<h2 class="text-light text-shadow">🎵 Music Widget for macOS</h4>
-					<p class="text-light text-shadow">A mini player remote for Apple Music.<br>A take on the <i>classic</i> iTunes widget.</p>
-					<a class="btn btn-light" style="margin-top: 10pt; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);" href="https://marioaguzman.github.io/musicwidget"><b>Learn More</b></a>
-					
+					<h2 class="text-light text-shadow">🎵 Music MiniPlayer for macOS</h4>
+					<p class="text-light text-shadow">A replica of the <i>classic</i> iTunes MiniPlayer.<br>Made for Apple Music on macOS.</p>
+					<a class="btn btn-light" style="margin-top: 10pt; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);" href="https://marioaguzman.github.io/musicminiplayer"><b>Learn More</b></a>
 					<p> </p>
-					
-					<p class="text-light text-shadow"><i>"You can once again enjoy your music in retro OS X style."</i> – <b>The Verge</b><br></p>
-					
 				</div>
 			</div>
 			
-			<br>
+			<div class="row align-items-center">
+				<div class="col-md">
+					<img 
+						srcset="musicwidget/images/MW_LibrarySong.png, 
+								musicwidget/images/MW_LibrarySong@2x.png 2x,
+								musicwidget/images/MW_LibrarySong@3x.png 3x," 
+						src="musicminiplayer/images/MW_LibrarySong.png" 
+						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-top: 30pt; padding-bottom: 30pt;" 
+						alt="Music Widget">
+				</div>
+				<div class="col-md" style="text-align: center;">
+					<h4>Music Widget <span class="text-muted">for macOS</span></h4>
+					<p><i>"You can once again enjoy your music in retro OS X style."</i><br> – <b>The Verge</b><br><a href="https://marioaguzman.github.io/musicwidget">Learn more about Music Widget</a></p>
+				</div>
+			</div>
+			
+			<hr>
 			
 			<div class="row align-items-center">
 				<div class="col-md">
@@ -144,23 +150,16 @@
 				</div>
 				<div class="col-md" style="text-align: center;">
 					<h4>PDX Transit <span class="text-muted">for Macintosh</span></h4>
-					<!--<p>TriMet arrival times and service alerts on your Mac.<br>
-						<a href="https://marioaguzman.github.io/pdxtransit/macos/">Learn more about PDX Transit for Mac</a></p> -->
-						<p>Updated for macOS Monterey & Apple Silicon<br>
+						<p>TriMet arrival times and service alerts on your Mac. Optimized for macOS Monterey & Apple Silicon.<br>
 						<a href="https://marioaguzman.github.io/pdxtransit/macos/">Learn more about PDX Transit for Mac</a></p>
 					<a href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12"><img src="images/Download_on_the_Mac_App_Store_Badge_US.svg"></a>
 				</div>
+				
 			</div>
 			
 			<hr>
 			
 			<div class="row align-items-center">
-				<div class="col-md" style="text-align: center;">
-					<h4>PDX Transit <span class="text-muted">for iOS & watchOS</span></h4>
-					<p>TriMet arrival times, transit directions, and service alerts on your iPhone and your wrist.<br>
-						<a href="https://marioaguzman.github.io/pdxtransit/ios/">Learn more about PDX Transit</a></p>
-					<a href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8"><img src="images/Download_on_the_App_Store_Badge_US.svg"></a>
-				</div>
 				<div class="col-md">
 					<img 
 						srcset="
@@ -171,6 +170,12 @@
 							class="mx-auto d-block" 
 							style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
 							alt="PDX Transit on iPhone 13 Pro">
+				</div>
+				<div class="col-md" style="text-align: center;">
+					<h4>PDX Transit <span class="text-muted">for iOS & watchOS</span></h4>
+					<p>TriMet arrival times, transit directions, and service alerts on your iPhone and your wrist.<br>
+						<a href="https://marioaguzman.github.io/pdxtransit/ios/">Learn more about PDX Transit</a></p>
+					<a href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8"><img src="images/Download_on_the_App_Store_Badge_US.svg"></a>
 				</div>
 			</div>
 			
@@ -202,44 +207,45 @@
 			</div>
 			
 			<!-- Footer Start -->
-			<div class="row">
-				<div class="col-md">
-					<small><b>© 2019-2022 Mario A Guzman</b></small>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md">
-					<small><b>Personal</b></small>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
-						<li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
-						<li><a class="text-muted" href="https://stackoverflow.com/story/marioguzman">Stack Overflow</a></li>
-						<li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
-						<li><a class="text-muted" rel="me" href="https://mastodon.technology/@marioguzman">Mastodon</a></li>
-					</ul>
-				</div>
-				<div class="col-sm">
-					<small><b>Projects</b></small>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
-						<li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music <small class="text-muted">Mac Preview</small></a></li>
-					</ul>
-				</div>
-				<div class="col-sm">
-					<small><b>Downloads</b></small>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">Music Widget <small class="text-muted">Macintosh</small></a></li>
-						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
-						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- Footer End -->
-
+            <div class="row">
+                <div class="col-md">
+                    <small><b>© 2019-2022 Mario A Guzman</b></small>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md">
+                    <small><b>Personal</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+                        <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+                        <li><a class="text-muted" href="https://stackoverflow.com/story/marioguzman">Stack Overflow</a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+                        <li><a class="text-muted" rel="me" href="https://mastodon.technology/@marioguzman">Mastodon</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Projects</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music <small class="text-muted">Mac Preview</small></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Downloads</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">Music Widget <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip">Music MiniPlayer <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer End -->
 		</div>
 	</body>
 </html>

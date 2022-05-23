@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <meta property="og:title" content="Music MiniPlayer for macOS" />
+        <meta property="og:type"  content="website" />
+        <meta property="og:image" content="https://marioaguzman.github.io/musicminiplayer/images/og_mmp_sl.png" />
+        <meta property="og:description" content="A replica of the classic iTunes MiniPlayer to control Apple Music on modern macOS." />
+        <meta property="og:site_name" content="marioaguzman.github.io" />
+        <meta property="og:url" content="https://marioaguzman.github.io/musicminiplayer/" />
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@MarioGuzman">
+        <meta name="twitter:creator" content="@MarioGuzman">
+        <meta name="twitter:title" content="Music MiniPlayer for macOS">
+        <meta name="twitter:description" content="A replica of the classic iTunes MiniPlayer to control Apple Music on modern macOS.">
+        <meta name="twitter:image" content="https://marioaguzman.github.io/musicminiplayer/images/og_mmp_sl.png">
+        <title>Music MiniPlayer for macOS</title>
+        <style>
+            .aquabg {
+            background-image: url('images/aquabg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+            }
+            @media /* only for retina displays */
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+            .aquabg {
+            background-image: url('images/aquabg@2x.png');
+            }
+            }
+            .darkbg {
+            background-image: url('images/darkbg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+            }
+            @media /* only for retina displays */
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+            .darkbg {
+            background-image: url('images/darkbg@2x.png');
+            }
+            }
+            .text-shadow {
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            }
+            #downloadbutton {
+            background-image: -webkit-image-set(
+            url("images/download.png") 1x,
+            url("images/download@2x.png") 2x,
+            url("images/download@3x.png") 3x);
+            background-image: image-set(
+            url("images/download.png") 1x, 
+            url("images/download@2x.png") 2x,
+            url("images/download@3x.png") 3x);
+            }
+            #downloadbutton:hover {
+            background-image: -webkit-image-set(
+            url("images/download_hi.png") 1x,
+            url("images/download_hi@2x.png") 2x,
+            url("images/download_hi@3x.png") 3x);
+            background-image: image-set(
+            url("images/download_hi.png") 1x, 
+            url("images/download_hi@2x.png") 2x,
+            url("images/download_hi@3x.png") 3x);
+            }
+            #downloadbutton:active {
+            background-image: -webkit-image-set(
+            url("images/download_lo.png") 1x,
+            url("images/download_lo@2x.png") 2x,
+            url("images/download_lo@3x.png") 3x);
+            background-image: image-set(
+            url("images/download_lo.png") 1x, 
+            url("images/download_lo@2x.png") 2x,
+            url("images/download_lo@3x.png") 3x);
+            }
+            .downloadbutton_size {
+            display:block;
+            height: 112px;
+            width:  244px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- START Header Nav. -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header"><b>MUSIC</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>Music Widget</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>Music MiniPlayer</b></a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>PDX Transit</b> <small class="text-muted">Macintosh</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header"><b>SPECIAL PROJECTS</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Music</b> <small class="text-muted">Mac Preview</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html"><b>PDX Transit</b> <small class="text-muted">SwiftUI</small></a>
+                        </div>
+                    </li>
+                    <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
+                    </li>
+                    <!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+                </ul>
+            </div>
+        </nav>
+        <!-- END Header Nav. -->
+        
+        <div class="container" style="margin-top: 0pt; margin-top: 7.5%; margin-bottom: 7.5%;">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div style="text-align: center; margin-bottom: 25pt;">
+                        <img srcset="images/MusicMiniPlayer_Track.png, 
+                            images/MusicMiniPlayer_Track@2x.png 2x, 
+                            images/MusicMiniPlayer_Track@3x.png 3x" 
+                            src="musicminiplayer/images/MusicMiniPlayer_Track.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music MiniPlayer playing &quot;Exodus Honey&quot; by Honeycut">
+                        <h2>Music MiniPlayer for macOS</h2>
+                        <p class="text-muted" style="margin-bottom: 0pt;">A replica of the <i>classic</i> iTunes MiniPlayer.<br>Made for Apple Music on macOS.</p>
+                        
+                        	<!--
+                        <a href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip">
+                        <img srcset="images/dl_btn.png, images/dl_btn@2x.png 2x, images/dl_btn@3x.png 3x" 
+                            src="images/dl_btn.png" 
+                            style="max-width: 100%;" 
+                            alt="Download Button">
+                        </a>
+                        	-->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row " style="padding-top: 20pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/MusicMiniPlayer_Tall.png, 
+                        			images/MusicMiniPlayer_Tall@2x.png 2x, 
+                        			images/MusicMiniPlayer_Tall@3x.png 3x" 
+                            src="images/MusicMiniPlayer_Tall.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music MiniPlayer playing &quot;Inside Your Head&quot; by Eberg">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Basic Controls</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Music MiniPlayer has all the basic controls to control Apple Music and just enough information and status indicators to keep it glanceable. It’s there when you need it without need any interaction and you can even keep it floating above all your other windows.</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" 
+                        	srcset="images/MusicMiniPlayer_Drawer.png, 
+                        			images/MusicMiniPlayer_Drawer@2x.png 2x, 
+                        			images/MusicMiniPlayer_Drawer@3x.png 3x" 
+                            src="images/MusicMiniPlayer_Drawer.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music MiniPlayer showing the playlist drawer.">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Playlists</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Unlike the original MiniPlayer, Music MiniPlayer allows you to play another playlist without having to open the main Apple Music window. Just slide open the drawer to pick a different playlist or control Shuffle and Repeat modes.</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row " style="padding-top: 20pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" 
+                        	srcset="images/MusicMiniPlayer_Streaming.png, 
+                        			images/MusicMiniPlayer_Streaming@2x.png 2x, 
+                        			images/MusicMiniPlayer_Streaming@3x.png 3x" 
+                            src="images/MusicMiniPlayer_Streaming.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music MiniPlayer streaming Live Audio">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Live Streaming UI</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">When you’re listening to live audio such as Apple Music Hits or LA’s KIIS FM, Music MiniPlayer adapts its user interface to something suitable for streaming audio.</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/Music_MiniPlayer_Graphite.png, 
+                        			images/Music_MiniPlayer_Graphite@2x.png 2x, 
+                        			images/Music_MiniPlayer_Graphite@3x.png 3x" 
+                            src="images/Music_MiniPlayer_Graphite.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music MiniPlayer playing &quot;1234&quot; by Feist">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Craftsmanship</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Music MiniPlayer is a 100% native, written in both AppKit and Swift. Nearly the entire UI is drawn in code using Core Graphics & Core Animation<span class="text-muted"><sup>0</sup></span> in order to achieve crisp details for both Retina and non-Retina displays.</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            <div class="row " style="padding-top: 20pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <video style="width: 100%; max-width: 480px; border-radius: 20pt; margin-bottom: 10pt;" playsinline autoplay loop muted>
+                            <source src="images/MMP_Scrolling_Marquee.m4v" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Scrolling Marquee</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">The “Now Playing” display performs beautiful, synchronized marquee animations to display the current track or radio station.</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <video style="width: 100%; max-width: 480px; border-radius: 20pt; margin-bottom: 10pt;" playsinline autoplay loop muted>
+                            <source src="images/MMP_Drawer.m4v" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-text">Playlist Drawer</h4>
+                        <br>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Switch open the drawer to reveal your Apple Music playlists or set your Shuffle or Repeat modes.</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            <br>
+            
+            <div class="row">
+                <div class="col-md darkbg">
+                    <div style="text-align: center; margin-top: 40pt; margin-bottom: 30pt;">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/MusicMiniPlayer_128.png, 
+                        			images/MusicMiniPlayer_128@2x.png 2x, 
+                        			images/MusicMiniPlayer_128@3x.png 3x" 
+                            src="images/MusicMiniPlayer_128.png" 
+                            style="max-width: 100%;" 
+                            alt="Music MiniPlayer App Icon">
+                        <h4 class="text-light text-shadow" style="margin-bottom: 0pt;">Want to take it for a spin?</h4>
+                        <small class="text-light text-shadow">AppKit Native. Optimized for Apple Silicon.</small>
+                        <div style="">
+                        	<!--
+                            <a href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip">
+                            <img loading="lazy" srcset="images/dl_btn.png, images/dl_btn@2x.png 2x, images/dl_btn@3x.png 3x" 
+                                src="images/dl_btn.png" 
+                                style="max-width: 100%;" 
+                                alt="Download Button">
+                            </a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            
+            <div class="row">
+                <div class="col-md">
+                	<table class="table table-striped">
+                        <h4>Specs and Requirements</h4>
+  						<tbody>
+    						<tr>
+      							<th scope="row">Software</th>
+      							<td>macOS Big Sur and newer; Music.app</td>
+    						</tr>
+    						<tr>
+      							<th scope="row">Hardware</th>
+      							<td>Universal Binary for Macintosh computers with Apple Silicon and Intel processors</td>
+    						</tr>
+    						<tr>
+      							<th scope="row">Language</th>
+      							<td>English, Spanish, Finnish, German, and Polish</td>
+    						</tr>
+    						<tr>
+      							<th scope="row">Code</th>
+      							<td>100% Native. Written in Swift using AppKit.</td>
+    						</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+            
+			<hr>
+			
+			<div class="row align-items-center" style="margin: 50px 0 50px 0;">
+				<div class="col-md">
+					<img
+						loading="lazy" 
+						srcset="
+							../musicwidget/images/MW_LibrarySong.png, 
+							../musicwidget/images/MW_LibrarySong@2x.png 2x, 
+							../musicwidget/images/MW_LibrarySong@3x.png 3x" 
+							src="../musicwidget/images/MW_LibrarySong.png" 
+							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; " 
+							alt="">
+				</div>
+				<div class="col-md">
+					<h4>Looking for Music Widget?</h4>
+					<p>Music Widget is a replica of the original iTunes Widget included with Dashboard introduced in 2005.<br>
+						<a href="https://marioaguzman.github.io/musicwidget/">Learn more about Music Widget</a></p>
+				</div>
+			</div>
+			
+			<hr>
+            
+            <div class="row">
+                <div class="col-md">
+                    <div>
+                        <h4 class="card-text">🛠 Technical stuff for the nerds</h4>
+                        <p>Music MiniPlayer uses Scripting Bridge and Distributed Notification Center to send and receive commands with Apple Music on macOS. 99%<span class="text-muted"><sup>2</sup></span> of the UI is written in Core Graphics and Core Animation to achieve crisp UI that is also optimized for non-Retina Displays. Music MiniPlayer is a completely native app; written with Swift and AppKit.</p>
+                        <p>Requires <b>macOS Big Sur</b> or newer and <b>Music.app</b>.<span class="text-muted"><sup>3</sup></span></p>
+                        <p>If you have feedback or want to report any bugs, tweet the developer directly <a href="https://www.twitter.com/marioguzman">@marioguzman</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div>
+                        <p class="text-muted">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md">
+                    <small class="text-muted">Apple Music and iTunes are registered trademarks of Apple Inc.
+                    <br><sup>0</sup> With the exception the Shuffle, Repeat, Speaker, and Snap Back button icons. Images are used to render these on screen.
+                    <br><sup>1</sup> Music MiniPlayer is notarized.
+                    <br><sup>2</sup> Shuffle, Repeat, Speakers, and Snap Back button icons are images.
+                    <br><sup>3</sup> Apple Music subscription not required. Not compatible with Spotify.</small>
+                    <br>
+                    <p> </p>
+                </div>
+            </div>
+            
+            <!-- Footer Start -->
+            <div class="row">
+                <div class="col-md">
+                    <small><b>© 2019-2022 Mario A Guzman</b></small>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md">
+                    <small><b>Personal</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+                        <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+                        <li><a class="text-muted" href="https://stackoverflow.com/story/marioguzman">Stack Overflow</a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+                        <li><a class="text-muted" rel="me" href="https://mastodon.technology/@marioguzman">Mastodon</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Projects</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music <small class="text-muted">Mac Preview</small></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Downloads</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">Music Widget <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip">Music MiniPlayer <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+    </body>
+</html>
