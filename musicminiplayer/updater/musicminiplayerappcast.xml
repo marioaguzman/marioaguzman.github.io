@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.0</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li><b>Welcome</b>: Welcome to Music MiniPlayer 1.0!</li><li>Thank you to everyone who helped test, provided feedback, and most of all, helped with localization. This made Music MiniPlayer truly a worldwide effort.</li></ul>
+            ]]></description>
+            <pubDate>Sun, 22 May 2022 18:58:06 -0700</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4898496" type="application/octet-stream" sparkle:edSignature="fc13hnT2x7x16u5ohhvyM6HvWQQh8yAJbi8Yh8hq8uO76jbMNYqqV4oLIBrXKja97b0lrwMNRP4E4SxCO8HXAA=="/>
+        </item>
+        <item>
             <title>0.16</title>
             <pubDate>Sun, 22 May 2022 11:03:10 -0700</pubDate>
             <sparkle:version>17</sparkle:version>
