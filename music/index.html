@@ -1,38 +1,112 @@
 <!doctype html>
 <html lang="en">
-
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
-		<meta property="og:title" content="Music for Macintosh" />
-		<meta property="og:type"  content="website" />
-		<meta property="og:image" content="https://marioaguzman.github.io/music/images/og_img_music.png" />
-		<meta property="og:description" content="Discover Music for macOS." />
-		<meta property="og:site_name" content="marioaguzman.github.io" />
-		<meta property="og:url" content="https://marioaguzman.github.io/music/" />
-		
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@PDXTransitApp">
-		<meta name="twitter:creator" content="@MarioGuzman">
-		<meta name="twitter:title" content="Music for Macintosh">
-		<meta name="twitter:description" content="Discover an all-new Music app for Macintosh.">
-		<meta name="twitter:image" content="https://marioaguzman.github.io/music/images/og_img_music.png">
-		
-		<title>Music for Macintosh</title>
-		
-	</head>
-
-	<body>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-		
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <meta property="og:title" content="Companion apps for Apple Music on macOS" />
+        <meta property="og:type"  content="website" />
+        <meta property="og:image" content="https://marioaguzman.github.io/music/images/link_preview.png" />
+        <meta property="og:description" content="Small remote apps to control Apple Music on macOS." />
+        <meta property="og:site_name" content="marioaguzman.github.io" />
+        <meta property="og:url" content="https://marioaguzman.github.io/musicminiplayer/" />
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@MarioGuzman">
+        <meta name="twitter:creator" content="@MarioGuzman">
+        <meta name="twitter:title" content="Companion apps for Apple Music on macOS">
+        <meta name="twitter:description" content="Small remote apps to control Apple Music on macOS.">
+        <meta name="twitter:image" content="https://marioaguzman.github.io/music/images/link_preview.png">
+        <title>Music MiniPlayer for macOS</title>
+        <style>
+            .aquabg {
+            background-image: url('images/aquabg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+            }
+            @media /* only for retina displays */
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+            .aquabg {
+            background-image: url('images/aquabg@2x.png');
+            }
+            }
+            .darkbg {
+            background-image: url('images/darkbg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25pt;
+            margin-left: 10pt;
+            margin-right: 10pt;
+            }
+            @media /* only for retina displays */
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+            .darkbg {
+            background-image: url('images/darkbg@2x.png');
+            }
+            }
+            .text-shadow {
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            }
+            #downloadbutton {
+            background-image: -webkit-image-set(
+            url("images/download.png") 1x,
+            url("images/download@2x.png") 2x,
+            url("images/download@3x.png") 3x);
+            background-image: image-set(
+            url("images/download.png") 1x, 
+            url("images/download@2x.png") 2x,
+            url("images/download@3x.png") 3x);
+            }
+            #downloadbutton:hover {
+            background-image: -webkit-image-set(
+            url("images/download_hi.png") 1x,
+            url("images/download_hi@2x.png") 2x,
+            url("images/download_hi@3x.png") 3x);
+            background-image: image-set(
+            url("images/download_hi.png") 1x, 
+            url("images/download_hi@2x.png") 2x,
+            url("images/download_hi@3x.png") 3x);
+            }
+            #downloadbutton:active {
+            background-image: -webkit-image-set(
+            url("images/download_lo.png") 1x,
+            url("images/download_lo@2x.png") 2x,
+            url("images/download_lo@3x.png") 3x);
+            background-image: image-set(
+            url("images/download_lo.png") 1x, 
+            url("images/download_lo@2x.png") 2x,
+            url("images/download_lo@3x.png") 3x);
+            }
+            .downloadbutton_size {
+            display:block;
+            height: 112px;
+            width:  244px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
         <!-- START Header Nav. -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
@@ -69,198 +143,73 @@
         </nav>
         <!-- END Header Nav. -->
         
-		
-		<div class="container" style="margin-top: 7.5%; margin-bottom: 7.5%;">
-		
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="images/music_macbookair.png, images/music_macbookair@2x.png 2x" 
-						src="images/pdxt_macbookair@2x.png" 
-						style="width: 100%; padding-bottom: 20pt;" 
-						alt="PDX Transit on MacBook Air">
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2" style="text-align: center; padding-bottom: 20pt;">
-					<h2>🎵 Music <span class="text-muted">for Macintosh</span></h2>
-					<p>Music started as a concept of re-imagining what a Media Player could be using AppKit. It was supposed to be nothing more than an exploratory exercise using standard, out-of-the-box controls. Over time, I re-created some of the look and feel of the original iTunes using Core Graphics and Core Animation and tested with actual content using the iTunesLibrary framework and AVFoundation. I never realized in the beginning that it would soon become my daily driver for enjoying my music.</p>
-					<a class="btn btn-primary" href="#demo"><b>Watch a Demo</b></a>
-				</div>
-			</div>
-			
+        <div class="container" style="margin-top: 0pt; margin-top: 7.5%; margin-bottom: 7.5%;">
+        
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div style="text-align: center;">
+                        <h2>Companion apps for<br>Apple Music on macOS</h2>
+                        <p class="text-muted">Tiny apps. <b>Huge</b> personalities. Classic design.</p>
+                    </div>
+                </div>
+            </div>
+            
+			<br>
 			<hr>
+			<br>
 			
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2" style="text-align: center;">
-					<div class="d-flex justify-content-between">
-						<p class="text-muted">In order to achieve perfect pixel alignment on both retina and non-retina displays, many of the UI controls and other static UI elements are drawn using Core Graphics or Core Animation.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row align-items-center">
+            <div class="row align-items-center">
 				<div class="col-md">
-					<img srcset="../images/music_toolbar.png, ../images/music_toolbar@2x.png 2x"
-						src="../images/music_toolbar@2x.png" 
-						class="mx-auto d-block" 
-						style="width: 100%; padding-bottom: 20pt;" 
-						alt="Dark Mode">
+					<img 
+						srcset="../musicwidget/images/MW_LibrarySong.png, 
+                            	../musicwidget/images/MW_LibrarySong@2x.png 2x, 
+                            	../musicwidget/images/MW_LibrarySong@3x.png 3x" 
+                        src="../musicwidget/images/MW_LibrarySong.png" 
+                        style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                        alt="Music Widget playing &quot;Speed of Sound&quot; by Coldplay">
 				</div>
-			</div>
-		
-			<div class="row" style="padding-top: 20pt;">
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">LCD Display</h4>
-						<p><span class="badge badge-info"> Core Animation </span></p>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">The LCD Display is composed of 3 primary elements: The background, the scrubber, and the track info. The background and scrubber are custom drawn using Core Graphics to achive an LCD look while the track info animates in a Marquee fashion using Core Animation.</small>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Player Controls</h4>
-						<p><span class="badge badge-primary"> Core Graphics </span></p>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">The player controls (NSButton, NSSlider) are subclassed so they can be re-drawn using Core Graphics to achive a physical look. The buttons also have a custom long-press functionality (for track seeking).</small>
-					</div>
+				<div class="col-md" style="text-align: center;">
+					<h4>Music Widget</h4>
+					<p>A replica of the original iTunes widget introduced with Dashboard in Mac OS X Tiger, 
+					   this small remote can be used to control playback, volume, and playlists.<br><a href="https://marioaguzman.github.io/musicwidget/">Learn more about Music Widget</a></p>
+					<p><i>"You can once again enjoy your music in retro OS X style."</i><br> – <b>The Verge</b></p>
 				</div>
 			</div>
 			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="../images/mba_music_wood.png, ../images/mba_music_wood@2x.png 2x"
-						src="../images/mba_music_wood@2x.png" 
-						class="mx-auto d-block" 
-						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
-						alt="Dark Mode">
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2" style="text-align: center;">
-					<h4 class="card-text">Custom Wood Trim</h4>
-					<p class="text-muted">The wood trim gives Music an additional touch of realism but also pays homage to some of the world’s most gorgeous music players. Think B&O’s Beogram or Braun’s SK61 record player. Would you like that in light maple or dark walnut?</p>
-				</div>
-			</div>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="../images/musicappdark.png, ../images/musicappdark@2x.png 2x"
-						src="../images/musicappdark@2x.png" 
-						class="mx-auto d-block" 
-						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
-						alt="Dark Mode">
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2" style="text-align: center;">
-					<h4 class="card-text">Dark Mode</h4>
-					<p class="text-muted">Dark Mode was given extra attention. All custom-drawn controls not only take on a dark appearance but also gain additional textures. For example, the LCD gains a pinstriped background while the wood trim goes from maple to walnut for a more dramatic look and feel.</p>
-				</div>
-			</div>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="../images/mba_music_fullscreen_alt.png, ../images/mba_music_fullscreen_alt@2x.png 2x"
-						src="../images/mba_music_fullscreen_alt@2x.png" 
-						class="mx-auto d-block" 
-						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
-						alt="Dark Mode">
-				</div>
-			</div>
-		
-			<div class="row" style="padding-top: 20pt; padding-bottom: 20pt;">
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Full Screen</h4>
-						<p><span class="badge badge-secondary"> AppKit </span></p>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">By using a standard NSToolbar, bringing down the app’s menu bar in full screen mode will not obscure the toolbar.</small>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">AirPlay</h4>
-						<p><span class="badge badge-secondary"> AVKit </span></p>
-					</div>
-					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-						<small class="text-muted">Music uses AVRoutePickerView which allows the user to stream their audio from Music to their AirPlay compatible devices. No setup necessary.</small>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 20pt;">
-				<div class="col-md">
-					<img srcset="../images/mini_players.png, ../images/mini_players@2x.png 2x"
-						src="../images/mini_players@2x.png" 
-						class="mx-auto d-block" 
-						style="max-width: 100%;"  
-						alt="Mini Player">
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Mini Player</h4>
-						<p><span class="badge badge-secondary"> AppKit </span></p>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<small class="text-muted">No Music app is complete without a mini player. This mini player includes only the essential controls and track information and adapts to dark mode.</small>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="images/music_mbp_touchbar.png, images/music_mbp_touchbar@2x.png 2x"
-						src="images/music_mbp_touchbar@2x.png" 
-						class="mx-auto d-block" 
-						style="width: 100%; padding-top: 30pt; padding-bottom: 25pt; padding-left: 20pt; padding-right: 20pt;"  
-						alt="Dark Mode">
-				</div>
-			</div>
-			
-			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 20pt;">
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Now Playing</h4>
-						<p><span class="badge badge-danger"> MediaPlayer </span></p>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<small class="text-muted">Music is a “Now Playable” app which allows the app to be controlled by the Now Playing widget, keyboard media controls, Touch Bar, or even Siri!</small>
-					</div>
-				</div>
-				<div class="col-md">
-					<img srcset="images/Now_Playing_Widget.png, images/Now_Playing_Widget@2x.png 2x"
-						src="images/Now_Playing_Widget@2x.png" 
-						class="mx-auto d-block"
-						style="max-width: 100%; padding-top: 20pt;" 
-						alt="Mini Player">
-				</div>
-			</div>
-			
+			<br>
 			<hr>
+			<br>
 			
-			<div class="row" style="padding-top: 20pt; padding-bottom: 20pt;">
+			<div class="row align-items-center">
 				<div class="col-md">
-					<div style="padding:62.5% 0 0 0; position:relative;"><iframe src="https://player.vimeo.com/video/416753361?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;"  allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-					<a id="demo" href="https://vimeo.com/416753361">Music on macOS Demo</a> from <a href="https://vimeo.com/user17931151">Mario Guzman</a> on <a href="https://vimeo.com">Vimeo</a>.
+                        <img 
+                        	loading="lazy" 
+                        	srcset="../musicminiplayer/images/MusicMiniPlayer_Track.png, 
+                        			../musicminiplayer/images/MusicMiniPlayer_Track@2x.png 2x, 
+                        			../musicminiplayer/images/MusicMiniPlayer_Track@3x.png 3x" 
+                            src="../miniplayer/images/MusicMiniPlayer_Track.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
+                            alt="Music MiniPlayer playing &quot;Inside Your Head&quot; by Eberg">
+				</div>
+				<div class="col-md" style="text-align: center;">
+					<h4>Music MiniPlayer</h4>
+					<p>A replica of the original iTunes 10 MiniPlayer, this small remote can be used to control playback, 
+					   volume, and playlists; all with an interface that is sure to take you back in time.</p>
+					<p><a href="https://marioaguzman.github.io/musicminiplayer/">Learn more about Music MiniPlayer</a></p>
 				</div>
 			</div>
 			
+			<br>
 			<hr>
+			<br>
 			
 			<div class="row">
 				<div class="col-md">
-					<small class="text-muted">Mac, Macintosh, macOS, AirPlay, iTunes, and Swift are registered trademarks of Apple Inc.</small>
+					<small class="text-muted">Mac, Macintosh, macOS, Dashboard, iTunes, and Apple Music are registered trademarks of Apple Inc.</small>
 				</div>
 			</div>
 			
-			<!-- Footer Start -->
+            <!-- Footer Start -->
             <div class="row">
                 <div class="col-md">
                     <small><b>© 2019-2022 Mario A Guzman</b></small>
@@ -300,7 +249,6 @@
                 </div>
             </div>
             <!-- Footer End -->
-
-		</div>
-	</body>
+        </div>
+    </body>
 </html>
