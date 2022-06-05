@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.2</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Updates to German localization strings.</li><li>Refactored component that interfaces with the Music app, making it more performant, more reliable, and use less memory.</li><li>General updates to the Help Book.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 04 Jun 2022 18:59:35 -0700</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4897213" type="application/octet-stream" sparkle:edSignature="5HNyQ3ZjkjndOh3rO/69aRDeEFhNy/tYbwQtlXqCJ96JoCG4HJOIPx1/E5NTLtm14OioexvRLuk0QlYgKLTgCA=="/>
+        </item>
+        <item>
             <title>1.1</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Drawer button now animates to reflect the state of the drawer.</li><li>Fixed an issue where focus rings weren't displaying when "Keyboard Navigation" was enabled.</li><li>Fixed an issue where pressing the Spacebar would close the MiniPlayer window rather than toggling between Play/Pause.</li><li>Fixed an issue where horizontal scrolling wouldn't scroll in the correct direction if "Natural Scrolling" was disabled.</li><li>Added Snap Back to the Dock icon menu (Dock Menu Items).</li><li>The Snap Back feature now <b>also</b> brings the Music app window to the forefront.</li><li>Auxiliary windows now respect Light & Dark Mode settings.</li><li>Fixed an issue where the app was incorrectly re-calculating the key view loop and possibly causing a crash when the Drawer was expanded.</li></ul>
