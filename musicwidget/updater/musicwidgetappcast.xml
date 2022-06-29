@@ -168,5 +168,16 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4854027" type="application/octet-stream" sparkle:edSignature="KenRYfBX1kCuMoJbpsVwtQMUzunq2R3twrtaGaglCbpcutfGmoh9XZOGABq1JnV7jR7W+PE33eUYSIhsqpMdDQ=="/>
         </item>
+        <item>
+            <title>1.18</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li><b>Updated</b>: Merging in all the stability and performance enhancements done with the release of Music MiniPlayer.</li></ul>
+            ]]></description>
+            <pubDate>Fri, 24 Jun 2022 19:51:00 -0700</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>1.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4856099" type="application/octet-stream" sparkle:edSignature="b8JgZHvI9aLJS+JmVZSY8LNadfurRQx6k5r4YH4qS47/rOQJL0XOS3v+5EcFsredZAJvZJuDx7tUqeQBPqIqCw=="/>
+        </item>
     </channel>
 </rss>
