@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.3</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>New: Music MiniPlayer is now available with Italian Localization.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 16 Jul 2022 14:56:55 -0700</pubDate>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4904764" type="application/octet-stream" sparkle:edSignature="+erHJewHbwEN0WL5qr7QgpnNE9DEZq0dnlLtTL0Ooswnuu4GiNRv9IR3P2ey5QXaarjJfzH/purnQQMxFnW5Dg=="/>
+        </item>
+        <item>
             <title>1.2</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Updates to German localization strings.</li><li>Refactored component that interfaces with the Music app, making it more performant, more reliable, and use less memory.</li><li>General updates to the Help Book.</li></ul>
