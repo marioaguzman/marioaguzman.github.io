@@ -190,5 +190,16 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4863468" type="application/octet-stream" sparkle:edSignature="MzvgVNF2rQCxKOTdtfo9+IYXlz8a2QuKYXRz6bhcIqHWJa1mDFlw0FEOwBXloomFlSyLrHIOAT2rn8IEG4xtDQ=="/>
         </item>
+        <item>
+            <title>1.20</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Fixed an issue where some buttons were not rendered correctly under beta versions of macOS Ventura.</li><li>Updated the Software Update framework, Sparkle, to version 2.2.1.</li></ul>
+            ]]></description>
+            <pubDate>Wed, 17 Aug 2022 20:46:27 -0700</pubDate>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>1.20</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4880202" type="application/octet-stream" sparkle:edSignature="yLpZqYcxFtQybMOFLMEWO7kHc02a66Isjlava6+p1gHYzL5Jz/C5qv3002AOb67ajRAioTS6Ma16I5hnfAlLDQ=="/>
+        </item>
     </channel>
 </rss>
