@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.5</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Fixes an issue where some UI elements may appear stretched in macOS Ventura.</li></ul>
+            ]]></description>
+            <pubDate>Wed, 07 Sep 2022 22:20:56 -0700</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4923984" type="application/octet-stream" sparkle:edSignature="p7snvjOBJY8veU6xxRvDXH1Jlt9FuKWNDxIMe0q7BMDtly4uwDMJWCY/FkelVl2FuUCWW0iwzoa/3BhrHjuxBA=="/>
+        </item>
+        <item>
             <title>1.4</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Fixed an issue where some buttons were not rendered correctly under beta versions of macOS Ventura.</li><li>Updated the Software Update framework, Sparkle, to version 2.2.1.</li><li>Playback controls now render with more depth on Hi-DPI displays.</li></ul>
