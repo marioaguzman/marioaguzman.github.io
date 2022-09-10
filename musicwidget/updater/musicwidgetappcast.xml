@@ -201,5 +201,16 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4880202" type="application/octet-stream" sparkle:edSignature="yLpZqYcxFtQybMOFLMEWO7kHc02a66Isjlava6+p1gHYzL5Jz/C5qv3002AOb67ajRAioTS6Ma16I5hnfAlLDQ=="/>
         </item>
+        <item>
+            <title>1.21</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Fixes an issue where some UI elements may appear stretched in macOS Ventura.</li></ul>
+            ]]></description>
+            <pubDate>Fri, 09 Sep 2022 18:53:20 -0700</pubDate>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.21</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4881994" type="application/octet-stream" sparkle:edSignature="fYfZdTLA3117ItUrWVSyDgL5P3zXuH45pUpUAjIyBnYhFWYCuHpwcdvyBPtHyneQyIMeGA9PUuMZLyuQSaR2Dw=="/>
+        </item>
     </channel>
 </rss>
