@@ -8,6 +8,17 @@
         <item>
             <title>0.0</title>
             <description><![CDATA[
+                <ul style="font-size:13px;"><li>Beta Release - Bug Fixes</li></ul>
+            ]]></description>
+            <pubDate>Mon, 17 Oct 2022 21:16:57 -0700</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4427852" type="application/octet-stream" sparkle:edSignature="pl0KFjcPCzM6kiLoWowmoQAacEmWy6SnteQ2E6u+wtuUfcVhke5gBC8Q0oRYo108FVK5EJYYrzlHE+VslrZtDg=="/>
+        </item>
+        <item>
+            <title>0.0</title>
+            <description><![CDATA[
                 <ul style="font-size:13px;"><li>Testing Sparkle Updates with Music Remote.</li></ul>
             ]]></description>
             <pubDate>Sun, 16 Oct 2022 13:34:36 -0700</pubDate>
