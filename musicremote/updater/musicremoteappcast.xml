@@ -8,6 +8,17 @@
         <item>
             <title>0.0</title>
             <description><![CDATA[
+                <ul style="font-size:13px;"><li>Beta Release - Minor updates to the Help Book contents.</li></ul>
+            ]]></description>
+            <pubDate>Wed, 19 Oct 2022 19:25:58 -0700</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4427411" type="application/octet-stream" sparkle:edSignature="bRqiZU5JfH6CSnQXxDW3RcT4h/ivKQ/AoifhyLCGHRWA0MDVIQOuUUoL0blc8PDIKt4nGr8WVFQCzAXld4+wBg=="/>
+        </item>
+        <item>
+            <title>0.0</title>
+            <description><![CDATA[
                 <ul style="font-size:13px;"><li>Beta Release - Testing build using macOS 13 SDK on Xcode 14.1.</li></ul>
             ]]></description>
             <pubDate>Tue, 18 Oct 2022 18:43:54 -0700</pubDate>
