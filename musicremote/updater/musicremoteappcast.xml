@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.0</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Initial Public Release of Music Remote</li></ul>
+            ]]></description>
+            <pubDate>Thu, 20 Oct 2022 08:47:51 -0700</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4427486" type="application/octet-stream" sparkle:edSignature="R3XjxOncDzCYBS728ZozYa2B5EpgYx5TkwcZjFcjicARJMDRhQG044dHBMMhrwANCXJ/PBO3Eg0QQ1Sp6XljCw=="/>
+        </item>
+        <item>
             <title>0.0</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Beta Release - Minor updates to the Help Book contents.</li></ul>
