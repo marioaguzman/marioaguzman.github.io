@@ -172,7 +172,19 @@
 					<small style="color: #bf4800;">New</small>
 					<h3>Music Remote</h3>
 					<p>Go back to the first Mac OS X Public Beta with this replica of the short lived "Music Player." Coming Soon.</p>
-					<a href="https://marioaguzman.github.io/musicremote/">
+					
+					<!-- Conditional Image Placement -->
+					<!-- Center image for small displays --> 
+					<a class="d-md-none" href="https://marioaguzman.github.io/musicremote/">
+						<img srcset="../musicremote/images/download_mr.png, 
+                            ../musicremote/images/download_mr@2x.png 2x, 
+                            ../musicremote/images/download_mr@3x.png 3x" 
+                            src="../musicremote/images/download_mr.png" 
+                            style="max-width: 100%; display: block;  margin-left: auto; margin-right: auto;" 
+                            alt="Music Remote Download">
+					</a>
+					<!-- Left-align image for large displays --> 
+					<a class="d-none d-md-block" href="https://marioaguzman.github.io/musicremote/">
 						<img srcset="../musicremote/images/download_mr.png, 
                             ../musicremote/images/download_mr@2x.png 2x, 
                             ../musicremote/images/download_mr@3x.png 3x" 
