@@ -50,6 +50,10 @@
 			.text-shadow {
 				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 			}
+			
+			.hel-text {
+				font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif;
+			}
 		</style>
 		
 	</head>
@@ -73,17 +77,15 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <h6 class="dropdown-header"><b>MUSIC</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Overview</b></a>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>Music Widget</b></a>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>Music MiniPlayer</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>Music Remote</b></a>
                             <div class="dropdown-divider"></div>
                             <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>PDX Transit</b> <small class="text-muted">Macintosh</small></a>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
-                            <div class="dropdown-divider"></div>
-                            <h6 class="dropdown-header"><b>SPECIAL PROJECTS</b></h6>
-                            <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Music</b> <small class="text-muted">Mac Preview</small></a>
-                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html"><b>PDX Transit</b> <small class="text-muted">SwiftUI</small></a>
                         </div>
                     </li>
                     <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
@@ -107,21 +109,52 @@
 			
 			<br>
 			
-			<div class="row" style="margin-bottom: 20pt;">
-				<div class="col-md aquabg align-items-center" style="text-align: center; padding-top: 30pt; padding-bottom: 30pt;">
+			<div class="row" style="margin-bottom: 40pt;">
+				<div class="col-md align-items-center" style="text-align: center;">
+					<img 
+						srcset="musicremote/images/app.png, 
+								musicremote/images/app@2x.png 2x, 
+								musicremote/images/app@3x.png 3x" 
+						src="musicremote/images/app.png" 
+						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+						alt="Music Remote">
+					<img 
+						srcset="musicremote/images/hero_text.png, 
+								musicremote/images/hero_text@2x.png 2x, 
+								musicremote/images/hero_text@3x.png 3x" 
+						src="musicremote/images/hero_text.png" 
+						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 5px;" 
+						alt="Music Remote">
+					<p class="hel-text">Go back to the first Mac OS X Public Beta with<br>this replica of the short lived "Music Player."</p>
+					<a href="https://marioaguzman.github.io/musicremote/">
+						<img srcset="musicremote/images/download_mr.png, 
+                            musicremote/images/download_mr@2x.png 2x, 
+                            musicremote/images/download_mr@3x.png 3x" 
+                            src="musicremote/images/download_mr.png" 
+                            style="max-width: 100%; display: block;  margin-left: auto; margin-right: auto;" 
+                            alt="Music Remote Download"></a>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="row align-items-center">
+				<div class="col-md">
 					<img 
 						srcset="musicminiplayer/images/MusicMiniPlayer_Controls.png, 
 								musicminiplayer/images/MusicMiniPlayer_Controls@2x.png 2x, 
 								musicminiplayer/images/MusicMiniPlayer_Controls@3x.png 3x" 
 						src="musicwidget/images/MusicMiniPlayer_Controls@2x.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 20pt; margin-bottom: 10pt;" 
-						alt="Music Widget">
-					<h2 class="text-light text-shadow">🎵 Music MiniPlayer for macOS</h4>
-					<p class="text-light text-shadow">A replica of the <i>classic</i> iTunes MiniPlayer<br>to control Apple Music on modern macOS.</p>
-					<a class="btn btn-light" style="margin-top: 10pt; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);" href="https://marioaguzman.github.io/musicminiplayer"><b>Learn More</b></a>
-					<p> </p>
+						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 30pt; margin-bottom: 30pt;" 
+						alt="Music MiniPlayer">
+				</div>
+				<div class="col-md" style="text-align: center;">
+					<h4>Music MiniPlayer <span class="text-muted">for macOS</span></h4>
+					<p><i>"The Music app does offer its own MiniPlayer option, but I find Guzman’s utility to be both more useful and more capable for almost everything."</i><br> – <b>9to5Mac</b><br><a href="https://marioaguzman.github.io/musicminiplayer">Learn more about Music MiniPlayer</a></p>
 				</div>
 			</div>
+			
+			<hr>
 			
 			<div class="row align-items-center">
 				<div class="col-md">
@@ -181,32 +214,14 @@
 			
 			<hr>
 			
-			<!--
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="music/images/music_macbookair.png, music/images/music_macbookair@2x.png 2x" 
-						src="music/images/pdxt_macbookair@2x.png" 
-						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;" 
-						alt="PDX Transit on MacBook Air">
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2" style="text-align: center; padding-bottom: 10pt;">
-					<h2>🎵 Music <span class="text-muted">for Macintosh</span></h2>
-					<p class="text-muted">Music is an app that envelops your iTunes library in a UI that is straight forward and simple to use. All necessary controls are front and center - not hidden under some menu or have to be revealed on mouse-over. Music is simple because it's easy to figure out, not because it necessarily hides away UI.<br><a href="music/index.html"><b>Learn more...</b></a></p>
-					<a class="btn btn-primary" href="music/index.html#demo"><b>Watch a Demo</b></a>
-				</div>
-			</div>
-			-->
-			
 			<div class="row">
 				<div class="col-md">
 					<small class="text-muted">Mac, Macintosh, iPhone, macOS, watchOS, iTunes, Swift, and Objective-C are registered trademarks of Apple Inc.</small>
 				</div>
 			</div>
 			
-			<!-- Footer Start -->
+			
+            <!-- Footer Start -->
             <div class="row">
                 <div class="col-md">
                     <small><b>© 2019-2022 Mario A Guzman</b></small>
@@ -221,18 +236,19 @@
                         <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
                         <li><a class="text-muted" href="https://stackoverflow.com/story/marioguzman">Stack Overflow</a></li>
                         <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
-                        <li><a class="text-muted" rel="me" href="https://mastodon.technology/@marioguzman">Mastodon</a></li>
+                        <li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
                     </ul>
                 </div>
                 <div class="col-sm">
                     <small><b>Projects</b></small>
                     <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Macintosh</small></a></li>
                         <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
                         <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
                         <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
                         <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
                         <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
-                        <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music <small class="text-muted">Mac Preview</small></a></li>
                     </ul>
                 </div>
                 <div class="col-sm">
@@ -240,6 +256,7 @@
                     <ul class="list-unstyled text-small">
                         <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip">Music Widget <small class="text-muted">Macintosh</small></a></li>
                         <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip">Music MiniPlayer <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="">Music Remote <small class="text-muted">Macintosh</small></a></li>
                         <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
                         <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
                     </ul>
