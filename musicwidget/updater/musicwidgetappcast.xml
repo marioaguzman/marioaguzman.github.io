@@ -212,5 +212,16 @@
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4881994" type="application/octet-stream" sparkle:edSignature="fYfZdTLA3117ItUrWVSyDgL5P3zXuH45pUpUAjIyBnYhFWYCuHpwcdvyBPtHyneQyIMeGA9PUuMZLyuQSaR2Dw=="/>
         </item>
+        <item>
+            <title>1.22</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Play button now launches Music app if not currently open.</li><li>Built with the macOS 13 SDK.</li></ul>
+            ]]></description>
+            <pubDate>Sun, 23 Oct 2022 21:44:21 -0700</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.22</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4875260" type="application/octet-stream" sparkle:edSignature="cQ9RcJO+xc+h0JiLPmeSAOxqjxiLu6Ie9NpNDKYlxbTlGNcj5r2378XhSmG86hLD/bf0/LVzdOQt3mxdBwGYBA=="/>
+        </item>
     </channel>
 </rss>
