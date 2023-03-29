@@ -8,7 +8,7 @@
         <item>
             <title>1.24</title>
             <description><![CDATA[
-                <ul style="font-size:13px;"><li>New: Added plug-in allows for light or dark mode Dock icon variants to persist even when the app is not running depending on your app preferences.</li><li>Update: Sparkle framework (for auto-updates) updated to version 2.3.2.</li></ul>
+                <ul style="font-size:13px;"><li>New: Control-clicking on the Dock icon when the application isn't running now reveals a menu item to open both Music and Music Widget simultaneously. Note, this menu option is not localized due to a bug in macOS, which has been reported.</li><li>Update: Updated various localization strings. Thank you for reporting this, John Gruber.</li></ul>
             ]]></description>
             <pubDate>Tue, 28 Mar 2023 20:32:57 -0700</pubDate>
             <sparkle:version>26</sparkle:version>
@@ -19,7 +19,7 @@
         <item>
             <title>1.23</title>
             <description><![CDATA[
-                <ul style="font-size:13px;"><li>New: Control-clicking on the Dock icon when the application isn't running now reveals a menu item to open both Music and Music Widget simultaneously. Note, this menu option is not localized due to a bug in macOS, which has been reported.</li><li>Update: Updated various localization strings. Thank you for reporting this, John Gruber.</li></ul>
+                <ul style="font-size:13px;"><li>New: Added plug-in allows for light or dark mode Dock icon variants to persist even when the app is not running depending on your app preferences.</li><li>Update: Sparkle framework (for auto-updates) updated to version 2.3.2.</li></ul>
             ]]></description>
             <pubDate>Sat, 04 Mar 2023 18:45:12 -0800</pubDate>
             <sparkle:version>25</sparkle:version>
