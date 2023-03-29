@@ -6,26 +6,26 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
-            <title>1.23</title>
+            <title>1.24</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>New: Added plug-in allows for light or dark mode Dock icon variants to persist even when the app is not running depending on your app preferences.</li><li>Update: Sparkle framework (for auto-updates) updated to version 2.3.2.</li></ul>
+            ]]></description>
+            <pubDate>Tue, 28 Mar 2023 20:32:57 -0700</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>1.24</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4957810" type="application/octet-stream" sparkle:edSignature="5GL/8dUpLlWmWNPDqRgKN/1iKWyiNyEcUgvAL8jX4RLRVZbjDZQbTMZDGoPGIjke+MP+ZbcFRci7pxRGCYZaDQ=="/>
+        </item>
+        <item>
+            <title>1.23</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>New: Control-clicking on the Dock icon when the application isn't running now reveals a menu item to open both Music and Music Widget simultaneously. Note, this menu option is not localized due to a bug in macOS, which has been reported.</li><li>Update: Updated various localization strings. Thank you for reporting this, John Gruber.</li></ul>
             ]]></description>
             <pubDate>Sat, 04 Mar 2023 18:45:12 -0800</pubDate>
             <sparkle:version>25</sparkle:version>
             <sparkle:shortVersionString>1.23</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4943930" type="application/octet-stream" sparkle:edSignature="tfK0app8Qi2jTdptcG0TH8vDoaY15YpuONjDyvwk4prM/cuCjoWPD4RdHt74g5zaq+wAtpTmE083GOsGpLhLAA=="/>
-        </item>
-        <item>
-            <title>1.21</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Fixes an issue where some UI elements may appear stretched in macOS Ventura.</li></ul>
-            ]]></description>
-            <pubDate>Fri, 09 Sep 2022 18:53:20 -0700</pubDate>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>1.21</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4881994" type="application/octet-stream" sparkle:edSignature="fYfZdTLA3117ItUrWVSyDgL5P3zXuH45pUpUAjIyBnYhFWYCuHpwcdvyBPtHyneQyIMeGA9PUuMZLyuQSaR2Dw=="/>
         </item>
         <item>
             <title>1.22</title>
