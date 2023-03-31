@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.8</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Update: Updated various localization strings. Thank you for reporting this, John Gruber.</li><li>Update: Sparkle framework (for auto-updates) updated to version 2.4.</li></ul>
+            ]]></description>
+            <pubDate>Thu, 30 Mar 2023 19:33:19 -0700</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4552120" type="application/octet-stream" sparkle:edSignature="B+gwi27iNA9NOikbHuptevVfc9CzG+aIf1YICby5sEhTOYAdrWMt1p7/7HMCcUtYws/vE0iZWx4a7eqLSkAHAw=="/>
+        </item>
+        <item>
             <title>1.7</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Play button now launches Music app if not currently open.</li><li>Fixed UI inconsistencies when Music completes an album, a playlist, or Music is terminated.</li><li>Built with the macOS 13 SDK.</li></ul>
