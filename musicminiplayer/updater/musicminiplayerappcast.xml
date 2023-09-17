@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.9</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Updated to support macOS 14 "Sonoma" & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the "Now Playing" section (requires macOS Sonoma).</li><li>Fixed an issue where the window control symbols would remain visible after un-Docking the app window.</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 16 Sep 2023 21:09:03 -0700</pubDate>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>1.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4557664" type="application/octet-stream" sparkle:edSignature="0jB5TT1hUazNN1dHnRBRh9rZdM4WHTqsneJ8CD1+3Mri1j1B9Pz65yPtL7mi7N8BKOUBJl6Tm+urUTj5jidfDA=="/>
+        </item>
+        <item>
             <title>1.8</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Update: Updated various localization strings. Thank you for reporting this, John Gruber.</li><li>Update: Sparkle framework (for auto-updates) updated to version 2.4.</li></ul>
@@ -37,208 +48,6 @@
             <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4919772" type="application/octet-stream" sparkle:edSignature="cQjNxou5YctB13vGfAjTQxSxfMYRUdSZmZ/ZAO2sbAsZn/u+N/86S1d+MNQgulFXTjYcuf4oSKAvTo/3KDS8Dg=="/>
-        </item>
-        <item>
-            <title>1.5</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Fixes an issue where some UI elements may appear stretched in macOS Ventura.</li></ul>
-            ]]></description>
-            <pubDate>Wed, 07 Sep 2022 22:20:56 -0700</pubDate>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4923984" type="application/octet-stream" sparkle:edSignature="p7snvjOBJY8veU6xxRvDXH1Jlt9FuKWNDxIMe0q7BMDtly4uwDMJWCY/FkelVl2FuUCWW0iwzoa/3BhrHjuxBA=="/>
-        </item>
-        <item>
-            <title>1.4</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Fixed an issue where some buttons were not rendered correctly under beta versions of macOS Ventura.</li><li>Updated the Software Update framework, Sparkle, to version 2.2.1.</li><li>Playback controls now render with more depth on Hi-DPI displays.</li></ul>
-            ]]></description>
-            <pubDate>Tue, 16 Aug 2022 16:08:10 -0700</pubDate>
-            <sparkle:version>26</sparkle:version>
-            <sparkle:shortVersionString>1.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4926879" type="application/octet-stream" sparkle:edSignature="cAAgA9qw2bnUwfZwghJXCa8nCA4G73AziwCa4LWTwhN1anghJI9Ko399AmkjVHDCZs9wieKwcGMifY+3+AqAAg=="/>
-        </item>
-        <item>
-            <title>1.3</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>New: Music MiniPlayer is now available with Italian Localization.</li></ul>
-            ]]></description>
-            <pubDate>Sat, 16 Jul 2022 14:56:55 -0700</pubDate>
-            <sparkle:version>25</sparkle:version>
-            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4904764" type="application/octet-stream" sparkle:edSignature="+erHJewHbwEN0WL5qr7QgpnNE9DEZq0dnlLtTL0Ooswnuu4GiNRv9IR3P2ey5QXaarjJfzH/purnQQMxFnW5Dg=="/>
-        </item>
-        <item>
-            <title>1.2</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Updates to German localization strings.</li><li>Refactored component that interfaces with the Music app, making it more performant, more reliable, and use less memory.</li><li>General updates to the Help Book.</li></ul>
-            ]]></description>
-            <pubDate>Sat, 04 Jun 2022 18:59:35 -0700</pubDate>
-            <sparkle:version>24</sparkle:version>
-            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4897213" type="application/octet-stream" sparkle:edSignature="5HNyQ3ZjkjndOh3rO/69aRDeEFhNy/tYbwQtlXqCJ96JoCG4HJOIPx1/E5NTLtm14OioexvRLuk0QlYgKLTgCA=="/>
-        </item>
-        <item>
-            <title>1.1</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Drawer button now animates to reflect the state of the drawer.</li><li>Fixed an issue where focus rings weren't displaying when "Keyboard Navigation" was enabled.</li><li>Fixed an issue where pressing the Spacebar would close the MiniPlayer window rather than toggling between Play/Pause.</li><li>Fixed an issue where horizontal scrolling wouldn't scroll in the correct direction if "Natural Scrolling" was disabled.</li><li>Added Snap Back to the Dock icon menu (Dock Menu Items).</li><li>The Snap Back feature now <b>also</b> brings the Music app window to the forefront.</li><li>Auxiliary windows now respect Light & Dark Mode settings.</li><li>Fixed an issue where the app was incorrectly re-calculating the key view loop and possibly causing a crash when the Drawer was expanded.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 29 May 2022 17:31:12 -0700</pubDate>
-            <sparkle:version>19</sparkle:version>
-            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4895335" type="application/octet-stream" sparkle:edSignature="HNXgovSfNg8Ut1tXCKXqyk310cXNECn6JnqpryB69eV6ce6l5/UD8ZmPINvQddQ+zxvumaPPruYqJis+ZImoDQ=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li><b>Welcome</b>: Welcome to Music MiniPlayer 1.0!</li><li>Thank you to everyone who helped test, provided feedback, and most of all, helped with localization. This made Music MiniPlayer truly a worldwide effort.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 22 May 2022 18:58:06 -0700</pubDate>
-            <sparkle:version>18</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4898496" type="application/octet-stream" sparkle:edSignature="fc13hnT2x7x16u5ohhvyM6HvWQQh8yAJbi8Yh8hq8uO76jbMNYqqV4oLIBrXKja97b0lrwMNRP4E4SxCO8HXAA=="/>
-        </item>
-        <item>
-            <title>0.16</title>
-            <pubDate>Sun, 22 May 2022 11:03:10 -0700</pubDate>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>0.16</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4898576" type="application/octet-stream" sparkle:edSignature="2LPSFJ3/nXaSxm0lWMzEIE3PzHNM4gUjluLnrEk2DXh+tdanT45k6DE2ZKrwgSZzMDneFZ64jxPauHgDbLiuAA=="/>
-        </item>
-        <item>
-            <title>0.15</title>
-            <pubDate>Sat, 21 May 2022 22:41:13 -0700</pubDate>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>0.15</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4898303" type="application/octet-stream" sparkle:edSignature="g/e3W+7NxEAG9NiOSGmxSR7mnx4DEFi8+ESmmlAZv0dnIphObgN63tArRbYMuQBuuMREn1ll7MY7DG3TeAp/Dg=="/>
-        </item>
-        <item>
-            <title>0.14</title>
-            <pubDate>Fri, 20 May 2022 08:32:43 -0700</pubDate>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>0.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4899085" type="application/octet-stream" sparkle:edSignature="RCp79h44ojm4HTck2/tafy7rOiWcAkMAXoUypXKqJH6dbqnZF8h0+5txx5Hv0gsLq6+LYLVo/YnqgelFkNBUBQ=="/>
-        </item>
-        <item>
-            <title>0.13</title>
-            <pubDate>Thu, 19 May 2022 17:47:43 -0700</pubDate>
-            <sparkle:version>14</sparkle:version>
-            <sparkle:shortVersionString>0.13</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4899467" type="application/octet-stream" sparkle:edSignature="fbeGOCIJA5jvtV/mI9IqcI03WQwyqBSsuvSjNYc6vKyO5xqW6Zat1cDByI7ndRT5t/9KSeU0MyHzHVz3BMD/Bg=="/>
-        </item>
-        <item>
-            <title>0.12</title>
-            <pubDate>Wed, 18 May 2022 22:26:50 -0700</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.12</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4899078" type="application/octet-stream" sparkle:edSignature="kgCzwk+jiKe3rVlD9h/Q/6mCQat7Q8PbL8JMZbSeJgQCQN3YBVjlInGJOXz0sDZjF9a57EQG1d1Mj/vQMA7WAQ=="/>
-        </item>
-        <item>
-            <title>0.11</title>
-            <pubDate>Tue, 17 May 2022 19:20:27 -0700</pubDate>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>0.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4906632" type="application/octet-stream" sparkle:edSignature="bbLJJgDo02jRCRNGUXMDgYgsinmlrxBvYf9TIgXi9CGR7hMS5Zu4lYtjP6N3YNQ7rqOj53kehd/kFeVXYawUCw=="/>
-        </item>
-        <item>
-            <title>0.10</title>
-            <pubDate>Sat, 14 May 2022 23:35:00 -0700</pubDate>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>0.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4899981" type="application/octet-stream" sparkle:edSignature="EtrzQlE04mHBUQ+i/1xIUCkfbxGDA2SEmC+3u1nGIsXG+1QA5UqUQUYHhOykQCEturnjZs20CXTODw7eXrRlCQ=="/>
-        </item>
-        <item>
-            <title>0.9</title>
-            <pubDate>Sat, 14 May 2022 23:18:09 -0700</pubDate>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4900949" type="application/octet-stream" sparkle:edSignature="MIShOC+fDLSVqiY+nLxosfevbz/zlxkYSyV0EM4DB49AICR8e4m37AWpnhA/ABjNNwDfyGtM+hx8Vh0UTBrDAA=="/>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Thu, 12 May 2022 23:06:38 -0700</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="5025093" type="application/octet-stream" sparkle:edSignature="YGLfWHu8eivBknDv08nCfSXhso/yGDW4stbzn37ciS+jNhEF9WUOC/B3k+KRlxU5k/J21B3jrtBx1CXyOUd9Ag=="/>
-        </item>
-        <item>
-            <title>0.7</title>
-            <pubDate>Tue, 10 May 2022 22:35:37 -0700</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>0.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="5021346" type="application/octet-stream" sparkle:edSignature="gDHVpaDlvka7xd4BaTp/RjNyYvnfLyZAzxj59nNGvbnQyVUjRhB5W2/wmTCtF9tJ+lH4y3VRFtfwZH0MaQmcAQ=="/>
-        </item>
-        <item>
-            <title>0.6</title>
-            <pubDate>Mon, 09 May 2022 23:29:04 -0700</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4572864" type="application/octet-stream" sparkle:edSignature="uuwSEvN9u4AJHWkeOWi6OLt05rbIQiIkp6CsVQCR/LHf6yFw0O/8gG5qG/EY0JNJA0pRqEM2d0wb7B2lPZNIDg=="/>
-        </item>
-        <item>
-            <title>0.5</title>
-            <pubDate>Mon, 09 May 2022 08:29:02 -0700</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="3418503" type="application/octet-stream" sparkle:edSignature="SAHmgFbh25dP0FRdftwnQp4e9sl2qdZ2oQbzxWeMxmtu52MbCtyQAfQIcmdxvyYHNQJMRAwFEaCb7cGWFZDwCg=="/>
-        </item>
-        <item>
-            <title>0.4</title>
-            <pubDate>Fri, 06 May 2022 07:42:47 -0700</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>0.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="3403395" type="application/octet-stream" sparkle:edSignature="EhM6yUJnHppjSigq4OkcJppfzbDk1oh1D7n/mKNI0HHhYqwK+kV7pe39inv8qDhMzvpTXC9Cr+CIpMGb9ywuDQ=="/>
-        </item>
-        <item>
-            <title>0.3</title>
-            <pubDate>Wed, 04 May 2022 22:46:59 -0700</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="3405847" type="application/octet-stream" sparkle:edSignature="/sfC+w+U5s15fecRHzMJwZfhqFXKZmLIc2MRMPZMmuHY26YgHJvYaTQ7NZOBDrAJHryiY7bqMAvN9rHT5wAgDA=="/>
-        </item>
-        <item>
-            <title>0.2</title>
-            <pubDate>Tue, 03 May 2022 08:21:04 -0700</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="3387857" type="application/octet-stream" sparkle:edSignature="6VVlx8OFbEf2HvJlZKHGN8bxW2kDTpBse/gCo6pbBo7U4H3AE5ypp/vz67DsvI9EbfatOOyV+3HoMhgQ0tLyCg=="/>
-        </item>
-        <item>
-            <title>0.1</title>
-            <pubDate>Mon, 02 May 2022 15:31:19 -0700</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="3387835" type="application/octet-stream" sparkle:edSignature="z4Bfz5NmGoBNOZqPeXnJ8XlX7dyXCQ+L1H6HO4DnQlEkWgQusFkGC4ZJe2wzAgpO8XQOuUieX8oedTwJ8i6fDA=="/>
-        </item>
-        <item>
-            <title>0.0</title>
-            <pubDate>Mon, 02 May 2022 08:01:04 -0700</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="3387757" type="application/octet-stream" sparkle:edSignature="FhLaJxsq0vteN3U43IJ15nYiDvTYxayol/zLt3+4M1pbOBotAJSVbkM/Sq2PJg+oxJBgSH41N8EYkzRNfON0BA=="/>
         </item>
     </channel>
 </rss>

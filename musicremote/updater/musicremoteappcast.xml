@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.2</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Updated to support macOS 14 "Sonoma" & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the "Now Playing" section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 16 Sep 2023 21:18:49 -0700</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4069221" type="application/octet-stream" sparkle:edSignature="4VbBSvRgpu8HVEyXwrWE+nHb61iKz9ms+7DpD1afVR1AXOwKPmjGD912KLCyMghAy/mNRNyQHkHbxsrkLiYWCg=="/>
+        </item>
+        <item>
             <title>1.1</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Update: Updated various localization strings. Thank you for reporting this, John Gruber.</li><li>Update: Sparkle framework (for auto-updates) updated to version 2.4.</li></ul>
@@ -26,50 +37,6 @@
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4427486" type="application/octet-stream" sparkle:edSignature="R3XjxOncDzCYBS728ZozYa2B5EpgYx5TkwcZjFcjicARJMDRhQG044dHBMMhrwANCXJ/PBO3Eg0QQ1Sp6XljCw=="/>
-        </item>
-        <item>
-            <title>0.0</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Beta Release - Minor updates to the Help Book contents.</li></ul>
-            ]]></description>
-            <pubDate>Wed, 19 Oct 2022 19:25:58 -0700</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4427411" type="application/octet-stream" sparkle:edSignature="bRqiZU5JfH6CSnQXxDW3RcT4h/ivKQ/AoifhyLCGHRWA0MDVIQOuUUoL0blc8PDIKt4nGr8WVFQCzAXld4+wBg=="/>
-        </item>
-        <item>
-            <title>0.0</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Beta Release - Testing build using macOS 13 SDK on Xcode 14.1.</li></ul>
-            ]]></description>
-            <pubDate>Tue, 18 Oct 2022 18:43:54 -0700</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4427238" type="application/octet-stream" sparkle:edSignature="5pkYx8v8skn4d7mIOs/6V7EJ+Hm9stdREZNkm135gVQJfnMRQ+fXY031OfOSJX11ZJbuhyiY/+lxgVdi/E3hAA=="/>
-        </item>
-        <item>
-            <title>0.0</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Beta Release - Bug Fixes</li></ul>
-            ]]></description>
-            <pubDate>Mon, 17 Oct 2022 21:16:57 -0700</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4427852" type="application/octet-stream" sparkle:edSignature="pl0KFjcPCzM6kiLoWowmoQAacEmWy6SnteQ2E6u+wtuUfcVhke5gBC8Q0oRYo108FVK5EJYYrzlHE+VslrZtDg=="/>
-        </item>
-        <item>
-            <title>0.0</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Testing Sparkle Updates with Music Remote.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 16 Oct 2022 13:34:36 -0700</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4251535" type="application/octet-stream" sparkle:edSignature="zAzT6DNJBPHCC/uWIwV/vGoZ+ln0rXZLYXb2UP9vKwpTz5mnXZ0eDEZ7Pu22Y4fBrQz5pU/jtF63cNxU4JyQCw=="/>
         </item>
     </channel>
 </rss>

@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.25</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Updated to support macOS 14 "Sonoma" & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the "Now Playing" section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 16 Sep 2023 20:44:52 -0700</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>1.25</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4660107" type="application/octet-stream" sparkle:edSignature="Z1Y8U2qlQ6pugXGxBiT2A3BaGjBFz7PYzwxL4GhggodmnWGxm0+CsvZ1DsvSmG7Jv+d5ndY6f5LrLwdPeZzAAA=="/>
+        </item>
+        <item>
             <title>1.24</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>New: Control-clicking on the Dock icon when the application isn't running now reveals a menu item to open both Music and Music Widget simultaneously. Note, this menu option is not localized due to a bug in macOS, which has been reported.</li><li>Update: Updated various localization strings. Thank you for reporting this, John Gruber.</li></ul>
