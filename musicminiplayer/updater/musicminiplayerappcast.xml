@@ -8,13 +8,13 @@
         <item>
             <title>1.9</title>
             <description><![CDATA[
-                <ul style="font-size:13px;"><li>Updated to support macOS 14 "Sonoma" & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the "Now Playing" section (requires macOS Sonoma).</li><li>Fixed an issue where the window control symbols would remain visible after un-Docking the app window.</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
+                <ul style="font-size:13px;"><li>Updated to support macOS 14 Sonoma and built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the Now Playing section (requires macOS Sonoma).</li><li>Fixed an issue where the window control symbols would remain visible after un-Docking the app window.</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
             ]]></description>
-            <pubDate>Sat, 16 Sep 2023 21:09:03 -0700</pubDate>
+            <pubDate>Sun, 17 Sep 2023 12:10:00 -0700</pubDate>
             <sparkle:version>31</sparkle:version>
             <sparkle:shortVersionString>1.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.zip" length="4557664" type="application/octet-stream" sparkle:edSignature="0jB5TT1hUazNN1dHnRBRh9rZdM4WHTqsneJ8CD1+3Mri1j1B9Pz65yPtL7mi7N8BKOUBJl6Tm+urUTj5jidfDA=="/>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg" length="4461379" type="application/octet-stream" sparkle:edSignature="kKArpqty5/kttASUUFXyYeH8Ts7RO8J+FoUxl9LOg0abEhJy7MjIAgV6bYKPz46cldtRylaIbSw0oksZs5vyDg=="/>
         </item>
         <item>
             <title>1.8</title>
