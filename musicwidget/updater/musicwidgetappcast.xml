@@ -8,13 +8,13 @@
         <item>
             <title>1.25</title>
             <description><![CDATA[
-                <ul style="font-size:13px;"><li>Updated to support macOS 14 "Sonoma" & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the "Now Playing" section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
+                <ul style="font-size:13px;"><li>Updated to support macOS 14 Sonoma & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the Now Playing section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
             ]]></description>
-            <pubDate>Sat, 16 Sep 2023 20:44:52 -0700</pubDate>
+            <pubDate>Sun, 17 Sep 2023 12:10:20 -0700</pubDate>
             <sparkle:version>27</sparkle:version>
             <sparkle:shortVersionString>1.25</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.zip" length="4660107" type="application/octet-stream" sparkle:edSignature="Z1Y8U2qlQ6pugXGxBiT2A3BaGjBFz7PYzwxL4GhggodmnWGxm0+CsvZ1DsvSmG7Jv+d5ndY6f5LrLwdPeZzAAA=="/>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4544061" type="application/octet-stream" sparkle:edSignature="m15lMyw754mV1bkIDU95ElmXHq4ee4lsPczEWQp50xXsyAwp9+symQgfveqzSdkffuA4AGd08E5y0oCWmj7iBw=="/>
         </item>
         <item>
             <title>1.24</title>
