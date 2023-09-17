@@ -8,13 +8,13 @@
         <item>
             <title>1.2</title>
             <description><![CDATA[
-                <ul style="font-size:13px;"><li>Updated to support macOS 14 "Sonoma" & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the "Now Playing" section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
+                <ul style="font-size:13px;"><li>Updated to support macOS 14 Sonoma and built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the Now Playing section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
             ]]></description>
-            <pubDate>Sat, 16 Sep 2023 21:18:49 -0700</pubDate>
+            <pubDate>Sun, 17 Sep 2023 12:10:11 -0700</pubDate>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.zip" length="4069221" type="application/octet-stream" sparkle:edSignature="4VbBSvRgpu8HVEyXwrWE+nHb61iKz9ms+7DpD1afVR1AXOwKPmjGD912KLCyMghAy/mNRNyQHkHbxsrkLiYWCg=="/>
+            <enclosure url="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg" length="3960814" type="application/octet-stream" sparkle:edSignature="aDT5UfqjtC5oJNLoR5pHiZHiN9bdMEZHHd6Zi3pJank9NswHMSCmKPozzAeih+fHsKwsm6FtMy193AOx3KtcAw=="/>
         </item>
         <item>
             <title>1.1</title>
