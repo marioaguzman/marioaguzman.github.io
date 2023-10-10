@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="custom.css">
+		
+		<meta property="og:title" content="Mario Guzman - Macintosh HIG - Layouts">
+		<meta property="og:type"  content="website">
+		<meta property="og:image" content="">
+		<meta property="og:description" content="">
+		<meta property="og:site_name" content="marioaguzman.github.io">
+		<meta property="og:url" content="" />
+		
+		<title>Macintosh HIG - Layouts</title>
+		
+	</head>
+
+	<body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		
+        <!-- START Header Nav. -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header"><b>MUSIC</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Overview</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>Music Widget</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>Music MiniPlayer</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>Music Remote</b></a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>PDX Transit</b> <small class="text-muted">Macintosh</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
+                        </div>
+                    </li>
+                    <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
+                    </li>
+                    <!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+                </ul>
+            </div>
+        </nav>
+        <!-- END Header Nav. -->
+        
+		<div class="container"  style="margin-top: 5%; margin-bottom: 5%;">
+		
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+				
+					<h2>Layout Guidelines</h2>
+					<p>The following sections are general guidelines that describe fundamental Macintosh layout principles of center equalization, text and control alignment, appropriate use of white space, and visual balance. Following these guidelines will help you create functional and aesthetically pleasing windows that are easy for Macintosh users to understand and use.</p>
+					<p>As you layout your window, remember to observe the principle of consistency in your decisions. If you have good reasons to break some layout guidelines, be sure to do it in a consistent way. Users tend to ignore symmetry and balance but will notice inconsistency.</p>
+					<p>Inconsistencies in a window can also lead users to conclude that the window was poorly designed and/or implemented. For example, users won’t notice if the margins inside your window edges are 18 points wide (instead of the recommended 20 points), but are likely to notice if the left margin is wider than the right one.</p>
+					
+					
+					
+					
+					<h3>Positioning Regular-Sized Controls</h3>
+					<p>Although there are many ways to arrange controls in a given window, there are guidelines you should follow so that your application has the clean, balanced appearance of Aqua. This section provides examples of properly designed windows and dialogs that use regular-size controls.</p>
+					
+					
+					
+					<h4>A Simple Settings Window</h4>
+					<p>The following example showcases a very simple Settings window. Note that more advanced Settings windows would use a window toolbar to access the various sections.</p>
+					
+					<img srcset="images/simplesettings.png, 
+								 images/simplesettings.png 2x" 
+						 src="images/simplesettings.png"
+						 style="max-width: 100%;
+						 		padding-top: 10px; 
+						 		padding-bottom: 20px;" 
+						 alt="" >
+						 
+					<p>This window provides a good example of a center-equalized layout. <b>Center Equalization</b> means that the visual weight is balanced on the left and right side of the content area. It does not mean center justification. In macOS, content should always be center-equalized in windows and panes.</p>
+					
+					<img srcset="images/simplesettingscentereq.png, 
+								 images/simplesettingscentereq.png 2x" 
+						 src="images/simplesettingscentereq.png"
+						 style="max-width: 100%;
+						 		padding-top: 10px; 
+						 		padding-bottom: 20px;" 
+						 alt="" >
+					
+					<p>Although the right side has more objects, it is balanced by the categorization labels on the left. The final result is a visually balanced window.</p>
+					
+					<p>When labels and controls are stacked in a group, they should line up with each other vertically. Note the right alignment of the colons for the main category labels and the left alignment of the checkboxes and radio buttons. The vertical alignment of the first control in each section is also first-line aligned with the section title label.</p>
+					
+					<img srcset="images/simplesettingsmargins.png, 
+								 images/simplesettingsmargins.png 2x" 
+						 src="images/simplesettingsmargins.png"
+						 style="max-width: 100%;
+						 		padding-top: 10px; 
+						 		padding-bottom: 20px;" 
+						 alt="" >
+					
+					<p>The following are general specifications on how to arrange controls in relation to the window that contains them.</p>
+					<ul>
+						<li>Controls not in a group box or a tab view should be 14 points from teh titlebar or toolbar.</li>
+						<li>There should be a 20 point margin all along the left, right, and bottom sides.</li>
+						<li>For regular size controls, leave 8 points of space between controls.</li>
+						<li>Leave at least 12 points of space above and below separators.</li>
+						<li>Leave at least 18 points of space between the bottom group of controls and the buttons (This would include buttons like a Help button shown above or confirmation push buttons like OK and Cancel).</li>
+						<li>If one control depends on the state of another, place it below and visually indent it in such a way that the leading edge aligns with the text label of the control it depends on.</li>
+					</ul>
+					
+					
+					
+					<h4>A Tabbed Window</h4>
+					<p>To be continued</p>
+					
+					
+					
+				</div>
+			</div>
+			
+			<br>
+			
+			<hr>
+			
+			<div class="row">
+				<div class="col-md">
+					<small class="text-muted">Mac, Macintosh, iPhone, macOS, watchOS, iTunes, Swift, and Objective-C are registered trademarks of Apple Inc.</small>
+				</div>
+			</div>
+			
+			
+            <!-- Footer Start -->
+            <div class="row">
+                <div class="col-md">
+                    <small><b>© 2019-2023 Mario A Guzman</b></small>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md">
+                    <small><b>Personal</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+                        <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+                        <li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+                        <li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Projects</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Downloads</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer End -->
+		</div>
+	</body>
+</html>
