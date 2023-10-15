@@ -126,6 +126,7 @@
 						<li>Controls not in a group box or a tab view should be 14 points from the titlebar or toolbar.</li>
 						<li>There should be a 20 point margin all along the left, right, and bottom sides.</li>
 						<li>Leave 8 points between the colons of the section labels and the stacked controls they represent.</li>
+						<li>If you include a Help button, it should always be placed on the left bottom corner.</li>
 					</ul>
 					
 					<p><b>Spacing between individual controls</b></p>
@@ -138,6 +139,7 @@
 					<p><b>Additional considerations</b></p>
 					<ul>
 						<li>If one control depends on the state of another, place it below and visually indent it in such a way that the leading edge aligns with the text label of the control it depends on.</li>
+						<li>Including a Help button is recommended and it should open the Help Viewer to a page specific to the Settings window.</li>
 					</ul>
 					
 					<hr>
@@ -190,7 +192,6 @@
 						 		padding-bottom: 20px;" 
 						 alt="" >
 						 
-						 
 					<p><b>Spacing between individual controls</b></p>
 					<ul>
 						<li>The colons for stacked labels are right-aligned.</li>
@@ -205,7 +206,12 @@
 						 		padding-top: 10px; 
 						 		padding-bottom: 20px;" 
 						 alt="" >
-						 
+					
+					<p><b>Additional considerations</b></p>
+					<ul>
+						<li>Including a Help button is recommended (not pictured). If your Settings window is driven by a tab view, the Help button should open the Help Viewer to a page specific to the selected tab.</li>
+					</ul>
+					
 					<hr>
 					
 					<h4>Positioning Small and Mini Controls</h4>
@@ -213,6 +219,10 @@
 					<p>Use smaller versions of controls only when necessary. Your first choice in designing for the Mac should always be to use the full-size controls.</p>
 					
 					<p>You can use the smaller versions of controls when space is at a premium, such as tool palettes, toolbar accessory views, HUDs, inspector sidebars, and other utility windows. Avoid mixing different sizes of controls in the same window or pane.</p>
+					
+					<h5>Layout Example for Small Controls</h5>
+					
+					<p>To save space while creating distinct sections, this example uses a bold font for each label section instead of using horizontal separators or group boxes.</p>
 					
 					<img srcset="images/smallcontrolslayout.png, 
 								 images/smallcontrolslayout.png 2x" 
@@ -223,6 +233,61 @@
 						 alt="" >
 						 
 					<p>As with using regular-sized controls, you should use the center-equalized approach to laying out small controls.</p>
+					
+					<img srcset="images/smallcontrolscentereq.png, 
+								 images/smallcontrolscentereq.png 2x" 
+						 src="images/smallcontrolscentereq.png"
+						 style="max-width: 100%;
+						 		padding-top: 10px; 
+						 		padding-bottom: 20px;" 
+						 alt="" >
+					
+					<br>
+					
+					<img srcset="images/smallcontrolsconsistentwidths.png, 
+								 images/smallcontrolsconsistentwidths.png 2x" 
+						 src="images/smallcontrolsconsistentwidths.png"
+						 style="max-width: 100%;
+						 		padding-top: 10px; 
+						 		padding-bottom: 20px;" 
+						 alt="" >
+					
+					<p><b>General margins and spacing</b></p>
+					<ul>
+						<li>The section text labels are right-aligned and their stacked controls are left-aligned.</li>
+						<li>Controls not in a group box or a tab view should be 14 points from the titlebar or toolbar.</li>
+						<li>There should be a 20 point margin all along the left, right, and bottom sides. 
+							Note that if you use group boxes in a panel with small controls, a narrower margin is more suitable 
+							(10 point margins all around).</li>
+					</ul>
+					
+					<img srcset="images/smallcontrolsmargins.png, 
+								 images/smallcontrolsmargins.png 2x" 
+						 src="images/smallcontrolsmargins.png"
+						 style="max-width: 100%;
+						 		padding-top: 10px; 
+						 		padding-bottom: 20px;" 
+						 alt="" >
+					
+					<p><b>Spacing between individual controls</b></p>
+					<ul>
+						<li>Use equal spacing between groups of controls. Use 12 points.</li>
+						<li>Use equal spacing between section labels and the first control in the section. 
+							For example, use 8 points between the label "Icon labels:" and the first row below it.</li>
+					</ul>
+					
+					<img srcset="images/smallcontrolsconsistentwidths.png, 
+								 images/smallcontrolsconsistentwidths.png 2x" 
+						 src="images/smallcontrolsconsistentwidths.png"
+						 style="max-width: 100%;
+						 		padding-top: 10px; 
+						 		padding-bottom: 20px;" 
+						 alt="" >
+					
+					
+					<h5>Layout Example for Mini Controls</h5>
+					
+					
 					
 				</div>
 			</div>
