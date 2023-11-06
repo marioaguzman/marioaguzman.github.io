@@ -67,18 +67,48 @@
 				
 					<h2>Layout Guidelines</h2>
 					<p>The following sections are general guidelines that describe fundamental Mac layout principles of center equalization, text and control alignment, appropriate use of white space, and visual balance. Following these guidelines will help you create functional and aesthetically pleasing windows that are easy for Mac users to understand and use.</p>
+					
+					<img srcset="images/LayoutHeroImage.png, 
+                         		 images/LayoutHeroImage.png 2x" 
+                         src="images/LayoutHeroImage.png" 
+                         style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                         alt="">
+					
 					<p>As you layout your window, remember to observe the principle of consistency in your decisions. If you have good reasons to break some layout guidelines, be sure to do it in a consistent way. Users tend to ignore symmetry and balance but will notice inconsistency.</p>
 					<p>Inconsistencies in a window can also lead users to conclude that the window was poorly designed and/or implemented. For example, users won’t notice if the margins inside your window edges are 18 points wide (instead of the recommended 20 points), but are likely to notice if the left margin is wider than the right one.</p>
 					
 					
 					
+					<h3>Table of Contents</h3>
+					<ul>
+						<li><a href="#PositioningRegularSizedControls">Positioning Regular-Size Controls</a></li>
+						<ul>
+							<li><a href="#ASimpleSettingsWindow">A Simple Settings Window</a></li>
+							<li><a href="#SpecialTopic-OptionalSettingsDescriptions">Special Topic: Optional Settings Descriptions</a></li>
+							<li><a href="#ATabbedWindow">A Tabbed Window</a></li>
+						</ul>
+						<li><a href="#PositioningSmallAndMiniControls">Positioning Small and Mini Controls</a></li>
+						<ul>
+							<li><a href="#LayoutExampleForSmallControls">Layout Example for Small Controls</a></li>
+							<li><a href="#LayoutExampleForMiniControls">Layout Example for Mini Controls</a></li>
+						</ul>
+						<li><a href="#GroupingControlsInAWindow">Grouping Controls in a Window</a></li>
+						<ul>
+							<li><a href="#GroupingUsingWhiteSpace">Grouping Using White Space</a></li>
+							<li><a href="#GroupingUsingSeparators">Grouping Using Separators</a></li>
+							<li><a href="#GroupingUsingGroupBoxes">Grouping Using Group Boxes</a></li>
+						</ul>
+						<li><a href="#BottomButtons">Bottom Buttons</a></li>
+						<li><a href="#PositioningControlsInBottomBars">Positioning Controls in Bottom Bars</a></li>
+					</ul>
 					
-					<h3>Positioning Regular-Sized Controls</h3>
+					
+					<h3 id="ASimpleSettingsWindow">Positioning Regular-Sized Controls</h3>
 					<p>Although there are many ways to arrange controls in a given window, there are guidelines you should follow so that your application has the clean, balanced appearance of Aqua. This section provides examples of properly designed windows and dialogs that use regular-size controls.</p>
 					
 					
 					
-					<h4>A Simple Settings Window</h4>
+					<h4 id="ASimpleSettingsWindow">A Simple Settings Window</h4>
 					<p>The following example showcases a very simple Settings window. Note that more advanced Settings windows would use a window toolbar to access the various sections.</p>
 					
 					<img srcset="images/simplesettings.png, 
@@ -151,7 +181,7 @@
 						<li>Including a Help button is recommended and it should open the Help Viewer to a page specific to the Settings window.</li>
 					</ul>
 					
-					<h5>Special Topic: Optional settings descriptions</h5>
+					<h4 id="SpecialTopic-OptionalSettingsDescriptions">Special Topic: Optional Settings Descriptions</h5>
 					
 					<p>In some situations, the label for your checkbox, radio button, etc. may not provide a good enough description or context for the user to understand. In such cases, you may use a label below the control with additional information as to how it will alter the application’s behavior.</p>
 						 
@@ -190,7 +220,7 @@
 					
 					<hr>
 					
-					<h4>A Tabbed Window</h4>
+					<h4 id="ATabbedWindow">A Tabbed Window</h4>
 						 
 					<img srcset="images/tabbedsettings.png, 
 								 images/tabbedsettings.png 2x" 
@@ -260,13 +290,13 @@
 					
 					<hr>
 					
-					<h3>Positioning Small and Mini Controls</h3>
+					<h3 id="PositioningSmallAndMiniControls">Positioning Small and Mini Controls</h3>
 					
 					<p>Use smaller versions of controls only when necessary. Your first choice in designing for the Mac should always be to use the full-size controls.</p>
 					
 					<p>You can use the smaller versions of controls when space is at a premium, such as tool palettes, toolbar accessory views, HUDs, inspector sidebars, and other utility windows. Avoid mixing different sizes of controls in the same window or pane.</p>
 					
-					<h4>Layout Example for Small Controls</h4>
+					<h4 id="LayoutExampleForSmallControls">Layout Example for Small Controls</h4>
 					
 					<p>To save space while creating distinct sections, this example uses a bold font for each label section instead of using horizontal separators or group boxes.</p>
 					
@@ -336,7 +366,7 @@
 						 		padding-bottom: 20px;" 
 						 alt="" >
 					
-					<h4>Layout Example for Mini Controls</h4>
+					<h4 id="LayoutExampleForMiniControls">Layout Example for Mini Controls</h4>
 					
 					<p>When you lay out mini controls, continue to follow the principles of center equalization, text and control alignment, and visual balance.</p>
 					
@@ -393,7 +423,7 @@
 						 
 					<hr>
 					
-					<h3>Grouping Controls in a Window</h3>
+					<h3 id="GroupingControlsInAWindow">Grouping Controls in a Window</h3>
 					
 					<p>Grouping related controls helps users understand what particular controls do and helps them locate the controls that affect the specific actions they want to preform. This section provides three ways to group the same controls within a tabbed window using:</p>
 					
@@ -405,7 +435,7 @@
 					
 					<p>Please note that no one way is more or less correct than the other. The effectiveness of a layout in your app depends on the overall aesthetic of your other windows and your app's workflow.</p>
 					
-					<h5>Grouping Using White Space</h5>
+					<h4 id="GroupingUsingWhiteSpace">Grouping Using White Space</h4>
 					
 					<p>Grouping using white space is a great option when you are dealing with small groups of controls.</p>
 					
@@ -428,7 +458,7 @@
 						 		padding-bottom: 20px;" 
 						 alt="" >
 						 
-					<h5>Grouping Using Separators</h5>
+					<h4 id="GroupingUsingSeparators">Grouping Using Separators</h4>
 					
 					<p>Grouping using separators is preferred and most useful when space is at a premium.</p>
 					
@@ -450,7 +480,7 @@
 						 		padding-bottom: 20px;" 
 						 alt="" >
 						 
-					<h5>Grouping Using Group Boxes</h5>
+					<h4 id="GroupingUsingGroupBoxes">Grouping Using Group Boxes</h4>
 					
 					<p>Grouping using group boxes when you need to provide a strong visual indication of distinct groups. Keep in mind that using Group Boxes do require the most space.</p>
 					
@@ -486,7 +516,7 @@
 						 
 					<hr>
 					
-					<h3>Bottom buttons</h3>
+					<h3 id="BottomButtons">Bottom Buttons</h3>
 					
 					<p>There are special considerations for the buttons typically placed along the bottom of a window or modal/sheet view.</p>
 					
@@ -518,7 +548,7 @@
 						 	 
 					<hr>
 					
-					<h3>Positioning Controls in Bottom Bars</h3>
+					<h3 id="PositioningControlsInBottomBars">Positioning Controls in Bottom Bars</h3>
 					
 					<p>A bottom bar is a part of the window frame that extends below the content in the window body. Controls in a bottom bar are frequently used but are not as frequently used as those found in the toolbar. Additionally, bottom bar controls are closely related to the content in the view directly above them.</p>
 					
