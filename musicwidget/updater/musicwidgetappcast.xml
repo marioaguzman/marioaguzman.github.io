@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.26</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;"><li>Fixed: If you're playing a live station in Music, launching Music Widget no longer leaves the audio paused.</li></ul>
+            ]]></description>
+            <pubDate>Sun, 07 Jan 2024 19:58:57 -0800</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>1.26</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4539291" type="application/octet-stream" sparkle:edSignature="r1ePoU02ntuLLUyAmbV2Z3Bjo8KaEfR7E91CPML+IPTNLt9Joqvajl2KE9rCfkukthDqo07t05OAC4KU0VagCw=="/>
+        </item>
+        <item>
             <title>1.25</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Updated to support macOS 14 Sonoma & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the Now Playing section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
