@@ -8,7 +8,7 @@
         <item>
             <title>1.3</title>
             <description><![CDATA[
-                <ul style="font-size:13px;"><li>Music Remote  Fixed: If you're playing a live station in Music, launching Music Remote no longer leaves the audio paused.</li></ul>
+                <ul style="font-size:13px;"><li>Fixed: If you're playing a live station in Music, launching Music Remote no longer leaves the audio paused.</li></ul>
             ]]></description>
             <pubDate>Sun, 07 Jan 2024 20:39:30 -0800</pubDate>
             <sparkle:version>8</sparkle:version>
