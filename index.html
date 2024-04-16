@@ -1,69 +1,57 @@
 <!doctype html>
 <html lang="en">
-
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="custom.css">
-		
-		<meta property="og:title" content="Mario Guzman">
-		<meta property="og:type"  content="website">
-		<meta property="og:image" content="https://marioaguzman.github.io/images/og_img_pdxt_devices.png">
-		<meta property="og:description" content="Hello. I'm a software engineer in Portland, OR with a degree in Computer Science from Cal Poly Pomona.">
-		<meta property="og:site_name" content="marioaguzman.github.io">
-		<meta property="og:url" content="https://marioaguzman.github.io/" />
-		
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@MarioGuzman">
-		<meta name="twitter:creator" content="@MarioGuzman">
-		<meta name="twitter:title" content="Mario Guzman">
-		<meta name="twitter:description" content="Hello. I'm a software engineer in Portland, OR with a degree in Computer Science from Cal Poly Pomona.">
-		<meta name="twitter:image" content="https://marioaguzman.github.io/pdxtransit/images/og_img_pdxt_devices.png">
-		
-		<title>Mario Guzman</title>
-		
-		<style>
-			.aquabg {
-    			background-image: url('musicminiplayer/images/darkbg.png');
-    			background-position: center center;
-    			background-repeat: no-repeat;
-    			background-size: cover;
-    			border-radius: 25pt;
-    			margin-left: 10pt;
-    			margin-right: 10pt;
-			}
-			@media /* only for retina displays */
-			only screen and (-webkit-min-device-pixel-ratio: 2),
-			only screen and (min--moz-device-pixel-ratio: 2),
-			only screen and (min-device-pixel-ratio: 2),
-			only screen and (-webkit-min-device-pixel-ratio: 2),
-			only screen and (min-resolution: 192dpi),
-			only screen and (min-resolution: 2dppx) {
-    		.aquabg {
-        			background-image: url('musicminiplayer/images/darkbg@2x.png');
-    			}
-			}
-			
-			.text-shadow {
-				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-			}
-			
-			.hel-text {
-				font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif;
-			}
-		</style>
-		
-	</head>
-
-	<body>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		
-		
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="custom.css">
+        <meta property="og:title" content="Mario Guzman">
+        <meta property="og:type"  content="website">
+        <meta property="og:image" content="https://marioaguzman.github.io/images/og_img_pdxt_devices.png">
+        <meta property="og:description" content="Hello. I'm a software engineer in Portland, OR with a degree in Computer Science from Cal Poly Pomona.">
+        <meta property="og:site_name" content="marioaguzman.github.io">
+        <meta property="og:url" content="https://marioaguzman.github.io/" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@MarioGuzman">
+        <meta name="twitter:creator" content="@MarioGuzman">
+        <meta name="twitter:title" content="Mario Guzman">
+        <meta name="twitter:description" content="Hello. I'm a software engineer in Portland, OR with a degree in Computer Science from Cal Poly Pomona.">
+        <meta name="twitter:image" content="https://marioaguzman.github.io/pdxtransit/images/og_img_pdxt_devices.png">
+        <title>Mario Guzman</title>
+        <style>
+            .aquabg {
+            background-image: url('musicwidget/images/aquabg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10pt;
+            margin-left: 8pt;
+            margin-right: 8pt;
+            }
+            @media /* only for retina displays */
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min--moz-device-pixel-ratio: 2),
+            only screen and (min-device-pixel-ratio: 2),
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx) {
+            .aquabg {
+            background-image: url('musicwidget/images/aquabg@2x.png');
+            }
+            }
+            .text-shadow {
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.667);
+            }
+            .hel-text {
+            font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- START Header Nav. -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
@@ -74,7 +62,6 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item dropdown">
-                    
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <h6 class="dropdown-header"><b>MUSIC</b></h6>
@@ -83,11 +70,11 @@
                             <a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>&emsp;Music MiniPlayer</b></a>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>&emsp;Music Remote</b></a>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/quicktune/"><b>&emsp;QuickTune </b>
-                            	<span>
-                            		<sup style="color: #bf4800;">
-                            			<small><b>NEW</b></small>
-                            		</sup>
-                            	</span></a>
+                            <span>
+                            <sup style="color: #bf4800;">
+                            <small><b>NEW</b></small>
+                            </sup>
+                            </span></a>
                             <div class="dropdown-divider"></div>
                             <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
                             <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
@@ -95,7 +82,6 @@
                             <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>&emsp;PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
                         </div>
                     </li>
-                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -103,7 +89,6 @@
                             <a class="dropdown-item" href="https://marioaguzman.github.io/design/layoutguidelines"><b>Layout Guidelines</b></a>
                         </div>
                     </li>
-                    
                     <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
@@ -113,162 +98,379 @@
             </div>
         </nav>
         <!-- END Header Nav. -->
-        
-		<div class="container" style="margin-top: 2.5%; margin-bottom: 2.5%;">
-			
-			<!-- 
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1">
-					<h2>Hello</h2>
-					<p>I'm a software engineer in Portland, OR with a degree in Computer Science from <a href="https://www.cpp.edu">Cal Poly Pomona</a>. 
-					   I spend most of my time developing for Apple Platforms writing in Objective-C and Swift.
-					   Oh, and also <a href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">SwiftUI</a>.</p>
-				</div>
-			</div>
-			-->
-			
-			<br>
-			
-			<div class="row">
-				<div class="col-md align-items-center" style="text-align: center;">
-					<img srcset="pdxtransit/macos/images/pdxt_mac_nearby.png, 
-								 pdxtransit/macos/images/pdxt_mac_nearby@2x.png 2x" 
-						 src="pdxtransit/macos/images/pdxt_mac_nearby.png" 
-						 style="width: 100%; 
-						        padding-bottom: 10pt;" 
-						 alt="PDX Transit on Nearby Tab">
-				</div>
-			</div>
-			
-			<div class="row" style="margin-bottom: 40pt;">
-				<div class="col-lg-8 offset-lg-2" style="text-align: center; padding-bottom: 10pt;">
-						<img srcset="pdxtransit/images/pdxt_splash.png, 
-									 pdxtransit/images/pdxt_splash@2x.png 2x, 
-									 pdxtransit/images/pdxt_splash@3x.png 3x" 
-							 src="../images/pdxt_splash@2x.png"
-							 style="max-width: 100%;"
-							 alt="PDX Transit Logo Splash">
-						<h4 style="margin-top: -12px;"><span class="text-muted">for Macintosh</span></h4>
-					
-						<p>Get nearby transit stops, real-time arrival times, and the latest service alerts. Updated for macOS Sonoma. Get the free update today!<br>
-					<a href="https://marioaguzman.github.io/pdxtransit/macos/">Learn more</a></p>
-					<a href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">
-						<img src="images/Download_on_the_Mac_App_Store_Badge_US.svg" alt="">
-					</a>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img 
-						srcset="musicremote/images/app.png, 
-								musicremote/images/app@2x.png 2x, 
-								musicremote/images/app@3x.png 3x" 
-						src="musicremote/images/app.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
-						alt="Music Remote">
-				</div>
-				<div class="col-md" style="text-align: center;">
-					<img 
-						srcset="musicremote/images/hero_text.png, 
-								musicremote/images/hero_text@2x.png 2x, 
-								musicremote/images/hero_text@3x.png 3x" 
-						src="musicremote/images/hero_text.png" 
-						style="max-width: 100%; display: block; 
-						       margin-left: auto; 
-						       margin-right: auto; 
-						       padding-bottom: 5px;" 
-						alt="Music Remote">
-						<a href="https://marioaguzman.github.io/musicremote/">
-						<img srcset="musicremote/images/download_mr.png, 
-                            musicremote/images/download_mr@2x.png 2x, 
-                            musicremote/images/download_mr@3x.png 3x" 
-                            src="musicremote/images/download_mr.png" 
-                            style="max-width: 100%; display: block;  margin-left: auto; margin-right: auto;" 
-                            alt="Music Remote Download"></a>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img 
-						srcset="musicminiplayer/images/MusicMiniPlayer_Controls.png, 
-								musicminiplayer/images/MusicMiniPlayer_Controls@2x.png 2x, 
-								musicminiplayer/images/MusicMiniPlayer_Controls@3x.png 3x" 
-						src="musicwidget/images/MusicMiniPlayer_Controls@2x.png" 
-						style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: 30pt; margin-bottom: 30pt;" 
-						alt="Music MiniPlayer">
-				</div>
-				<div class="col-md" style="text-align: center;">
-					<h4 style="padding-top: 10px">Music MiniPlayer <span class="text-muted">for macOS</span></h4>
-					<p><i>"…I find Guzman’s utility to be both more useful and more capable for almost everything."</i><br> – <b>9to5Mac</b><br><br><b>MacLife Magazine Editor's Choice<br>Oct. 2022</b><br><br><a href="https://marioaguzman.github.io/musicminiplayer">Learn more about Music MiniPlayer</a></p>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="musicwidget/images/MW_LibrarySong.png, 
-								 musicwidget/images/MW_LibrarySong@2x.png 2x,
-								 musicwidget/images/MW_LibrarySong@3x.png 3x," 
-						src="musicwidget/images/MW_LibrarySong.png"
-						style="max-width: 100%; 
-							   display: block; 
-							   margin-left: auto; 
-							   margin-right: auto; 
-							   padding-top: 30pt; 
-							   padding-bottom: 30pt;" 
-						alt="Music Widget">
-				</div>
-				<div class="col-md" style="text-align: center;">
-					<h4>Music Widget <span class="text-muted">for macOS</span></h4>
-					<p><i>"You can once again enjoy your music in retro OS X style."</i><br> – <b>The Verge</b><br><a href="https://marioaguzman.github.io/musicwidget">Learn more about Music Widget</a></p>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img 
-						srcset="
-							pdxtransit/ios/images/pdxt_ios_nearby_arrivals.png, 
-							pdxtransit/ios/images/pdxt_ios_nearby_arrivals@2x.png 2x,
-							pdxtransit/ios/images/pdxt_ios_nearby_arrivals@3x.png 3x" 
-							src="pdxtransit/ios/images/pdxt_ios_nearby_arrivals@2x.png" 
-							class="mx-auto d-block" 
-							style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"
-							alt="PDX Transit on iPhone 13 Pro">
-				</div>
-				<div class="col-md" style="text-align: center;">
-					<h4>PDX Transit <span class="text-muted">for iOS & watchOS</span></h4>
-					<p>TriMet arrival times, transit directions, and service alerts on your iPhone and your wrist.<br>
-						<a href="https://marioaguzman.github.io/pdxtransit/ios/">Learn more about PDX Transit</a></p>
-					<a href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8"><img src="images/Download_on_the_App_Store_Badge_US.svg" alt=""></a>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row">
-				<div class="col-md">
-					<small class="text-muted">Mac, Macintosh, iPhone, macOS, watchOS, iTunes, QuickTime, Swift, and Objective-C are registered trademarks of Apple Inc.</small>
-				</div>
-			</div>
-			
-			
+        <div class="container" style="margin-top: 2.5%; margin-bottom: 2.5%;">
+            <div class="row">
+                <div class="col-md aquabg">
+                    <div style="margin-top: 24pt;">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 d-md-none">
+                                <!-- Centered for small displays -->
+                                <div class="" style="text-align: center; margin-bottom: 16pt;">
+                                    <img 
+                                        loading="lazy" 
+                                        srcset="images/quicktune_hero.png, 
+                                        images/quicktune_hero@2x.png 2x, 
+                                        images/quicktune_hero@3x.png 3x" 
+                                        src="images/quicktune_hero.png" 
+                                        style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                                        alt="QuickTune 7 playing &quot;City of Blinding Lights&quot; by U2">
+                                    <img
+                                        srcset="images/quicktune7_title.png,
+                                        images/quicktune7_title@2x.png 2x, 
+                                        images/quicktune7_title@3x.png 3x" 
+                                        src="images/quicktune7_title.png" 
+                                        style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: -16pt;" 
+                                        alt="QuickTune 7 for macOS">
+                                    <p class="text-light text-shadow" style="margin-bottom: 16pt;">Control Apple Music with this simplified controller that has the look and feel of QuickTime 7.
+                                    </p>
+                                    <a href="https://marioaguzman.github.io/quicktune/">
+                                    <img srcset="
+                                        images/download_btn.png, 
+                                        images/download_btn@2x.png 2x, 
+                                        images/download_btn@3x.png 3x" 
+                                        src="images/download_btn.png" 
+                                        style="max-width: 100%; margin-bottom: 20pt;" 
+                                        alt="Download Button">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Left-align image for large displays -->
+                            <div class="col-md d-none d-md-block">
+                                <div>
+                                    <img 
+                                        loading="lazy" 
+                                        srcset="images/quicktune_hero_lg.png, 
+                                        images/quicktune_hero_lg@2x.png 2x, 
+                                        images/quicktune_hero_lg@3x.png 3x" 
+                                        src="images/quicktune_hero_lg.png" 
+                                        style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                                        alt="QuickTune 7 playing &quot;City of Blinding Lights&quot; by U2">
+                                </div>
+                            </div>
+                            <div class="col-md d-none d-md-block">
+                                <div style="margin-top: 25%;">
+                                    <img
+                                        srcset="images/quicktune7_title_left.png,
+                                        images/quicktune7_title_left@2x.png 2x, 
+                                        images/quicktune7_title_left@3x.png 3x" 
+                                        src="images/quicktune7_title_left.png" 
+                                        style="max-width: 100%;" 
+                                        alt="QuickTune 7 for macOS">
+                                    <p class="text-light text-shadow" style="margin-bottom: 16pt;">Control Apple Music with this simplified 
+                                        controller that has the look and feel of QuickTime 7 and Mac OS X "Tiger".
+                                    </p>
+                                    <a href="https://marioaguzman.github.io/quicktune/">
+                                    <img srcset="
+                                        images/download_btn.png, 
+                                        images/download_btn@2x.png 2x, 
+                                        images/download_btn@3x.png 3x" 
+                                        src="images/download_btn.png" 
+                                        style="max-width: 100%;" 
+                                        alt="Download Button">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+                // X-SMALL
+                --> 
+            <div class="row align-items-center">
+                <div class="col-md d-block d-sm-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicwidget/">
+                    <img 
+                        srcset="images/MusicWidgetHomeBanner.png, 
+                        images/MusicWidgetHomeBanner@2x.png 2x, 
+                        images/MusicWidgetHomeBanner@2x.png 3x" 
+                        src="images/MusicWidgetHomeBanner.png" 
+                        style="max-width: 270pt; 
+                        width: 100%;
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Widget">
+                    </a>
+                </div>
+                <div class="col-md d-block d-sm-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicremote/">
+                    <img 
+                        srcset="images/MusicRemoteHomeBanner.png, 
+                        images/MusicRemoteHomeBanner@2x.png 2x, 
+                        images/MusicRemoteHomeBanner@2x.png 3x" 
+                        src="images/MusicRemoteHomeBanner.png" 
+                        style="max-width: 270pt; 
+                        width: 100%;
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Remote">
+                    </a>
+                </div>
+                <div class="col-md d-block d-sm-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicminiplayer/">
+                    <img 
+                        srcset="images/MusicMiniPlayerHomeBanner.png, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 2x, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 3x" 
+                        src="images/MusicMiniPlayerHomeBanner.png" 
+                        style="max-width: 270pt; 
+                        width: 100%;
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music MiniPlayer">
+                    </a>
+                </div>
+            </div>
+            <!-- 
+                // SMALL
+                --> 
+            <div class="row align-items-center">
+                <div class="col-md d-none d-sm-block d-md-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicwidget/">
+                    <img 
+                        srcset="images/MusicWidgetHomeBanner.png, 
+                        images/MusicWidgetHomeBanner@2x.png 2x, 
+                        images/MusicWidgetHomeBanner@2x.png 3x" 
+                        src="images/MusicWidgetHomeBanner.png" 
+                        style="max-width: 80%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Widget">
+                    </a>
+                </div>
+                <div class="col-md d-none d-sm-block d-md-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicremote/">
+                    <img 
+                        srcset="images/MusicRemoteHomeBanner.png, 
+                        images/MusicRemoteHomeBanner@2x.png 2x, 
+                        images/MusicRemoteHomeBanner@2x.png 3x" 
+                        src="images/MusicRemoteHomeBanner.png" 
+                        style="max-width: 80%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Remote">
+                    </a>
+                </div>
+                <div class="col-md d-none d-sm-block d-md-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicminiplayer/">
+                    <img 
+                        srcset="images/MusicMiniPlayerHomeBanner.png, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 2x, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 3x" 
+                        src="images/MusicMiniPlayerHomeBanner.png" 
+                        style="max-width: 80%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music MiniPlayer">
+                    </a>
+                </div>
+            </div>
+            <!-- 
+                // MEDIUM
+                --> 
+            <div class="row align-items-center">
+                <div class="col-md d-none d-md-block d-lg-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicwidget/">
+                    <img 
+                        srcset="images/MusicWidgetHomeBanner.png, 
+                        images/MusicWidgetHomeBanner@2x.png 2x, 
+                        images/MusicWidgetHomeBanner@2x.png 3x" 
+                        src="images/MusicWidgetHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Widget">
+                    </a>
+                </div>
+                <div class="col-md d-none d-md-block d-lg-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicremote/">
+                    <img 
+                        srcset="images/MusicRemoteHomeBanner.png, 
+                        images/MusicRemoteHomeBanner@2x.png 2x, 
+                        images/MusicRemoteHomeBanner@2x.png 3x" 
+                        src="images/MusicRemoteHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Remote">
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md d-none d-md-block d-lg-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicminiplayer/">
+                    <img 
+                        srcset="images/MusicMiniPlayerHomeBanner.png, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 2x, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 3x" 
+                        src="images/MusicMiniPlayerHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music MiniPlayer">
+                    </a>
+                </div>
+                <div class="col-md d-none d-md-block d-lg-none">
+                    <p> </p>
+                </div>
+            </div>
+            <!-- 
+                // LARGE
+                --> 
+            <div class="row align-items-center">
+                <div class="col-md d-none d-lg-block d-xl-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicwidget/">
+                    <img 
+                        srcset="images/MusicWidgetHomeBanner.png, 
+                        images/MusicWidgetHomeBanner@2x.png 2x, 
+                        images/MusicWidgetHomeBanner@2x.png 3x" 
+                        src="images/MusicWidgetHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Widget">
+                    </a>
+                </div>
+                <div class="col-md d-none d-lg-block d-xl-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicremote/">
+                    <img 
+                        srcset="images/MusicRemoteHomeBanner.png, 
+                        images/MusicRemoteHomeBanner@2x.png 2x, 
+                        images/MusicRemoteHomeBanner@2x.png 3x" 
+                        src="images/MusicRemoteHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Remote">
+                    </a>
+                </div>
+                <div class="col-md d-none d-lg-block d-xl-none">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicminiplayer/">
+                    <img 
+                        srcset="images/MusicMiniPlayerHomeBanner.png, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 2x, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 3x" 
+                        src="images/MusicMiniPlayerHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music MiniPlayer">
+                    </a>
+                </div>
+            </div>
+            <!-- 
+                // X-LARGE
+                --> 
+            <div class="row align-items-center">
+                <div class="col-md d-none d-xl-block">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicwidget/">
+                    <img 
+                        srcset="images/MusicWidgetHomeBanner.png, 
+                        images/MusicWidgetHomeBanner@2x.png 2x, 
+                        images/MusicWidgetHomeBanner@2x.png 3x" 
+                        src="images/MusicWidgetHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Widget">
+                    </a>
+                </div>
+                <div class="col-md d-none d-xl-block">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicremote/">
+                    <img 
+                        srcset="images/MusicRemoteHomeBanner.png, 
+                        images/MusicRemoteHomeBanner@2x.png 2x, 
+                        images/MusicRemoteHomeBanner@2x.png 3x" 
+                        src="images/MusicRemoteHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music Remote">
+                    </a>
+                </div>
+                <div class="col-md d-none d-xl-block">
+                    <br>
+                    <a href="https://marioaguzman.github.io/musicminiplayer/">
+                    <img 
+                        srcset="images/MusicMiniPlayerHomeBanner.png, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 2x, 
+                        images/MusicMiniPlayerHomeBanner@2x.png 3x" 
+                        src="images/MusicMiniPlayerHomeBanner.png" 
+                        style="max-width: 100%; 
+                        display: block; 
+                        margin-left: auto; 
+                        margin-right: auto;" 
+                        alt="Music MiniPlayer">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 align-items-center" style="text-align: center;">
+                    <img srcset="pdxtransit/images/pdxt_ondevices.png, 
+                        pdxtransit/images/pdxt_ondevices@2x.png 2x" 
+                        src="pdxtransit/images/pdxt_ondevices.png" 
+                        style="width: 100%; 
+                        padding-bottom: 10pt;" 
+                        alt="PDX Transit on Nearby Tab">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2" style="text-align: center; padding-bottom: 10pt;">
+                    <img srcset="pdxtransit/images/pdxt_splash.png, 
+                        pdxtransit/images/pdxt_splash@2x.png 2x, 
+                        pdxtransit/images/pdxt_splash@3x.png 3x" 
+                        src="../images/pdxt_splash@2x.png"
+                        style="max-width: 100%;"
+                        alt="PDX Transit Logo Splash">
+                    <h4><span class="text-muted">Available for iOS, macOS, & watchOS</span></h4>
+                    <p>Get nearby transit stops, real-time arrival times, and the latest service alerts.<br>
+                        <span><a href="https://marioaguzman.github.io/pdxtransit/macos/">Download for macOS</a>&emsp;
+                        <a href="https://marioaguzman.github.io/pdxtransit/ios/">Download for iOS</a></span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md">
+                    <small class="text-muted">Mac, Macintosh, iPhone, macOS, watchOS, iTunes, QuickTime, Swift, and Objective-C are registered trademarks of Apple Inc.</small>
+                </div>
+            </div>
             <!-- Footer Start -->
             <div class="row">
                 <div class="col-md">
                     <small><b>© 2019-2024 Mario A Guzman</b></small>
                 </div>
             </div>
-            
             <div class="row">
                 <div class="col-md">
                     <small><b>Personal</b></small>
@@ -306,6 +508,6 @@
                 </div>
             </div>
             <!-- Footer End -->
-		</div>
-	</body>
+        </div>
+    </body>
 </html>
