@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <meta property="og:title" content="QuickTune 7 for macOS" />
+        <meta property="og:type"  content="website" />
+        <meta property="og:image" content="https://marioaguzman.github.io/quicktune/images/qt_web_preview_card.png" />
+        <meta property="og:description" content="Control Apple Music playback with this simplified controller with the look and feel of QuickTime 7." />
+        <meta property="og:site_name" content="marioaguzman.github.io" />
+        <meta property="og:url" content="https://marioaguzman.github.io/quicktune/" />
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@MarioGuzman">
+        <meta name="twitter:creator" content="@MarioGuzman">
+        <meta name="twitter:title" content="QuickTune 7 for macOS">
+        <meta name="twitter:description" content="Control Apple Music playback with this simplified controller with the look and feel of QuickTime 7.">
+        <meta name="twitter:image" content="https://marioaguzman.github.io/quicktune/images/qt_web_preview_card.png">
+        <title>QuickTune for macOS</title>
+        
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- START Header Nav. -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                    
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header"><b>MUSIC</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Overview</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>&emsp;Music Widget</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>&emsp;Music MiniPlayer</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>&emsp;Music Remote</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/quicktune/"><b>&emsp;QuickTune </b>
+                            	<span>
+                            		<sup style="color: #bf4800;">
+                            			<small><b>NEW</b></small>
+                            		</sup>
+                            	</span></a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>&emsp;PDX Transit</b> <small class="text-muted">Macintosh</small></a>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>&emsp;PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <h6 class="dropdown-header"><b>MACINTOSH</b></h6>
+                            <a class="dropdown-item" href="https://marioaguzman.github.io/design/layoutguidelines"><b>Layout Guidelines</b></a>
+                        </div>
+                    </li>
+                    
+                    <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
+                    </li>
+                    <!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+                </ul>
+            </div>
+        </nav>
+        <!-- END Header Nav. -->
+        
+        <div class="container" style="margin-top: 0pt; margin-top: 5%; margin-bottom: 5%;">
+        
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 d-md-none">
+                	<!-- Centered for small displays -->
+                    <div class="" style="text-align: center; margin-bottom: 16pt;">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/quicktune_hero.png, 
+                        			images/quicktune_hero@2x.png 2x, 
+                        			images/quicktune_hero@3x.png 3x" 
+                            src="images/quicktune_hero.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                            alt="QuickTune 7 playing &quot;City of Blinding Lights&quot; by U2">
+                            
+                        <img
+                        	srcset="images/quicktune7_title.png,
+                        			images/quicktune7_title@2x.png 2x, 
+                            		images/quicktune7_title@3x.png 3x" 
+                            src="images/quicktune7_title.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; margin-top: -16pt;" 
+                            alt="QuickTune 7 for macOS">
+                        
+                        <p class="text-muted" style="margin-bottom: 16pt;">Control Apple Music with this simplified 
+                        	controller that has the look and feel of QuickTime 7.</p>
+                        <a href="">
+                        <img srcset="
+                        		images/download_btn.png, 
+                        		images/download_btn@2x.png 2x, 
+                       			images/download_btn@3x.png 3x" 
+                            src="images/download_btn.png" 
+                            style="max-width: 100%;" 
+                            alt="Download Button">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Left-align image for large displays -->
+                <div class="col-md d-none d-md-block">
+                    <div>
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/quicktune_hero_lg.png, 
+                        			images/quicktune_hero_lg@2x.png 2x, 
+                        			images/quicktune_hero_lg@3x.png 3x" 
+                            src="images/quicktune_hero_lg.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                            alt="QuickTune 7 playing &quot;City of Blinding Lights&quot; by U2">
+                    </div>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <div style="margin-top: 25%;">
+                        <img
+                        	srcset="images/quicktune7_title_left.png,
+                        			images/quicktune7_title_left@2x.png 2x, 
+                            		images/quicktune7_title_left@3x.png 3x" 
+                            src="images/quicktune7_title_left.png" 
+                            style="max-width: 100%;" 
+                            alt="QuickTune 7 for macOS">
+                        
+                        <p class="text-muted" style="margin-bottom: 16pt;">Control Apple Music with this simplified 
+                        	controller that has the look and feel of QuickTime 7 and Mac OS X "Tiger".</p>
+                        <a href="">
+                        <img srcset="
+                        		images/download_btn.png, 
+                        		images/download_btn@2x.png 2x, 
+                       			images/download_btn@3x.png 3x" 
+                            src="images/download_btn.png" 
+                            style="max-width: 100%;" 
+                            alt="Download Button">
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <hr>
+            
+            <div class="row " style="padding-top: 16pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                    
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/quicktune7_main.png, 
+                            		images/quicktune7_main@2x.png 2x, 
+                            		images/quicktune7_main@3x.png 3x" 
+                            src="images/quicktune7_main.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                            alt="QuickTune 7 playing &quot;Speed of Sound&quot; by Coldplay">
+                        <!-- <img 
+                        	loading="lazy" 
+                        	srcset="images/quicktune7_mini.png, 
+                        			images/quicktune7_mini@2x.png 2x, 
+                        			images/quicktune7_mini@3x.png 3x" 
+                            src="images/quicktune7_mini.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                            alt="QuickTune 7 playing &quot;City of Blinding Lights&quot; by U2"> -->
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/title_user_interface.png, 
+                        			images/title_user_interface@2x.png 2x, 
+                        			images/title_user_interface@3x.png 3x" 
+                            src="images/title_user_interface.png" 
+                            style="max-width: 100%;" 
+                            alt="User Interface">
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">From brushed metal to the glass buttons to the classic LCD, QuickTune 7 faithfully replicates the look and feel of QuickTime 7. Graphite theme comes standard.</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" 
+                        	srcset="images/quicktune7_coverart.png, 
+                        			images/quicktune7_coverart@2x.png 2x, 
+                        			images/quicktune7_coverart@3x.png 3x" 
+                            src="images/quicktune7_coverart.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                            alt="QuickTune 7 playing &quot;Technologic&quot; by Daft Punk">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/title_cover_art.png, 
+                        			images/title_cover_art@2x.png 2x, 
+                        			images/title_cover_art@3x.png 3x" 
+                            src="images/title_cover_art.png" 
+                            style="max-width: 100%;" 
+                            alt="Cover Art">
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Resize the QuickTune window to expand or collapse the Now Playing track’s artwork. When expanded, the window will always persist the correct aspect ratio.</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row " style="padding-top: 20pt;">
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img loading="lazy" 
+                        	srcset="images/quicktune7_inspector.png, 
+                        			images/quicktune7_inspector@2x.png 2x, 
+                        			images/quicktune7_inspector@3x.png 3x" 
+                            src="images/quicktune7_inspector.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                            alt="QuickTune 7 playing &quot;Hung Up&quot; by Madonna and displaying the Inspector HUD.">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/title_inspector.png, 
+                        			images/title_inspector@2x.png 2x, 
+                        			images/title_inspector@3x.png 3x" 
+                            src="images/title_inspector.png" 
+                            style="max-width: 100%;" 
+                            alt="Inspector">
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">Open the available Inspector HUD to get additional details of the Now Playing track such as Genre, Year, Composers, and much more.</small>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/quicktune7_playlists.png, 
+                        			images/quicktune7_playlists@2x.png 2x, 
+                        			images/quicktune7_playlists@3x.png 3x" 
+                            src="images/quicktune7_playlists.png" 
+                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+                            alt="QuickTune playing &quot;Pump It&quot; by The Black Eyed Peas">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/title_music_playlists.png, 
+                        			images/title_music_playlists@2x.png 2x, 
+                        			images/title_music_playlists@3x.png 3x" 
+                            src="images/title_music_playlists.png" 
+                            style="max-width: 100%;" 
+                            alt="Music Playlists">
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+                        <small class="text-muted">With QuickTune, you don’t have to bring up Apple Music to switch playlists. Simply open the available Playlists HUD and double-click a playlist start.</small>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col-md">
+                	<table class="table table-striped">
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/title_specs.png, 
+                        			images/title_specs@2x.png 2x, 
+                        			images/title_specs@3x.png 3x" 
+                            src="images/title_specs.png" 
+                            style="max-width: 100%; padding-bottom: 4pt;" 
+                            alt="Specs & Requirements">
+  						<tbody>
+    						<tr>
+      							<th scope="row">Software</th>
+      							<td>macOS Big Sur and newer; Music.app</td>
+    						</tr>
+    						<tr>
+      							<th scope="row">Hardware</th>
+      							<td>Universal Binary for Macintosh computers with Apple silicon and Intel processors</td>
+    						</tr>
+    						<tr>
+      							<th scope="row">Language</th>
+      							<td>English, Spanish, Italian, Finnish, German, and Polish</td>
+    						</tr>
+    						<tr>
+      							<th scope="row">Code</th>
+      							<td>100% Native. Written in Swift using AppKit.</td>
+    						</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+            
+			<hr>
+			
+			<div class="row align-items-center" style="margin-bottom: 16pt;">
+				<div class="col-md">
+					<img
+						loading="lazy" 
+						srcset="
+							../musicwidget/images/MW_LibrarySong.png, 
+							../musicwidget/images/MW_LibrarySong@2x.png 2x, 
+							../musicwidget/images/MW_LibrarySong@3x.png 3x" 
+							src="../musicwidget/images/MW_LibrarySong.png" 
+							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+							alt="Music Widget">
+				</div>
+				<div class="col-md">
+					<h4>Looking for Music Widget?</h4>
+					<div class="d-flex justify-content-between">
+                        <small class="text-muted">Music Widget is a replica of the original iTunes Widget included with Dashboard introduced in 2005.<br>
+						<a href="https://marioaguzman.github.io/musicwidget/">Learn more about Music Widget</a></small>
+                    </div>
+				</div>
+			</div>
+            
+			<div class="row align-items-center" style="margin-bottom: 32pt;">
+				<div class="col-md">
+					<img
+						loading="lazy" 
+						srcset="
+							../musicminiplayer/images/MusicMiniPlayer_Controls.png, 
+							../musicminiplayer/images/MusicMiniPlayer_Controls@2x.png 2x, 
+							../musicminiplayer/images/MusicMiniPlayer_Controls@3x.png 3x" 
+							src="../musicminiplayer/images/MusicMiniPlayer_Controls.png" 
+							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
+							alt="Music MiniPlayer">
+				</div>
+				<div class="col-md">
+					<h4>Looking for Music MiniPlayer?</h4>
+					<div class="d-flex justify-content-between">
+                        <small class="text-muted">Music MiniPlayer is a replica of the original iTunes MiniPlayer included with early versions of iTunes.<br>
+						<a href="https://marioaguzman.github.io/musicminiplayer/">Learn more about Music MiniPlayer</a></small>
+                    </div>
+				</div>
+			</div>
+			
+			<hr>
+            
+            <div class="row">
+                <div class="col-md">
+                    <div>
+                        <img 
+                        	loading="lazy" 
+                        	srcset="images/title_technical.png, 
+                        			images/title_technical@2x.png 2x, 
+                        			images/title_technical@3x.png 3x" 
+                            src="images/title_technical.png" 
+                            style="max-width: 100%; padding-bottom: 2pt;" 
+                            alt="Technical Stuff">
+                        <p>QuickTune uses Scripting Bridge and Distributed Notification Center to send and receive commands with Apple Music on macOS. The majority of the UI is written in Core Graphics and Core Animation to achieve crisp UI that is also optimized for non-Retina Displays. QuickTune is a completely native app; written with Swift and AppKit.</p>
+                        <p>Requires <b>macOS Big Sur</b> or newer and <b>Music.app</b>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div>
+                        <p class="text-muted">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+			
+            <!-- Footer Start -->
+            <div class="row">
+                <div class="col-md">
+                    <small><b>© 2019-2024 Mario A Guzman</b></small>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md">
+                    <small><b>Personal</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+                        <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+                        <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+                        <li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Projects</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/">QuickTune</a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/swiftui.html">PDX Transit <small class="text-muted">SwiftUI</small></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <small><b>Downloads</b></small>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg">QuickTune <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Macintosh</small></a></li>
+                        <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS & watchOS</small></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+    </body>
+</html>
