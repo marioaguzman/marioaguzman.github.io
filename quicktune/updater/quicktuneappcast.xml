@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.1</title>
+            <description><![CDATA[
+                <ul style="font-size:13px;">You can now choose from either Mac OS X Tiger or Mac OS X Leopard themes. Open Settings and select the Interface tab to get started.</ul>
+            ]]></description>
+            <pubDate>Wed, 28 Aug 2024 19:42:43 -0700</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8171247" type="application/octet-stream" sparkle:edSignature="ZWGAqfusSJjC4DLobwqwZj6xD30996RoDr9zViknroyoXhTHZDP2rIP7hExD0oKFikQQpgRQ2Z3hPnKojZFODQ=="/>
+        </item>
+        <item>
             <title>7.0</title>
             <description><![CDATA[
                 <ul style="font-size:13px;">Initial release of QuickTune for macOS + Apple Music.</ul>
