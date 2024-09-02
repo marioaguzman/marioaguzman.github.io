@@ -8,7 +8,7 @@
         <item>
             <title>7.2</title>
             <description><![CDATA[
-                <ul style="font-size: 12pt;">
+                <ul style="font-size: 11pt;">
                 	<li>The UI for streaming live audio has been updated. Track and provider information will now show inside the LCD display under the album artwork rather than in the title bar.</li>
                 		<li>In certain cases, the text in the scrolling marquee would appear blurry on non-Retina Displays. This has been addressed.</li>
 				</ul>
@@ -22,7 +22,7 @@
         <item>
             <title>7.1</title>
             <description><![CDATA[
-                <ul style="font-size: 12pt;">
+                <ul style="font-size: 11pt;">
                 	<li>You can now choose from either Mac OS X Tiger or Mac OS X Leopard themes. Open Settings and select the Interface tab to get started. Thank you Jason S. for the suggestion.</li>
 				</ul>
             ]]></description>
@@ -35,7 +35,7 @@
         <item>
             <title>7.0</title>
             <description><![CDATA[
-                <ul style="font-size: 12pt;">Initial release of QuickTune for macOS + Apple Music.</ul>
+                <ul style="font-size: 11pt;">Initial release of QuickTune for macOS + Apple Music.</ul>
             ]]></description>
             <pubDate>Sun, 19 May 2024 09:34:45 -0700</pubDate>
             <sparkle:version>1</sparkle:version>
