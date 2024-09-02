@@ -6,9 +6,25 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.2</title>
+            <description><![CDATA[
+                <ul style="font-size: 12pt;">
+                	<li>The UI for streaming live audio has been updated. Track and provider information will now show inside the LCD display under the album artwork rather than in the title bar.</li>
+                		<li>In certain cases, the text in the scrolling marquee would appear blurry on non-Retina Displays. This has been addressed.</li>
+				</ul>
+            ]]></description>
+            <pubDate>Sun, 01 Sep 2024 19:48:16 -0700</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8546058" type="application/octet-stream" sparkle:edSignature="xF17iD5pKsy/9qzFCbELUfEBMn3Llc1GeU7CQpIG2H88hgNL48xt1UrknAgqof9sV9ckSXp11FcxgfIYp3JUDQ=="/>
+        </item>
+        <item>
             <title>7.1</title>
             <description><![CDATA[
-                <ul style="font-size:13px;">You can now choose from either Mac OS X Tiger or Mac OS X Leopard themes. Open Settings and select the Interface tab to get started. Thank you Jason S. for the suggestion.</ul>
+                <ul style="font-size: 12pt;">
+                	<li>You can now choose from either Mac OS X Tiger or Mac OS X Leopard themes. Open Settings and select the Interface tab to get started. Thank you Jason S. for the suggestion.</li>
+				</ul>
             ]]></description>
             <pubDate>Wed, 28 Aug 2024 19:42:43 -0700</pubDate>
             <sparkle:version>3</sparkle:version>
@@ -19,7 +35,7 @@
         <item>
             <title>7.0</title>
             <description><![CDATA[
-                <ul style="font-size:13px;">Initial release of QuickTune for macOS + Apple Music.</ul>
+                <ul style="font-size: 12pt;">Initial release of QuickTune for macOS + Apple Music.</ul>
             ]]></description>
             <pubDate>Sun, 19 May 2024 09:34:45 -0700</pubDate>
             <sparkle:version>1</sparkle:version>
