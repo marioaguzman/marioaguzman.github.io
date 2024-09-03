@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.12</title>
+            <description><![CDATA[
+                <ul style="font-size:11pt;"><li>In certain cases, the text in the scrolling marquee would appear blurry on non-Retina Displays. This has been addressed.</li></ul>
+            ]]></description>
+            <pubDate>Tue, 03 Sep 2024 08:48:29 -0700</pubDate>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>1.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg" length="4466128" type="application/octet-stream" sparkle:edSignature="kI/U0I3BexYTNOM0PPxRMaYtfhAbfzyz+JEPnspuhDipvBwsKNLM4rICf5Cg3vEufva52Zrv7xN9p0K3Y9iHAQ=="/>
+        </item>
+        <item>
             <title>1.11</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Fixed: If you're playing a live station in Music, launching Music MiniPlayer no longer leaves the audio paused.</li></ul>
@@ -26,17 +37,6 @@
             <sparkle:shortVersionString>1.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg" length="4468990" type="application/octet-stream" sparkle:edSignature="5zj5JWAW2y0D/LQTRHaQT1txMs32kHztp1mepY7XQqeX+KQx81w0HtYsEQtHHgU4kZXizXUTX/hMBUl2onf/DQ=="/>
-        </item>
-        <item>
-            <title>1.9</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Updated to support macOS 14 Sonoma and built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the Now Playing section (requires macOS Sonoma).</li><li>Fixed an issue where the window control symbols would remain visible after un-Docking the app window.</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 17 Sep 2023 12:10:00 -0700</pubDate>
-            <sparkle:version>31</sparkle:version>
-            <sparkle:shortVersionString>1.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg" length="4461379" type="application/octet-stream" sparkle:edSignature="kKArpqty5/kttASUUFXyYeH8Ts7RO8J+FoUxl9LOg0abEhJy7MjIAgV6bYKPz46cldtRylaIbSw0oksZs5vyDg=="/>
         </item>
         <item>
             <title>1.8</title>
