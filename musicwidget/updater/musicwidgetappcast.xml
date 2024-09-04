@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.27</title>
+            <description><![CDATA[
+                <ul style="font-size:11pt;"><li>In certain cases, the text in the scrolling marquee would appear blurry on non-Retina Displays. This has been addressed.</li></ul>
+            ]]></description>
+            <pubDate>Tue, 03 Sep 2024 12:40:05 -0700</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>1.27</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4557975" type="application/octet-stream" sparkle:edSignature="hns9IjMI93QtMv3tBIsigBFZhFiTTX8iAPYkLWDvvW0BxCFfVbJXPw+L2vKdaO7ULOzjE66bCXWjqsqcrbSaDQ=="/>
+        </item>
+        <item>
             <title>1.26</title>
             <description><![CDATA[
                 <ul style="font-size:13px;"><li>Fixed: If you're playing a live station in Music, launching Music Widget no longer leaves the audio paused.</li></ul>
