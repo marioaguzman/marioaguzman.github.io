@@ -6,6 +6,21 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.3.1</title>
+            <description><![CDATA[
+                <ul style="font-size: 10pt;">
+                <li>Updated with the latest macOS SDK to support macOS 15 Sequoia.</li>
+                <li>The album artwork image view now performs a fade animation when updating its image.</li>
+                <li>Efficiency enhancements when updating track information on track change.</li>
+				</ul>
+            ]]></description>
+            <pubDate>Mon, 16 Sep 2024 13:59:17 -0700</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>7.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8545874" type="application/octet-stream" sparkle:edSignature="JZbmgVbVXDBzbL3aLs9dEWYo7GvSAS4Bh8q/zDDSe1mU2zhvxaY7bubWyMMwJeCBB0b93uT6pa8Rgux0WkVrAg=="/>
+        </item>
+        <item>
             <title>7.3</title>
             <description><![CDATA[
                 <ul style="font-size: 10pt;">
@@ -32,19 +47,6 @@
             <sparkle:shortVersionString>7.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8546058" type="application/octet-stream" sparkle:edSignature="xF17iD5pKsy/9qzFCbELUfEBMn3Llc1GeU7CQpIG2H88hgNL48xt1UrknAgqof9sV9ckSXp11FcxgfIYp3JUDQ=="/>
-        </item>
-        <item>
-            <title>7.1</title>
-            <description><![CDATA[
-                <ul style="font-size: 11pt;">
-                	<li>You can now choose from either Mac OS X Tiger or Mac OS X Leopard themes. Open Settings and select the Interface tab to get started. Thank you Jason S. for the suggestion.</li>
-				</ul>
-            ]]></description>
-            <pubDate>Wed, 28 Aug 2024 19:42:43 -0700</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>7.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8171247" type="application/octet-stream" sparkle:edSignature="ZWGAqfusSJjC4DLobwqwZj6xD30996RoDr9zViknroyoXhTHZDP2rIP7hExD0oKFikQQpgRQ2Z3hPnKojZFODQ=="/>
         </item>
     </channel>
 </rss>
