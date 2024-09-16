@@ -6,6 +6,20 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.3</title>
+            <description><![CDATA[
+                <ul style="font-size: 10pt;">
+                <li>Updated with the latest macOS SDK to support macOS 15 Sequoia.</li>
+                <li>The album artwork image view now performs a fade animation when updating its image.</li>
+				</ul>
+            ]]></description>
+            <pubDate>Sun, 15 Sep 2024 21:13:41 -0700</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>7.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8550534" type="application/octet-stream" sparkle:edSignature="dqluyU2uu0dvCQcskdsP+ULMumFMWSLPSLMBZSDWOzKmQZ/Fw4htXlbk7reatdGSboBTchV5WNisAfhpan3+Ag=="/>
+        </item>
+        <item>
             <title>7.2</title>
             <description><![CDATA[
                 <ul style="font-size: 11pt;">
@@ -31,17 +45,6 @@
             <sparkle:shortVersionString>7.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8171247" type="application/octet-stream" sparkle:edSignature="ZWGAqfusSJjC4DLobwqwZj6xD30996RoDr9zViknroyoXhTHZDP2rIP7hExD0oKFikQQpgRQ2Z3hPnKojZFODQ=="/>
-        </item>
-        <item>
-            <title>7.0</title>
-            <description><![CDATA[
-                <ul style="font-size: 11pt;">Initial release of QuickTune for macOS + Apple Music.</ul>
-            ]]></description>
-            <pubDate>Sun, 19 May 2024 09:34:45 -0700</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>7.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="7691974" type="application/octet-stream" sparkle:edSignature="hsMevniV/FiUv3A9+jOFw20z7bHaJSrfBwmNKQWopqz4TN0H2eB+HtGjsEtNrW3o6wOUbCi4QJ1U7GLkLaFvBA=="/>
         </item>
     </channel>
 </rss>
