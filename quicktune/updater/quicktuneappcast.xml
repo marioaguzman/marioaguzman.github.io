@@ -6,6 +6,21 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.4</title>
+            <description><![CDATA[
+                <ul style="font-size: 10pt;">
+                <li>Updated design for the enabled states for Shuffle and Repeat buttons in the Leopard theme. Thank you Tuomas Hämäläinen.</li>
+                <li>When QuickTune is minimized, its Dock tile thumbnail will now refresh to display the current Now Playing track's album cover art. Thank you Steve Troughton-Smith.</li>
+                <li>Additional enhancements to reduce the number of UI state refreshes needed to sync UI with Apple Music.</li>
+				</ul>
+            ]]></description>
+            <pubDate>Thu, 26 Sep 2024 20:51:09 -0700</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>7.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8550513" type="application/octet-stream" sparkle:edSignature="0E2h8xtnH4QrnmtAivk7Yt4/HWYIFUKj1TMSinPhTULadUIGFNx0eTHNE/BWrs/Xtjn7sxXc71o3qsAfjB8ZAw=="/>
+        </item>
+        <item>
             <title>7.3.1</title>
             <description><![CDATA[
                 <ul style="font-size: 10pt;">
@@ -33,20 +48,6 @@
             <sparkle:shortVersionString>7.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8550534" type="application/octet-stream" sparkle:edSignature="dqluyU2uu0dvCQcskdsP+ULMumFMWSLPSLMBZSDWOzKmQZ/Fw4htXlbk7reatdGSboBTchV5WNisAfhpan3+Ag=="/>
-        </item>
-        <item>
-            <title>7.2</title>
-            <description><![CDATA[
-                <ul style="font-size: 11pt;">
-                	<li>The UI for streaming live audio has been updated. Track and provider information will now show inside the LCD display under the album artwork rather than in the title bar.</li>
-                		<li>In certain cases, the text in the scrolling marquee would appear blurry on non-Retina Displays. This has been addressed.</li>
-				</ul>
-            ]]></description>
-            <pubDate>Sun, 01 Sep 2024 19:48:16 -0700</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>7.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8546058" type="application/octet-stream" sparkle:edSignature="xF17iD5pKsy/9qzFCbELUfEBMn3Llc1GeU7CQpIG2H88hgNL48xt1UrknAgqof9sV9ckSXp11FcxgfIYp3JUDQ=="/>
         </item>
     </channel>
 </rss>
