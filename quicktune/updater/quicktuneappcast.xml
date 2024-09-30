@@ -6,6 +6,22 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.4.1</title>
+            <description><![CDATA[
+                <ul style="font-size: 9pt;">
+                <li>7.4,1: Fixed an issue where the Previous/Next buttons would not appear disabled when listening to live radio in Apple Music.</li>
+                <li>7.4: Updated design for the enabled states for Shuffle and Repeat buttons in the Leopard theme. Thank you Tuomas Hämäläinen.</li>
+                <li>7.4: When QuickTune is minimized, its Dock tile thumbnail will now refresh to display the current Now Playing track's album cover art. Thank you Steve Troughton-Smith.</li>
+                <li>7.4: Additional enhancements to reduce the number of UI state refreshes needed to sync UI with Apple Music.</li>
+                </ul>
+            ]]></description>
+            <pubDate>Sun, 29 Sep 2024 18:38:38 -0700</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>7.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8567460" type="application/octet-stream" sparkle:edSignature="ba0HihjJkfO5K9kaN///O9YCWxbp+Rwqg+8pVVq/R9DOFARbEBowptXFKECwmB7RhvSffZpdBTbg+ALm1J1uCg=="/>
+        </item>
+        <item>
             <title>7.4</title>
             <description><![CDATA[
                 <ul style="font-size: 10pt;">
@@ -34,20 +50,6 @@
             <sparkle:shortVersionString>7.3.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8545874" type="application/octet-stream" sparkle:edSignature="JZbmgVbVXDBzbL3aLs9dEWYo7GvSAS4Bh8q/zDDSe1mU2zhvxaY7bubWyMMwJeCBB0b93uT6pa8Rgux0WkVrAg=="/>
-        </item>
-        <item>
-            <title>7.3</title>
-            <description><![CDATA[
-                <ul style="font-size: 10pt;">
-                <li>Updated with the latest macOS SDK to support macOS 15 Sequoia.</li>
-                <li>The album artwork image view now performs a fade animation when updating its image.</li>
-				</ul>
-            ]]></description>
-            <pubDate>Sun, 15 Sep 2024 21:13:41 -0700</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>7.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8550534" type="application/octet-stream" sparkle:edSignature="dqluyU2uu0dvCQcskdsP+ULMumFMWSLPSLMBZSDWOzKmQZ/Fw4htXlbk7reatdGSboBTchV5WNisAfhpan3+Ag=="/>
         </item>
     </channel>
 </rss>
