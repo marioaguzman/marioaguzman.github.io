@@ -188,6 +188,13 @@
                <p>To get the Inspector Sidebar Toggle button and all of its setup for free, use the <a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/toggleInspector">.toggleInspector</a> identifier. AppKit will not only setup the button with the correct icon, titles, and localization, it will also call the correct functions to toggle your application's Inspector.</p>
                <p>To allow items to the right of the Inspector sidebar divider, use the <a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/inspectorTrackingSeparator">.inspectorTrackingSeparator</a> identifier. When implementing the default item identifiers delegate, provide both <a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/toggleInspector">.toggleInspector</a> and <a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/inspectorTrackingSeparator">.inspectorTrackingSeparator</a> in the appropriate order.</p>
                
+               <br>
+               <img srcset="images/toolbar_separators_sidebar_inspector@2x.png, 
+                  images/toolbar_separators_sidebar_inspector@2x.png 2x" 
+                  src="images/toolbar_separators_sidebar_inspector@2x.png" 
+                  style="width: 100%; max-width: 903px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+               <p class="small" style="padding-top: 8px; text-align: center">The tracking separators allow developers and users to place toolbar items on the outer sides of the separators Otherwise, toolbar items couldn't be in the Sidebar or Inspector portions when either are expanded.</p>
                <p>Other out-of-the-box toolbar items include:</p>
                <ul>
                <li><p><a href="https://developer.apple.com/documentation/appkit/nssharingservicepickertoolbaritem">NSSharingServicePickerToolbarItem</a>: Includes automatic setup and delegate functions for a Share button.</p></li>
@@ -262,6 +269,13 @@
                <br>
 			   <p>Resizing a content column will impact the spacing for the items in that portion of the toolbar. Items that go into an overflow menu will now be impacted by window size, item priorty, and column size.</p>
 			   <p><b>Developer Note:</b> If your application has multiple content columns (column is neither a Sidebar nor an Inspector) and want a visual separator in the toolbar, implement <a href="https://developer.apple.com/documentation/appkit/nstrackingseparatortoolbaritem">NSTrackingSeparatorToolbarItem</a>. It requires a reference to the <a href="https://developer.apple.com/documentation/appkit/nssplitviewcontroller">NSSplitViewController</a>'s <a href="https://developer.apple.com/documentation/appkit/nssplitviewcontroller/splitview">splitView</a> property and which divider index it needs to track.</p>
+               <br>
+               <img srcset="images/toolbar_separators_sidebar_tracking@2x.png, 
+                  images/toolbar_separators_sidebar_tracking@2x.png 2x" 
+                  src="images/toolbar_separators_sidebar_tracking@2x.png" 
+                  style="width: 100%; max-width: 903px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+               <p class="small" style="padding-top: 8px; text-align: center">The NSTrackingSeparatorToolbarItem allows for a visual separator that follows the Split View Controller in the content of the Window. It will move (and shift toolbar items accordingly) as the separator it is tracking is moved by the user.</p>
                <h3 id="Styles">Styles</h3>
                <p><a href="https://developer.apple.com/documentation/appkit/nswindow/toolbarstyle-swift.enum">Toolbar styles</a> determine the appearance and location of the toolbar in relation to the title bar of the window.</p>
                <h4 id="StyleUnified">Unified and Unified Compact</h4>
@@ -351,8 +365,8 @@
                <ul>
                   <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/cloudsharing">.cloudSharing</a>: A toolbar item identifier that tells your app to display the iCloud sharing interface.</li>
                   <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/writingtoolsitemidentifier">.writingToolsItemIdentifier</a>: A toolbar item identifier that tells your app to display the Apple Intelligence Writing Tools UI.</li>
-                  <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/togglesidebar">.togglesidebar</a>: A toolbar item identifier that toggle's your app's sidebar.</li>
-                  <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/sidebartrackingseparator">.sidebartrackingseparator</a>: A toolbar item identifier that visually aligns itself with the sidebar divider of a vertical split view in the same window.</li>
+                  <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/togglesidebar">.toggleSidebar</a>: A toolbar item identifier that toggle's your app's sidebar.</li>
+                  <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/sidebartrackingseparator">.sidebarTrackingSeparator</a>: A toolbar item identifier that visually aligns itself with the sidebar divider of a vertical split view in the same window.</li>
                   <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/toggleInspector">toggleInspector</a>: A toolbar item that toggle's your app's Inspector sidebar.</li>
                   <li><a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/identifier/inspectorTrackingSeparator">inspectorTrackingSeparator</a>: A toolbar item identifier that visually aligns itself with the Inspector sidebar divider of a vertical split view in the same window.</li>
                   <li><a href="https://developer.apple.com/documentation/appkit/nssharingservicepickertoolbaritem">NSSharingServicePickerToolbarItem</a>: Item displays the macOS share sheet. Use this item to share the selected or focal content from the current window.</li>
