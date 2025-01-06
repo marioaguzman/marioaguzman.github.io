@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.28</title>
+            <description><![CDATA[
+                <ul style="font-size:10pt;"><li>Updated to display proper names for Apple Música Uno, Apple Music Chill, and Apple Music Club.</li></ul>
+            ]]></description>
+            <pubDate>Sun, 05 Jan 2025 17:15:57 -0800</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.28</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4560344" type="application/octet-stream" sparkle:edSignature="SOW7pVUYfODW8qr6CPnuqou1/ffURVdMM7gMsMMiP+pcyvxpSDY1LZIpBEZlJZRPqQRT8Q94RRde6KfkMZmeAQ=="/>
+        </item>
+        <item>
             <title>1.27</title>
             <description><![CDATA[
                 <ul style="font-size:11pt;"><li>In certain cases, the text in the scrolling marquee would appear blurry on non-Retina Displays. This has been addressed.</li></ul>
@@ -26,17 +37,6 @@
             <sparkle:shortVersionString>1.26</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4539291" type="application/octet-stream" sparkle:edSignature="r1ePoU02ntuLLUyAmbV2Z3Bjo8KaEfR7E91CPML+IPTNLt9Joqvajl2KE9rCfkukthDqo07t05OAC4KU0VagCw=="/>
-        </item>
-        <item>
-            <title>1.25</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Updated to support macOS 14 Sonoma & built with the latest build tools.</li><li>Updated the UI in the Dock Menu for the Now Playing section (requires macOS Sonoma).</li><li>Updated Sparkle framework (for auto-updates) to version 2.4.2.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 17 Sep 2023 12:10:20 -0700</pubDate>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>1.25</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4544061" type="application/octet-stream" sparkle:edSignature="m15lMyw754mV1bkIDU95ElmXHq4ee4lsPczEWQp50xXsyAwp9+symQgfveqzSdkffuA4AGd08E5y0oCWmj7iBw=="/>
         </item>
         <item>
             <title>1.24</title>
