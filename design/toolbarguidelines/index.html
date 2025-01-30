@@ -168,7 +168,7 @@
                   alt="">
                <p class="small" style="padding-top: 8px; text-align: center">Window with the Sidebar Expanded.</p>
                <br>
-               <p>Items in the toolbar portion for the sidebar should only consist of the sidebar toggle button, global items, or items that only persist to the conent directly below it (sidebar content).</p>
+               <p>Items in the toolbar portion for the sidebar should only consist of the sidebar toggle button, global items, or items that only persist to the content directly below it (sidebar content).</p>
                <p>The toolbar portion for the sidebar should have no more than two items. Since sidebars are now full-height, it is possible that making the sidebar too narrow, it will move some items into an overflow menu. Another option may be to give your sidebar a minimum width to allow for sidebar toolbar items to always show without being moved into an overflow menu.</p>
                <p>The best recommendation would be to only have the Sidebar toggle in the toolbar and any additional items that pertain only to sidebar content be down in a <a href="#BottomBars">Bottom Bar</a>.</p>
                <p><b>Developer Note</b></p>
@@ -227,7 +227,7 @@
                <br>
                <p><b>Developer Note:</b> Review the <a href="https://developer.apple.com/documentation/appkit/nstoolbaritem/visibilitypriority-swift.property">visibilityPriority</a> property on <a href="https://developer.apple.com/documentation/appkit/nstoolbaritem">NSToolbarItem</a> for more details.</p>
                <h4 id="CenteredItems">Centered Items</h4>
-               <p>Toolbars have a property to desginate which items should always be centered. This item has priority to always be fully centered and should be reserved for special items.</p>
+               <p>Toolbars have a property to designate which items should always be centered. This item has priority to always be fully centered and should be reserved for special items.</p>
                <p>In this hypothetical Email example app, there's a segmented/picker control that allows the user to navigate between major parts of the application: Email, Calendar, and Contacts. Because navigation is so important, this item is marked as the centered item for the toolbar.</p>
                <p>Examples of first-party apps that center items in their toolbar would be Safari's Address Bar, Apple Music's Now Playing Track view, Photo's view picker.</p>
                <p><b>Developer Note: </b>Use the <a href="https://developer.apple.com/documentation/appkit/nstoolbar/centereditemidentifiers">centeredItemIdentifiers</a> property on <a href="https://developer.apple.com/documentation/appkit/nstoolbar">NSToolbar</a> with the identifiers of the items you want centered; in this case, the segmented control shown below.</p>
