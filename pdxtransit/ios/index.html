@@ -1,326 +1,591 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
 		<meta property="og:title" content="PDX Transit for iOS & watchOS" />
 		<meta property="og:type"  content="website" />
-		<meta property="og:image" content="https://marioaguzman.github.io/pdxtransit/ios/images/og_img_pdxt_ios.png" />
+		<meta property="og:image" content="https://marioaguzman.github.io/pdxtransit/ios/images/link_preview.png" />
 		<meta property="og:description" content="Discover and download PDX Transit for iOS & watchOS." />
 		<meta property="og:site_name" content="marioaguzman.github.io" />
 		<meta property="og:url" content="https://marioaguzman.github.io/pdxtransit/ios/" />
-		
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@PDXTransitApp">
 		<meta name="twitter:creator" content="@MarioGuzman">
 		<meta name="twitter:title" content="PDX Transit for iOS & watchOS">
 		<meta name="twitter:description" content="Discover and download PDX Transit for iOS & watchOS.">
-		<meta name="twitter:image" content="https://marioaguzman.github.io/pdxtransit/ios/images/og_img_pdxt_ios.png">
-		
+		<meta name="twitter:image" content="https://marioaguzman.github.io/pdxtransit/ios/images/link_preview.png">
 		<title>PDX Transit for iOS & watchOS</title>
+		<meta name="description" content="PDX Transit for iOS and watchOS provides arrival times, service alerts, and trip itineraries using TriMet in Portland, OR." />
+		<meta name="keywords" content="pdx, portland, oregon, trimet, public transit, pdx transit, iOS, watchOS, iPadOS, arrival times, trip planner, service alerts, portland streetcar, wes, max" />
+		<meta name="author" content="Mario Guzman" />
 	</head>
-
 	<body>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- START Header Nav. -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+				aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>MUSIC</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Overview</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>&emsp;Music Widget</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>&emsp;Music MiniPlayer</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>&emsp;Music Remote</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/quicktune/"><b>&emsp;QuickTune </b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>&emsp;PDX Transit </b>
+							<span>
+							<sup style="color: #bf4800;">
+							<small><b>NEW</b></small>
+							</sup>
+							</span></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>&emsp;PDX Transit</b> <small class="text-muted">for Mac</small></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>MACINTOSH</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/layoutguidelines"><b>Layout Guidelines</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/toolbarguidelines"><b>Toolbar Guidelines</b><span>
+							<sup style="color: #bf4800;">
+							<small><b>NEW</b></small>
+							</sup>
+							</span>
+							</a>
+						</div>
+					</li>
+					
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find Me</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>Professional</b></h6>
+							<a class="dropdown-item" href="https://www.linkedin.com/in/marioguzman/"><b>LinkedIn</b></a>
+							<a class="dropdown-item" href="https://github.com/marioaguzman"><b>GitHub</b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>Social</b></h6>
+							<a class="dropdown-item" href="https://mastodon.social/@marioguzman"><b>Mastodon</b></a>
+							<a class="dropdown-item" href="https://bsky.app/profile/marioguzman.bsky.social"><b>Bluesky</b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>More</b></h6>
+							<a class="dropdown-item" href="https://itunes.apple.com/profile/marioguzman"><b>Apple Music</b></a>
+							<a class="dropdown-item" href="https://bento.me/marioguzman"><b>Bento.Me</b></a>
+						</div>
+					</li>
+					
+					<!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+					<!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+				</ul>
+			</div>
+		</nav>
+		<!-- END Header Nav. -->
 		
-      <!-- START Header Nav. -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-         <a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
-            aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                     <h6 class="dropdown-header"><b>MUSIC</b></h6>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Overview</b></a>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>&emsp;Music Widget</b></a>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>&emsp;Music MiniPlayer</b></a>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>&emsp;Music Remote</b></a>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/quicktune/"><b>&emsp;QuickTune </b>
-                     <span>
-                     <sup style="color: #bf4800;">
-                     <small><b>NEW</b></small>
-                     </sup>
-                     </span></a>
-                     <div class="dropdown-divider"></div>
-                     <h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>&emsp;PDX Transit</b> <small class="text-muted">Macintosh</small></a>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>&emsp;PDX Transit</b> <small class="text-muted">iOS & watchOS</small></a>
-                  </div>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                     <h6 class="dropdown-header"><b>MACINTOSH</b></h6>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/design/layoutguidelines"><b>Layout Guidelines</b></a>
-                     <a class="dropdown-item" href="https://marioaguzman.github.io/design/toolbarguidelines"><b>Toolbar Guidelines</b><span>
-                     <sup style="color: #bf4800;">
-                     <small><b>NEW</b></small>
-                     </sup>
-                     </span>
-                     </a>
-                  </div>
-               </li>
-               <!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
-               <li class="nav-item">
-                  <a class="nav-link" href="https://www.linkedin.com/in/marioguzman/">Contact Me</a>
-               </li>
-               <!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
-            </ul>
-         </div>
-      </nav>
-      <!-- END Header Nav. -->
-		<div class="container" style="margin-top: 7.5%; margin-bottom: 7.5%;">
+		
+		<div class="container" style="margin-top: 0pt; margin-top: 5%; margin-bottom: 5%;">
+		
+		
+		
+		
 		
 			<div class="row align-items-center">
-				<div class="col-md">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<div class="" style="text-align: center;">
 					<img 
 						srcset="
-							images/pdxt_ios_nearby_arrivals.png, 
-							images/pdxt_ios_nearby_arrivals@2x.png 2x,
-							images/pdxt_ios_nearby_arrivals@3x.png 3x" 
-							src="images/pdxt_ios_nearby_arrivals@2x.png" 
-							style="width: 100%; padding-top: 10pt; padding-bottom: 20pt;" 
-							alt="PDX Transit on iPhone 16 Pro">
-				</div>
-				<div class="col-md">
-					<img 
-						srcset="
-							../images/pdxt_splash.png, 
-							../images/pdxt_splash@2x.png 2x,
-							../images/pdxt_splash@3x.png 3x" 
-							src="../images/pdxt_splash@2x.png"
-							style="max-width: 100%;"
-							alt="PDX Transit Logo Splash">
-					<h4><span class="text-muted">for iOS & watchOS</span></h4>
-					<p style="text-wrap: balance;">PDX Transit for iOS conveniently provides you with nearby transit stops, arrival times, transit directions, and service alerts using TriMet's open data web API and includes an companion Apple Watch app.</p>
-					<p><a href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8"><img src="images/Download_on_the_App_Store_Badge_US.svg" alt="Download on the App Store"></a></p>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 10pt;">
-				<div class="col-md">
-					<img 
-						srcset="
-							images/pdxt_ios_nearby_arrivals.png, 
-							images/pdxt_ios_nearby_arrivals@2x.png 2x,
-							images/pdxt_ios_nearby_arrivals@3x.png 3x" 
-							src="images/pdxt_ios_nearby_arrivals@2x.png"
-							class="mx-auto d-block" 
-							style="width: 100%; padding-bottom: 20pt;"
-							alt="Nearby Transit Stops & Arrival Times">
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Nearby Stops & Arrival Times</h4>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<p class="text-muted" style="text-wrap: balance;">PDX Transit uses your current location to find nearby TriMet transit stops. Select a transit stop to get arrival times and other details.<br><b>Siri Shortcuts compatible</b>.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 10pt;">
-				<div class="col-md">
-					<img 
-						srcset="
-							images/pdxt_ios_bookmarks.png,
-							images/pdxt_ios_bookmarks@2x.png 2x,
-							images/pdxt_ios_bookmarks@3x.png 3x"
-							src="images/pdxt_ios_bookmarks@2x.png" 
-							class="mx-auto d-block" 
-							style="width: 100%; padding-bottom: 20pt;"
-							alt="iCloud Bookmarks">
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">iCloud Bookmarks</h4>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<p class="text-muted" style="text-wrap: balance;">Bookmark transit stops you frequent most. Bookmarks sync and stay up-to-date automatically across all your macOS, iOS, and watchOS devices.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 10pt;">
-				<div class="col-md">
-					<img 
-						srcset="
-							images/pdxt_ios_alerts.png,
-							images/pdxt_ios_alerts@2x.png 2x,
-							images/pdxt_ios_alerts@3x.png 3x"
-							src="images/pdxt_ios_alerts@2x.png" 
-							class="mx-auto d-block" 
-							style="width: 100%; padding-bottom: 20pt;"
-							alt="Service Alerts">
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Service Alerts</h4>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<p class="text-muted" style="text-wrap: balance;">View all service alerts published by TriMet grouped and sorted by transit line.<br><b>Siri Shortcuts compatible</b>.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 10pt;">
-				<div class="col-md">
-					<img 
-						srcset="
-							images/pdxt_ios_trip.png,
-							images/pdxt_ios_trip@2x.png 2x,
-							images/pdxt_ios_trip@3x.png 3x"
-							src="images/pdxt_ios_trip@2x.png" 
-							class="mx-auto d-block"
-							style="width: 100%; padding-bottom: 20pt;"
-							alt="Trip Planner">
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Trip Planner</h4>
-					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<p class="text-muted" style="text-wrap: balance;">Get transit directions using Trimet by entering either the Stop ID or an address.</p>
-					</div>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row align-items-center">
-				<div class="col-md">
-					<img srcset="images/pdxt_aw.png, images/pdxt_aw@2x.png 2x"
-						src="images/pdxt_aw@2x.png" 
+						images/pdxt_hero_ios.png, 
+						images/pdxt_hero_ios@2x.png 2x" 
+						src="images/pdxt_hero_ios@2x.png"
 						class="mx-auto d-block" 
-						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;"  
-						alt="Dark Mode">
+						style="width: 100%;"
+						alt="">
+						
+						<img srcset="../images/pdxt_splash.png,
+							../images/pdxt_splash@2x.png 2x,
+							../images/pdxt_splash@3x.png 3x"
+							src="../images/pdxt_splash@2x.png" 
+							style="max-width: 100%; margin-top: 16pt;" 
+							alt="PDX Transit Logo Splash">
+						<p class="mb-0" style="text-wrap: balance; margin-top: 6pt;"><b>Now Arriving: </b>The new PDX Transit.</p>
+						<p style="text-wrap: balance; margin-top: 4pt;">Re-written from the ground up, this new generation of PDX Transit was built on Apple's latest technologies and frameworks delivering speed, stability, and a new foundation that will carry it for the next 10 years.</p>
+						<p>
+							<a href="https://apps.apple.com/us/app/pdx-transit-next-generation/id1665339330">
+								<img src="images/Download_on_the_App_Store_Badge_US.svg" alt="Download on the App Store">
+							</a>
+						</p>
+					</div>
 				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2" style="text-align: center;">
-					<h4 class="card-text">PDX Transit for Apple Watch</h4>
-					<p class="text-muted" style="text-wrap: balance;">Access nearby transit stops, arrival times, and service alerts all from your wrist. Supports one-way <b>Handoff</b> to your iOS or macOS device & iCloud Bookmarks sync.</p>
-				</div>
-			</div>
-			
-			<hr>
-			
-			<div class="row align-items-center" style="padding-top: 10pt; padding-bottom: 10pt;">
-				<div class="col-md">
+				<div class="col-md d-none d-md-block">
+					<div>
 					<img 
 						srcset="
-							images/pdxt_ios_siri.png,
-							images/pdxt_ios_siri@2x.png 2x,
-							images/pdxt_ios_siri@3x.png 3x"
-							src="images/pdxt_ios_siri@2x.png" 
-							class="mx-auto d-block"
-							style="width: 100%; padding-bottom: 20pt;"
-							alt="Siri Shortcuts">
-				</div>
-				<div class="col-md">
-					<div class="d-flex justify-content-between align-items-center">
-						<h4 class="card-text">Siri Shortcuts</h4>
+						images/pdxt_hero_ios.png, 
+						images/pdxt_hero_ios@2x.png 2x" 
+						src="images/pdxt_hero_ios@2x.png"
+						class="mx-auto d-block" 
+						style="width: 100%;"
+						alt="">
 					</div>
-					<div class="d-flex justify-content-between align-items-center">
-						<p class="text-muted" style="text-wrap: balance;">Add a transit stop or a transit line and get arrival times or service alerts using a Siri invocation phrase.</p>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img srcset="../images/pdxt_splash.png,
+							../images/pdxt_splash@2x.png 2x,
+							../images/pdxt_splash@3x.png 3x"
+							src="../images/pdxt_splash@2x.png" 
+							style="max-width: 100%;" 
+							alt="PDX Transit Logo Splash">
+						<p class="mb-0" style="text-wrap: balance; margin-top: 6pt;"><b>Now Arriving: </b>The new PDX Transit.</p>
+						<p style="text-wrap: balance; margin-top: 4pt;">Re-written from the ground up, this new generation of PDX Transit was built on Apple's latest technologies and frameworks delivering speed, stability, and a new foundation that will carry it for the next 10 years.</p>
+						<p>
+							<a href="https://apps.apple.com/us/app/pdx-transit-next-generation/id1665339330">
+								<img src="images/Download_on_the_App_Store_Badge_US.svg" alt="Download on the App Store">
+							</a>
+						</p>
 					</div>
 				</div>
 			</div>
 			
+			
+			
+			
+			<hr style="margin: 20pt 0 30pt 0;">
+			
+			
+			
+						
+			<!-- ARRIVAL TIMES FEATURES -->
+			<div class="row align-items-center" style="margin-top: 20pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<!-- Centered for small displays -->
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_arrivals.png, 
+									images/feature_arrivals@2x.png 2x" 
+							src="images/feature_arrivals@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit Arrival Times and Look Around for Old Tow/Chinatown MAX Station.">
+						<h4 class="card-text" style="margin-top: 16pt;">Arrival Times</h4>
+						<p class="mb-0" style="text-wrap: balance;">Get real-time arrivals for any TriMet or Portland Streetcar stop through an immersive, detail-rich interface. Explore select stops with 360° panoramic views, stay informed with live service alerts from TriMet, and bookmark your favorites for instant access. You can even set 3- or 5-minute push notification reminders so you never miss your ride.</p>
+					</div>
+				</div>
+				<!-- Left-align image for large displays -->
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">Arrival Times</h4>
+						<p class="mb-0" style="text-wrap: balance;">Get real-time arrivals for any TriMet or Portland Streetcar stop through an immersive, detail-rich interface. Explore select stops with 360° panoramic views, stay informed with live service alerts from TriMet, and bookmark your favorites for instant access. You can even set 3- or 5-minute push notification reminders so you never miss your ride.</p>
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_arrivals.png, 
+									images/feature_arrivals@2x.png 2x" 
+							src="images/feature_arrivals@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit Arrival Times and Look Around for Old Tow/Chinatown MAX Station.">
+					</div>
+				</div>
+			</div>
+			<!-- END ARRIVAL TIMES FEATURES -->
+			
+			
+			
+			
+			
+			<!-- BOOKMARKS FEATURES -->
+			<div class="row align-items-center" style="margin-top: 20pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<!-- Centered for small displays -->
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_bookmarks.png, 
+									images/feature_bookmarks@2x.png 2x" 
+							src="images/feature_bookmarks@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit Bookmarks view">
+						<h4 class="card-text" style="margin-top: 16pt;">Bookmarks with iCloud sync</h4>
+						<p class="mb-0" style="text-wrap: balance;">Easily organize and manage your saved transit stops in the Bookmarks tab. Your changes automatically sync across devices with iCloud, and you can even add custom shortcut names for quick Siri access.
+</p>
+					</div>
+				</div>
+				<!-- Left-align image for large displays -->
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_bookmarks.png, 
+									images/feature_bookmarks@2x.png 2x" 
+							src="images/feature_bookmarks@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit Bookmarks view">
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">Bookmarks with iCloud sync</h4>
+						<p class="mb-0" style="text-wrap: balance;">Easily organize and manage your saved transit stops in the Bookmarks tab. Your changes automatically sync across devices with iCloud, and you can even add custom shortcut names for quick Siri access.
+</p>
+					</div>
+				</div>
+			</div>
+			<!-- END BOOKMARKS FEATURES -->
+			
+			
+			
+			
+			
+			
+			<!-- TRIP PLANNER FEATURES -->
+			<div class="row align-items-center" style="margin-top: 20pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<!-- Centered for small displays -->
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_tripplanner.png, 
+									images/feature_tripplanner@2x.png 2x" 
+							src="images/feature_tripplanner@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit with Trip Planner showing trip details from St Johns to PDX Airport.">
+						<h4 class="card-text" style="margin-top: 16pt;">Trip Planner</h4>
+						<p class="mb-0" style="text-wrap: balance;">Plan your trip easily with PDX Transit’s Trip Planner, powered by TriMet. Enter your starting point and destination to get clear, step-by-step directions. Adjust your route with custom options, use Map Search to find any location, and preview select stops in 360° panoramic views along your journey.</p>
+					</div>
+				</div>
+				<!-- Left-align image for large displays -->
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">Trip Planner</h4>
+						<p class="mb-0" style="text-wrap: balance;">Plan your trip easily with PDX Transit’s Trip Planner, powered by TriMet. Enter your starting point and destination to get clear, step-by-step directions. Adjust your route with custom options, use Map Search to find any location, and preview select stops in 360° panoramic views along your journey.</p>
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_tripplanner.png, 
+									images/feature_tripplanner@2x.png 2x" 
+							src="images/feature_tripplanner@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit with Trip Planner showing trip details from St Johns to PDX Airport.">
+					</div>
+				</div>
+			</div>
+			<!-- END TRIP PLANNER FEATURES -->
+			
+			
+			
+			
+			
+			<!-- SERVICE ALERTS FEATURES -->
+			<div class="row align-items-center" style="margin-top: 20pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<!-- Centered for small displays -->
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_alerts.png, 
+									images/feature_alerts@2x.png 2x" 
+							src="images/feature_alerts@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit with Service Alerts">
+						<h4 class="card-text" style="margin-top: 16pt;">Service Alerts</h4>
+						<p class="mb-0" style="text-wrap: balance;">Stay informed with real-time systemwide and route-specific service alerts from TriMet—all in one place. View the latest updates marked “Posted Today,” instantly translate alerts into multiple languages with on-device machine learning, and quickly filter by transit line using built-in search.
+</p>
+					</div>
+				</div>
+				<!-- Left-align image for large displays -->
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_alerts.png, 
+									images/feature_alerts@2x.png 2x" 
+							src="images/feature_alerts@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit with Service Alerts">
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">Service Alerts</h4>
+						<p class="mb-0" style="text-wrap: balance;">Stay informed with real-time systemwide and route-specific service alerts from TriMet—all in one place. View the latest updates marked “Posted Today,” instantly translate alerts into multiple languages with on-device machine learning, and quickly filter by transit line using built-in search.
+</p>
+					</div>
+				</div>
+			</div>
+			<!-- END SERVICE ALERTS FEATURES -->
+			
+			
+			
+			
+			
+			<!-- WATCH FEATURES -->
+			<div class="row align-items-center" style="margin-top: 40pt; margin-bottom: 40pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<!-- Centered for small displays -->
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_watch.png, 
+									images/feature_watch@2x.png 2x" 
+							src="images/feature_watch@2x.png"
+							class="mx-auto d-block" 
+							style="width: 85%;"
+							alt="PDX Transit running on Apple Watch">
+						<h4 class="card-text" style="margin-top: 16pt;">Apple Watch</h4>
+						<p class="mb-0" style="text-wrap: balance;">Built from the ground up, PDX Transit for Apple Watch introduces a simplified design with a clear, elegant view of upcoming arrivals.</p>
+					</div>
+				</div>
+				<!-- Left-align image for large displays -->
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">Apple Watch</h4>
+						<p class="mb-0" style="text-wrap: balance;">Built from the ground up, PDX Transit for Apple Watch introduces a simplified design with a clear, elegant view of upcoming arrivals.</p>
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_watch.png, 
+									images/feature_watch@2x.png 2x" 
+							src="images/feature_watch@2x.png"
+							class="mx-auto d-block" 
+							style="width: 85%;"
+							alt="PDX Transit running on Apple Watch">
+					</div>
+				</div>
+			</div>
+			<!-- END WATCH FEATURES -->
+			
+			
+			
+			
+			
+			<!-- SHORTCUTS FEATURES -->
+			<div class="row align-items-center" style="margin-top: 20pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<!-- Centered for small displays -->
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_shortcuts.png, 
+									images/feature_shortcuts@2x.png 2x" 
+							src="images/feature_shortcuts@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit App Shortcuts">
+						<h4 class="card-text" style="margin-top: 16pt;">Service Alerts</h4>
+						<p class="mb-0" style="text-wrap: balance;">PDX Transit App Shortcuts let you check arrival times and service alerts for your bookmarked stops—without even opening the app. Access them instantly from your Home Screen, with Siri or HomePod, or as part of your Shortcut workflows.
+</p>
+					</div>
+				</div>
+				<!-- Left-align image for large displays -->
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_shortcuts.png, 
+									images/feature_shortcuts@2x.png 2x" 
+							src="images/feature_shortcuts@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit App Shortcuts">
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">App Shortcuts</h4>
+						<p class="mb-0" style="text-wrap: balance;">PDX Transit App Shortcuts let you check arrival times and service alerts for your bookmarked stops—without even opening the app. Access them instantly from your Home Screen, with Siri or HomePod, or as part of your Shortcut workflows.</p>
+					</div>
+				</div>
+			</div>
+			<!-- END SHORTCUTS FEATURES -->
+			
+			
+			
+			
+			
+			<!-- HOMEPOD FEATURES -->
+			<div class="row align-items-center" style="margin-top: 40pt; margin-bottom: 40pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_homepod.png, 
+									images/feature_homepod@2x.png 2x" 
+							src="images/feature_homepod@2x.png"
+							class="mx-auto d-block" 
+							style="width: 85%; margin-top: -20pt;"
+							alt="PDX Transit announcing arrival times on HomePod.">
+						<h4 class="card-text" style="margin-top: 16pt;">TriMet on HomePod</h4>
+						<p class="mb-0" style="text-wrap: balance;">Invoke your transit stop app shortcuts with Siri to get TriMet arrival times right from your HomePod.</p>
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">TriMet on HomePod</h4>
+						<p class="mb-0" style="text-wrap: balance;">Invoke your transit stop app shortcuts with Siri to get TriMet arrival times right from your HomePod.</p>
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_homepod.png, 
+									images/feature_homepod@2x.png 2x" 
+							src="images/feature_homepod@2x.png"
+							class="mx-auto d-block" 
+							style="width: 85%; margin-top: -10pt;"
+							alt="PDX Transit announcing arrival times on HomePod.">
+					</div>
+				</div>
+			</div>
+			<!-- END HOMEPOD FEATURES -->
+			
+			
+			
+			
+			
 			<hr>
+			
+			
+			
+			
 			
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2" style="text-align: center;">
-					<h4>Ready to give it a try?</h4>
-					<p style="text-wrap: balance;">Check it out first hand and see what makes PDX Transit an incredibly useful tool for those who use public transit in Portland, Oregon.</p>
-					<p><a href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8"><img src="images/Download_on_the_App_Store_Badge_US.svg" alt="Download on the App Store"></a></p>
-					<small class="text-muted">Looking for more info? Check out our <a href="privacypolicy.html">Privacy Policy</a>.</small>
+					<h4>Download for free today!</h4>
+					<p>
+						<a href="https://apps.apple.com/us/app/pdx-transit-next-generation/id1665339330">
+							<img src="images/Download_on_the_App_Store_Badge_US.svg" alt="Download on the App Store">
+						</a>
+					</p>
+					<small class="text-muted">Read our <a href="privacypolicy.html">Privacy Policy</a>.</small>
 				</div>
 			</div>
 			
+			
 			<hr>
+			
 			
 			<div class="row align-items-center">
-				<div class="col-md-8">
-					<img srcset="../macos/images/pdxt_mbp_14.png, ../macos/images/pdxt_mbp_14@2x.png 2x" 
-						src="../macos/images/pdxt_mbp_14@2x.png" 
-						style="width: 100%; padding-top: 20pt; padding-bottom: 20pt;" 
-						alt="PDX Transit on MacBook Pro">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<div class="" style="text-align: center;">
+					<img 
+						srcset="
+							../macos/images/pdxt_mbp_14.png, 
+							../macos/images/pdxt_mbp_14@2x.png 2x" 
+							src="../macos/images/pdxt_mbp_14@2x.png" 
+							style="max-width: 80%; padding-top: 20pt; padding-bottom: 10pt;" 
+							alt="PDX Transit on MacBook Pro">
+						<br>
+						<small style="color: #bf4800;"><b>UPDATED</b></small>
+						<h4>PDX Transit <span class="text-muted"> for macOS</span></h4>
+						<p style="text-wrap: balance;">Get nearby TriMet transit stops, arrival times, service alerts, and more — right on your Mac.</p>
+						<p><a href="https://marioaguzman.github.io/pdxtransit/macos/">Learn more about PDX Transit for macOS</a></p>
+					</div>
 				</div>
-				<div class="col-md-4" style="text-align: center;">
-					<h4>PDX Transit for Macintosh</h4>
-					<p style="text-wrap: balance;">TriMet arrival times, service alerts, and iCloud-synced Bookmarks on your Mac.<br>
-						<a href="https://marioaguzman.github.io/pdxtransit/macos/">Learn more about PDX Transit for Mac</a></p>
+				<div class="col-md-7 d-none d-md-block">
+					<div class="" style="text-align: center;">
+					<img 
+						srcset="
+							../macos/images/pdxt_mbp_14.png, 
+							../macos/images/pdxt_mbp_14@2x.png 2x" 
+							src="../macos/images/pdxt_mbp_14@2x.png" 
+							style="max-width: 80%; padding-top: 20pt; padding-bottom: 20pt;" 
+							alt="PDX Transit on MacBook Pro">
+					</div>
+				</div>
+				<div class="col-md-5 d-none d-md-block">
+					<div>
+					<small style="color: #bf4800;"><b>UPDATED</b></small>
+						<h4>PDX Transit <span class="text-muted"> for macOS</span></h4>
+						<p style="text-wrap: balance;">Get nearby TriMet transit stops, arrival times, service alerts, and more — right on your Mac.</p>
+						<p><a href="https://marioaguzman.github.io/pdxtransit/macos/">Learn more about PDX Transit for macOS</a></p>
+					</div>
 				</div>
 			</div>
+			
+			
+			
+			
+			
 			
 			<hr>
-			
 			<div class="row">
 				<div class="col-md">
-					<small class="text-muted">iPhone, Apple Watch, Siri, iCloud, Handoff, Mac, Macintosh, macOS, and Swift are registered trademarks of Apple Inc.</small>
+					<small class="text-muted">iPhone, iPad, Apple Watch, Siri, iCloud, HomePod, and Swift are registered trademarks of Apple Inc.</small>
 				</div>
 			</div>
-         <!-- Footer Start -->
-         <div class="row">
-            <div class="col-md">
-               <small><b>© 2019-2025 Mario A Guzman</b></small>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md">
-               <small><b>Personal</b></small>
-               <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
-                  <li><a class="text-muted" href="https://bsky.app/profile/marioguzman.bsky.social">Bluesky</a></li>
-                  <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
-                  <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
-                  <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
-                  <li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
-               </ul>
-            </div>
-            <div class="col-sm">
-               <small><b>Projects</b></small>
-               <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/">QuickTune</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Mac</small></a></li>
-               </ul>
-            </div>
-            <div class="col-sm">
-               <small><b>Downloads</b></small>
-               <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg">QuickTune <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
-               </ul>
-            </div>
-         </div>
-         <!-- Footer End -->
+			
+			
+			
+			
+			
+			<!-- Footer Start -->
+			<div class="row">
+				<div class="col-md">
+					<small><b>© 2019-2025 Mario A Guzman</b></small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
+					<small><b>Personal</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
+						<li><a class="text-muted" href="https://bsky.app/profile/marioguzman.bsky.social">Bluesky</a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+						<li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+						<li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+						<li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<small><b>Apps</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/">QuickTune</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Mac</small></a></li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<small><b>Downloads</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg">QuickTune <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Footer End -->
 		</div>
 	</body>
 </html>
