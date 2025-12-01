@@ -20,7 +20,7 @@
 		<meta name="twitter:image" content="https://marioaguzman.github.io/pdxtransit/ios/images/link_preview.png">
 		<title>PDX Transit for iOS & watchOS</title>
 		<meta name="description" content="PDX Transit for iOS and watchOS provides arrival times, service alerts, and trip itineraries using TriMet in Portland, OR." />
-		<meta name="keywords" content="pdx, portland, oregon, trimet, public transit, pdx transit, iOS, watchOS, iPadOS, arrival times, trip planner, service alerts, portland streetcar, wes, max" />
+		<meta name="keywords" content="pdx, portland, oregon, trimet, public transit, pdx transit, iOS, watchOS, iPadOS, arrival times, trip planner, service alerts, portland streetcar, wes, max, PSU" />
 		<meta name="author" content="Mario Guzman" />
 	</head>
 	<body>
@@ -123,6 +123,7 @@
 							alt="PDX Transit Logo Splash">
 						<p class="mb-0" style="text-wrap: balance; margin-top: 6pt;"><b>Now Arriving: </b>The new PDX Transit.</p>
 						<p style="text-wrap: balance; margin-top: 4pt;">Re-written from the ground up, this new generation of PDX Transit was built on Apple's latest technologies and frameworks delivering speed, stability, and a new foundation that will carry it for the next 10 years.</p>
+						<p><b>Version 1.1 featuring Live Activities now available!</b></p>
 						<p>
 							<a href="https://apps.apple.com/us/app/pdx-transit-next-generation/id1665339330">
 								<img src="images/Download_on_the_App_Store_Badge_US.svg" alt="Download on the App Store">
@@ -152,6 +153,7 @@
 							alt="PDX Transit Logo Splash">
 						<p class="mb-0" style="text-wrap: balance; margin-top: 6pt;"><b>Now Arriving: </b>The new PDX Transit.</p>
 						<p style="text-wrap: balance; margin-top: 4pt;">Re-written from the ground up, this new generation of PDX Transit was built on Apple's latest technologies and frameworks delivering speed, stability, and a new foundation that will carry it for the next 10 years.</p>
+						<p><b>Version 1.1 featuring Live Activities now available!</b></p>
 						<p>
 							<a href="https://apps.apple.com/us/app/pdx-transit-next-generation/id1665339330">
 								<img src="images/Download_on_the_App_Store_Badge_US.svg" alt="Download on the App Store">
@@ -427,28 +429,67 @@
 			
 			
 			
-			<!-- HOMEPOD FEATURES -->
-			<div class="row align-items-center" style="margin-top: 40pt; margin-bottom: 40pt;">
+			
+			<!-- LIVE ACTIVITY FEATURES -->
+			<div class="row align-items-center" style="margin-top: 20pt;">
 				<div class="col-lg-8 offset-lg-2 d-md-none">
 					<br>
+					<!-- Centered for small displays -->
+					<div class="" style="text-align: center;">
+						<img 
+							srcset="images/feature_live_activities.png, 
+									images/feature_live_activities@2x.png 2x" 
+							src="images/feature_live_activities@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit with Live Activities on Lock Screen.">
+						<h4 class="card-text" style="margin-top: 16pt;">Live Activities</h4>
+						<p class="mb-0" style="text-wrap: balance;">Keep an eye on your TriMet or Portland Streetcar arrival with Live Activities for their estimated arrival time on iPhone and Apple Watch. Tapping on the Live Activity opens the app to that specific transit stop.</p>
+					</div>
+				</div>
+				<!-- Left-align image for large displays -->
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">Live Activities</h4>
+						<p class="mb-0" style="text-wrap: balance;">Keep an eye on your arrival with Live Activities for their estimated arrival times on iPhone and Apple Watch. Tapping on the Live Activity opens the app to that specific transit stop.</p>
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<img 
+							srcset="images/feature_live_activities.png, 
+									images/feature_live_activities@2x.png 2x" 
+							src="images/feature_live_activities@2x.png"
+							class="mx-auto d-block" 
+							style="width: 100%;"
+							alt="PDX Transit with Live Activities on Lock Screen.">
+					</div>
+				</div>
+			</div>
+			<!-- END LIVE ACTIVITY FEATURES -->
+			
+			
+			
+			
+			
+			<!-- HOMEPOD FEATURES -->
+			<div class="row align-items-center" style="margin-top: 20pt;">
+				<div class="col-lg-8 offset-lg-2 d-md-none">
+					<br>
+					<!-- Centered for small displays -->
 					<div class="" style="text-align: center;">
 						<img 
 							srcset="images/feature_homepod.png, 
 									images/feature_homepod@2x.png 2x" 
 							src="images/feature_homepod@2x.png"
 							class="mx-auto d-block" 
-							style="width: 85%; margin-top: -20pt;"
+							style="width: 85%; margin-top: -25pt;"
 							alt="PDX Transit announcing arrival times on HomePod.">
 						<h4 class="card-text" style="margin-top: 16pt;">TriMet on HomePod</h4>
 						<p class="mb-0" style="text-wrap: balance;">Invoke your transit stop app shortcuts with Siri to get TriMet arrival times right from your HomePod.</p>
 					</div>
 				</div>
-				<div class="col-md d-none d-md-block">
-					<div>
-						<h4 class="card-text">TriMet on HomePod</h4>
-						<p class="mb-0" style="text-wrap: balance;">Invoke your transit stop app shortcuts with Siri to get TriMet arrival times right from your HomePod.</p>
-					</div>
-				</div>
+				<!-- Left-align image for large displays -->
 				<div class="col-md d-none d-md-block">
 					<div>
 						<img 
@@ -456,8 +497,14 @@
 									images/feature_homepod@2x.png 2x" 
 							src="images/feature_homepod@2x.png"
 							class="mx-auto d-block" 
-							style="width: 85%; margin-top: -10pt;"
+							style="width: 85%; margin-top: -20pt; margin-bottom: -12pt;"
 							alt="PDX Transit announcing arrival times on HomePod.">
+					</div>
+				</div>
+				<div class="col-md d-none d-md-block">
+					<div>
+						<h4 class="card-text">TriMet on HomePod</h4>
+						<p class="mb-0" style="text-wrap: balance;">Invoke your transit stop app shortcuts with Siri to get TriMet arrival times right from your HomePod.</p>
 					</div>
 				</div>
 			</div>
