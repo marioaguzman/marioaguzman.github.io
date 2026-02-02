@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="custom.css">
+      <meta property="og:title" content="Sidebar Guidelines">
+      <meta property="og:type"  content="article">
+      <meta property="og:image" content="https://marioaguzman.github.io/design/sidebarguidelines/images/ogimage.png">
+      <meta property="og:description" content="The following sections are general guidelines that describe fundamental Sidebar (also known as a Source List) design principles for Mac applications.">
+      <meta property="og:site_name" content="Mario Guzman">
+      <meta property="og:url" content="marioaguzman.github.io/design/sidebarguidelines" />
+      <meta property="og:locale" content="en_US" />
+      <meta name="fediverse:creator" content="@marioguzman@mastodon.social" />
+      <title>Sidebar Guidelines</title>
+   </head>
+   <body>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- START Header Nav. -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+				aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>MUSIC</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Overview</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>&emsp;Music Widget</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>&emsp;Music MiniPlayer</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>&emsp;Music Remote</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/quicktune/"><b>&emsp;QuickTune </b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>&emsp;PDX Transit </b>
+							<span>
+							<sup style="color: #bf4800;">
+							<small><b>NEW</b></small>
+							</sup>
+							</span></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>&emsp;PDX Transit</b> <small class="text-muted">for Mac</small></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>Macintosh</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/layoutguidelines"><b>Layout Guidelines</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/toolbarguidelines"><b>Toolbar Guidelines</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/sidebarguidelines"><b>Sidebar Guidelines</b><span>
+							<sup style="color: #bf4800;">
+							<small><b> NEW</b></small>
+							</sup>
+							</span>
+							</a>
+						</div>
+					</li>
+					
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find Me</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>Professional</b></h6>
+							<a class="dropdown-item" href="https://www.linkedin.com/in/marioguzman/"><b>LinkedIn</b></a>
+							<a class="dropdown-item" href="https://github.com/marioaguzman"><b>GitHub</b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>Social</b></h6>
+							<a class="dropdown-item" href="https://mastodon.social/@marioguzman"><b>Mastodon</b></a>
+							<a class="dropdown-item" href="https://bsky.app/profile/marioguzman.bsky.social"><b>Bluesky</b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>More</b></h6>
+							<a class="dropdown-item" href="https://itunes.apple.com/profile/marioguzman"><b>Apple Music</b></a>
+							<a class="dropdown-item" href="https://bento.me/marioguzman"><b>Bento.Me</b></a>
+						</div>
+					</li>
+					
+					<!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+					<!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+				</ul>
+			</div>
+		</nav>
+		<!-- END Header Nav. -->
+      <div class="container"  style="margin-top: 5%; margin-bottom: 5%;">
+         <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+               <h1>Sidebar Guidelines</h1>
+               <p>The following sections are general guidelines that describe fundamental Sidebar (also known as a Source List) design principles for Mac applications. Following these guidelines will help you create functional and consistent Sidebar implementations that are easy for Mac users to understand and use.</p>
+               <img srcset="images/sidebar_diagram@2x.png, 
+                  images/sidebar_diagram@2x.png 2x" 
+                  src="images/sidebar_diagram@2x.png" 
+                  style="width: 100%; max-width: 832px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+               <br>
+               
+                  <h2>Table of Contents</h2>
+                  <ul>
+                  	<li><a href="#Introduction">Introduction</a></li>
+                  	<li><a href="#DesigningASidebar">Designing a Sidebar</a></li>
+                  		<ul>
+                  			<li><a href="#ToolbarArea">Toolbar Area</a></li>
+                  			<li><a href="#BottomBar">Bottom Bar</a></li>
+                  			<li><a href="#ContextualMenus">Contextual Menus</a></li>
+                  			<li><a href="#SearchBar">Search Bar</a></li>
+                  		</ul>
+                  	<li><a href="#DataOrganization">Data Organization</a></li>
+                  	<li><a href="#AdditionalConsiderations">Additional Considerations</a></li>
+                  </ul>
+                  
+               <h2 id="Introduction">Introduction</h2>
+               
+               <p>A sidebar (source list) is an area of a window, usually set off by a movable splitter, that provides users with a way to navigate or select objects in the app. Typically, users select an item in the sidebar that they act on in the main (details) part of the window.</p>
+               <p>In simpler terms, users select an item in the sidebar and it will display its main content in the details side of the window. Sidebars are typically found in what are "shoebox" applications and not typically found or used in Document-based applications.</p>
+               
+               <h2 id="DesigningASidebar">Designing a Sidebar</h2>
+               
+               <p>Consider using a sidebar to give users a file-system abstraction. A sidebar's content can shield users from the details of file and document management and instead allow them to work with a user-customizable, app-specific container that holds related items.</p>
+               <p>For example, Music (Apple Music app), allows users to ignore the file-system locations of their individual songs and instead work with Libraries and Playlists. </p>
+               
+               <h3 id="ToolbarArea">Toolbar Area</h3>
+               
+               <p>Since Sidebars are now full-height of the window they reside in, their toolbar width can be variable depending on how the user resizes the sidebar. Because of this, it is difficult to know up-front how many toolbar items can be shown.</p>
+               
+               <p>If you place more than the automatic Show/Hide Sidebar toggle toolbar button, you risk them "hiding" in the overflow menu on the right-end of the window. This may confuse your users, especially if these buttons are important to the addition or navigation of content in your application.</p>
+               <img srcset="images/overflow@2x.png, 
+                  images/overflow@2x.png 2x" 
+                  src="images/overflow@2x.png" 
+                  style="width: 100%; max-width: 832px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+                  
+               <p><b>Do not</b> place additional toolbar items in the sidebar column. If you need actions that pertain to the sidebar or the content presented in the sidebar, use a <b>Bottom Bar</b> in the sidebar instead.</p>
+               
+               <h3 id="BottomBar">Bottom Bar</h3>
+               
+               <p>The <b>Bottom Bar</b> is a strip that runs along the bottom edge of the sidebar that can contain controls or application status. You might include items like: </p>
+               <ul>
+               		<li>Add an item</li>
+               		<li>Remove an item</li>
+               		<li>Edit an item</li>
+               		<li>Get Info on an item</li>
+               		<li>Refresh main content</li>
+               		<li>Sync or sync status</li>
+               </ul>
+               
+               <img srcset="images/bottom_bar_items@2x.png, 
+                  images/bottom_bar_items@2x.png 2x" 
+                  src="images/bottom_bar_items@2x.png" 
+                  style="width: 100%; max-width: 832px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+               
+               <p class="small" style="margin-top: -10pt; text-align: center">A Sidebar's Bottom Bar displaying common actions for the application.</p>
+               
+               <img srcset="images/bottom_bar_sync@2x.png, 
+                  images/bottom_bar_sync@2x.png 2x" 
+                  src="images/bottom_bar_sync@2x.png" 
+                  style="width: 100%; max-width: 832px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+               
+               <p class="small" style="margin-top: -10pt; text-align: center">A Sidebar's Bottom Bar displaying application sync status.</p>
+               
+               <p>For actions needed to be placed in the Toolbar area for the sidebar, add them to the Bottom Bar of the sidebar instead. SwiftUI and AppKit provide APIs to simplify adoption of Bottom Bars in Sidebars.</p>
+               
+               <ul>
+               		<li>If you're using AppKit, refer to both <a href="https://developer.apple.com/documentation/appkit/nssplitviewitemaccessoryviewcontroller?changes=_2_8&language=objc">NSSplitViewItemAccessoryViewController</a> and <a href="https://developer.apple.com/documentation/appkit/nssplitviewitem/addbottomalignedaccessoryviewcontroller(_:)">addBottomAlignedAccessoryViewController(_:)</a> documentation.</li>
+               		<li>If you're using SwiftUI's <a href="https://developer.apple.com/documentation/SwiftUI/TabView">TabView</a>, refer to the <a href="https://developer.apple.com/documentation/swiftui/view/tabviewsidebarbottombar(content:)">tabViewSidebarBottomBar(content:)</a> documentation.</li>
+               		<li>If you're using SwiftUI's List or Scroll views, refer to the <a href="https://developer.apple.com/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:)">safeAreaBar(edge:alignment:spacing:content:)</a> documentation.</li>
+               </ul>
+               
+               <h3 id="ContextualMenus">Contextual Menus</h3>
+               
+               <p>Further customization of Sidebar items can be done with Contextual Menus (right-click menus). This is an excellent option for items that may be important but not important enough to display in the Bottom Bar.</p>
+               
+               <p>For important or commonly-used actions, include them in both the Bottom Bar as a button action and in the Contextual Menu as a menu item option.</p>
+               
+               <img srcset="images/contextual_menu@2x.png, 
+                  images/contextual_menu@2x.png 2x" 
+                  src="images/contextual_menu@2x.png" 
+                  style="width: 100%; max-width: 832px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+                  
+               <h3 id="SearchBar">Search Bar</h3>
+               
+               <p>If you anticipate your users may have many items in their sidebar, consider adding a Search Bar at the top to filter down on the items in the list. </p>
+               
+               <img srcset="images/searchbar_alt@2x.png, 
+                  images/searchbar_alt@2x.png 2x" 
+                  src="images/searchbar_alt@2x.png" 
+                  style="width: 100%; max-width: 832px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+               
+               <p>Refer to <a href="https://developer.apple.com/documentation/SwiftUI/Adding-a-search-interface-to-your-app">Adding a search interface to your app</a> on Apple's Developer website for documentation and sample code.</p>
+                  
+               <h2 id="DataOrganization">Data Organization</h2>
+               
+               <p>Avoid displaying more than two levels of hierarchy in a sidebar. If the data you need to display is organized in more than two levels of hierarchy, create a second source list between the app’s main sidebar and the details view. The Notes app has this configuration.</p>
+               
+               <p>If your app is centered on the navigation of deeply nested objects, consider using a browser view instead of multiple source lists.</p>
+               
+               <p>If necessary, display titles inside the Sidebar. Sidebars don’t generally have headers but they can display them to distinguish subsets or logical groupings of data. For example, in the screenshots used for this document, user-defined folders have their own visual grouping with a title a header title of "Folders."</p>
+               
+               <h2 id="AdditionalConsiderations">Additional Considerations</h2>
+               <ul>
+               		<li>Allow users to customize the contents of a Sidebar. It is best when users can decide what items or content is most important to them.</li>
+               		<li>Allow for as much standard API behavior since a user can change the size of Sidebar items in System Settings to Small, Medium, Large.</li>
+               		<li>Always include a <b>Show/Hide Sidebar</b> menu item in your <b>View</b> menu of your app’s menu bar.</li>
+               </ul>
+               
+               
+               <br>
+               
+            </div>
+         </div>
+         
+         
+         <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+               <div class="card">
+                  <!-- <div class="card-header">
+                     Have Suggestions?
+                     </div> -->
+                  <div class="card-body">
+                     <p class="card-text">
+                        I enjoy creating content that helps other Mac developers ship their best possible work. If you find this content useful and if you're able to, consider perhaps buying me a coffee. But if not, no worries! I'd appreciate you at least sharing this document with your fellow Mac developers posting it on social media! Thank you! 
+                     </p>
+                     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="marioguzman" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+         
+         <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+               <div class="card">
+                  <!-- <div class="card-header">
+                     Have Suggestions?
+                     </div> -->
+                  <div class="card-body">
+                     <h5 class="card-title">Have Suggestions?</h5>
+                     <p class="card-text">
+                        Reach out via Mastodon if you have suggestions that would improve this article. 
+                     </p>
+                     <a href="https://mastodon.social/@marioguzman" class="btn-sm btn-primary">Mastodon</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+         
+         <hr>
+         <div class="row">
+            <div class="col-md">
+               <small class="text-muted">Mac, Macintosh, and macOS are registered trademarks of Apple Inc.</small>
+            </div>
+         </div>
+         <!-- Footer Start -->
+         <div class="row">
+            <div class="col-md">
+               <small><b>© 2019-2026 Mario A Guzman</b></small>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md">
+               <small><b>Personal</b></small>
+               <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
+                  <li><a class="text-muted" href="https://bsky.app/profile/marioguzman.bsky.social">Bluesky</a></li>
+                  <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+                  <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+                  <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+                  <li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
+               </ul>
+            </div>
+            <div class="col-sm">
+               <small><b>Apps</b></small>
+               <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Mac</small></a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/">QuickTune</a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Mac</small></a></li>
+               </ul>
+            </div>
+            <div class="col-sm">
+               <small><b>Downloads</b></small>
+               <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Mac</small></a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Mac</small></a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Mac</small></a></li>
+                  <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg">QuickTune <small class="text-muted">Mac</small></a></li>
+                  <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Mac</small></a></li>
+                  <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+               </ul>
+            </div>
+         </div>
+         <!-- Footer End -->
+      </div>
+   </body>
+</html>
