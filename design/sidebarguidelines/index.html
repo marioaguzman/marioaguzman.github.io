@@ -10,6 +10,7 @@
       <meta property="og:type"  content="article">
       <meta property="og:image" content="https://marioaguzman.github.io/design/sidebarguidelines/images/ogimage.png">
       <meta property="og:description" content="The following sections are general guidelines that describe fundamental Sidebar (also known as a Source List) design principles for Mac applications.">
+      <meta name="keywords" content="macOS, HIG, Human Interface Guidelines, Sidebar, Source List, UI, UX, Design, AppKit, SwiftUI, Liquid Glass" />
       <meta property="og:site_name" content="Mario Guzman">
       <meta property="og:url" content="marioaguzman.github.io/design/sidebarguidelines" />
       <meta property="og:locale" content="en_US" />
@@ -204,15 +205,15 @@
                
                <p>If your app is centered on the navigation of deeply nested objects, consider using a browser view instead of multiple source lists.</p>
                
-               <p>If necessary, display titles inside the Sidebar. Sidebars don’t generally have headers but they can display them to distinguish subsets or logical groupings of data. For example, in the screenshots used for this document, user-defined folders have their own visual grouping with a title a header title of "Folders."</p>
+               <p>If necessary, display titles inside the Sidebar. Sidebars don’t generally have headers but they can display them to distinguish subsets or logical groupings of data. For example, in the screenshots used for this document, user-defined folders have their own visual grouping with a header title of "Folders."</p>
                
                <h2 id="AdditionalConsiderations">Additional Considerations</h2>
                <ul>
                		<li>Allow users to customize the contents of a Sidebar. It is best when users can decide what items or content is most important to them.</li>
+               		<li>Give your sidebar sensible minimum, maximum, and default widths. A majority of sidebars do not need to be expanded nowhere as wide as its window.</li>
+               		<li>Include a <b>Show/Hide Sidebar</b> menu item in your <b>View</b> menu of your app’s menu bar.</li>
                		<li>Allow for as much standard API behavior since a user can change the size of Sidebar items in System Settings to Small, Medium, Large.</li>
-               		<li>Always include a <b>Show/Hide Sidebar</b> menu item in your <b>View</b> menu of your app’s menu bar.</li>
                </ul>
-               
                
                <br>
                
