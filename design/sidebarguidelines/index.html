@@ -170,9 +170,9 @@
                <p>For actions needed to be placed in the Toolbar area for the sidebar, add them to the Bottom Bar of the sidebar instead. SwiftUI and AppKit provide APIs to simplify adoption of Bottom Bars in Sidebars.</p>
                
                <ul>
-               		<li>If you're using AppKit, refer to both <a href="https://developer.apple.com/documentation/appkit/nssplitviewitemaccessoryviewcontroller?changes=_2_8&language=objc">NSSplitViewItemAccessoryViewController</a> and <a href="https://developer.apple.com/documentation/appkit/nssplitviewitem/addbottomalignedaccessoryviewcontroller(_:)">addBottomAlignedAccessoryViewController(_:)</a> documentation.</li>
-               		<li>If you're using SwiftUI's <a href="https://developer.apple.com/documentation/SwiftUI/TabView">TabView</a>, refer to the <a href="https://developer.apple.com/documentation/swiftui/view/tabviewsidebarbottombar(content:)">tabViewSidebarBottomBar(content:)</a> documentation.</li>
-               		<li>If you're using SwiftUI's List or Scroll views, refer to the <a href="https://developer.apple.com/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:)">safeAreaBar(edge:alignment:spacing:content:)</a> documentation.</li>
+               		<li>If you're using AppKit, refer to both <a href="https://developer.apple.com/documentation/appkit/nssplitviewitemaccessoryviewcontroller?changes=_2_8&language=objc"><code>NSSplitViewItemAccessoryViewController</code></a> and <a href="https://developer.apple.com/documentation/appkit/nssplitviewitem/addbottomalignedaccessoryviewcontroller(_:)"><code>addBottomAlignedAccessoryViewController(_:)</code></a> documentation.</li>
+               		<li>If you're using SwiftUI's <a href="https://developer.apple.com/documentation/SwiftUI/TabView"><code>TabView</code></a>, refer to the <a href="https://developer.apple.com/documentation/swiftui/view/tabviewsidebarbottombar(content:)"><code>tabViewSidebarBottomBar(content:)</code></a> documentation.</li>
+               		<li>If you're using SwiftUI's <code>List</code> or <code>ScrollView</code>, refer to the <a href="https://developer.apple.com/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:)"><code>safeAreaBar(edge:alignment:spacing:content:)</code></a> documentation.</li>
                </ul>
                
                <h3 id="ContextualMenus">Contextual Menus</h3>
@@ -213,9 +213,16 @@
                		<li>Give your sidebar sensible minimum, maximum, and default widths. A majority of sidebars do not need to be expanded nowhere as wide as its window.</li>
                		<li>Include a <b>Show/Hide Sidebar</b> menu item in your <b>View</b> menu of your app’s menu bar.</li>
                		<li>Allow for as much standard API behavior since a user can change the size of Sidebar items in System Settings to Small, Medium, Large.</li>
+               		<li>If you're using AppKit, enable the text field's <a href="https://developer.apple.com/documentation/appkit/nscontrol/allowsexpansiontooltips"><code>allowsExpansionToolTips</code></a>. If the string in the label is truncated due to the sidebar's narrow width, an expanesion tooltip appears on hover revealing the entirety of the string.</li>
                </ul>
                
-               <br>
+               <img srcset="images/expansiontooltips@2x.png, 
+                  images/expansiontooltips@2x.png 2x" 
+                  src="images/expansiontooltips@2x.png" 
+                  style="width: 100%; max-width: 832px; display: block; margin-left: auto; margin-right: auto;" 
+                  alt="">
+               
+               <p><b>Note:</b> If you're using SwiftUI, you'll have to wrap <code>NSTextField</code> inside an <code>NSViewRepresentable</code> to enable this behavior.</p><br>
                
             </div>
          </div>
