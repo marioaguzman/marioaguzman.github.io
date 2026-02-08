@@ -126,6 +126,13 @@
                <p>Consider using a sidebar to give users a file-system abstraction. A sidebar's content can shield users from the details of file and document management and instead allow them to work with a user-customizable, app-specific container that holds related items.</p>
                <p>For example, Music (Apple Music app), allows users to ignore the file-system locations of their individual songs and instead work with Libraries and Playlists. </p>
                
+               	<div class="alert alert-primary" role="alert">
+               		<h4 class="alert-heading">macOS Tahoe updates</h4>
+  					<p class="mb-0">In macOS Tahoe, the default tint for icons in the sidebar is now black in light mode and white in dark mode. In previous versions of macOS, the icons's tint color was the app's <code>.accentColor</code>.</p>
+  					<p> </p>
+  					<p class="mb-0">Since the translucent glass sidebar now visually floating over the main content, any tinted icons would clash with the sidebar's colorful background. This visual change is why accent color icons should be avoided.</p>
+				</div>
+               
                <h3 id="ToolbarArea">Toolbar Area</h3>
                
                <p>Since Sidebars are now full-height of the window they reside in, their toolbar width can be variable depending on how the user resizes the sidebar. Because of this, it is difficult to know up-front how many toolbar items can be shown.</p>
