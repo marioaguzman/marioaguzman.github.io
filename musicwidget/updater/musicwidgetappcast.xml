@@ -6,6 +6,18 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.29.1</title><description><![CDATA[
+		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
+		<p><b>New in this update:</b></p>
+                <ul style="font-size:10pt;"><li>Support for macOS Tahoe and Apple Music 1.6</li><li>App menu item icons (only in macOS 26.0 and newer)</li><li>Clicking on the Dock icon while the app is running will bring it to the forefront but also perform a shake animation.</li><li>Listening to live radio now displays a new wave animation in the LCD indicating Live streaming.</li><li>Music Widget is 100% "hand-made." No use of AI went into designing, developing, or testing Music Widget.</li></ul>
+            ]]></description>
+            <pubDate>Thu, 12 Feb 2026 19:59:10 -0800</pubDate>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>1.29.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4827760" type="application/octet-stream" sparkle:edSignature="EWlR7sJxQbDc/FwoUbN5aIRfr0+Bax2zJpKcq/Ay0qgERop0XKj7Ws86uu5u11QFcBvHQyGbz00G3FFAMxOYAg=="/>
+        </item>
+        <item>
             <title>1.29</title>
             <description><![CDATA[
 		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
@@ -28,28 +40,6 @@
             <sparkle:shortVersionString>1.28</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4560344" type="application/octet-stream" sparkle:edSignature="SOW7pVUYfODW8qr6CPnuqou1/ffURVdMM7gMsMMiP+pcyvxpSDY1LZIpBEZlJZRPqQRT8Q94RRde6KfkMZmeAQ=="/>
-        </item>
-        <item>
-            <title>1.27</title>
-            <description><![CDATA[
-                <ul style="font-size:11pt;"><li>In certain cases, the text in the scrolling marquee would appear blurry on non-Retina Displays. This has been addressed.</li></ul>
-            ]]></description>
-            <pubDate>Tue, 03 Sep 2024 12:40:05 -0700</pubDate>
-            <sparkle:version>29</sparkle:version>
-            <sparkle:shortVersionString>1.27</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4557975" type="application/octet-stream" sparkle:edSignature="hns9IjMI93QtMv3tBIsigBFZhFiTTX8iAPYkLWDvvW0BxCFfVbJXPw+L2vKdaO7ULOzjE66bCXWjqsqcrbSaDQ=="/>
-        </item>
-        <item>
-            <title>1.26</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Fixed: If you're playing a live station in Music, launching Music Widget no longer leaves the audio paused.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 07 Jan 2024 19:58:57 -0800</pubDate>
-            <sparkle:version>28</sparkle:version>
-            <sparkle:shortVersionString>1.26</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4539291" type="application/octet-stream" sparkle:edSignature="r1ePoU02ntuLLUyAmbV2Z3Bjo8KaEfR7E91CPML+IPTNLt9Joqvajl2KE9rCfkukthDqo07t05OAC4KU0VagCw=="/>
         </item>
         <item>
             <title>1.24</title>
