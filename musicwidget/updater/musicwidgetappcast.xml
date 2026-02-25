@@ -6,7 +6,21 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
-            <title>1.29.1</title><description><![CDATA[
+            <title>1.29.2</title>
+            <description><![CDATA[
+		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
+		<p><b>New in this update:</b></p>
+                <ul style="font-size:10pt;"><li>Removes the Shake animation to quickly find it when clicking on its Dock icon.</li><li>Support for macOS Tahoe and Apple Music 1.6.</li><li>App menu item icons (only in macOS 26.0 and newer).</li><li>Listening to live radio now displays a new wave animation in the LCD indicating Live streaming.</li><li>Music Widget is 100% "hand-made." No use of AI went into designing, developing, or testing Music Widget.</li></ul>
+            ]]></description>
+            <pubDate>Tue, 24 Feb 2026 19:24:24 -0800</pubDate>
+            <sparkle:version>33</sparkle:version>
+            <sparkle:shortVersionString>1.29.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4823975" type="application/octet-stream" sparkle:edSignature="/y3qvaS93iYLr8aJLMe+rAHW68zUVQVYggnsAK1fbuSVxfkEfE8oiZrCmDtQlcYb7dYISAGsAdURWbaXq1VWDA=="/>
+        </item>
+        <item>
+            <title>1.29.1</title>
+            <description><![CDATA[
 		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
 		<p><b>New in this update:</b></p>
                 <ul style="font-size:10pt;"><li>Support for macOS Tahoe and Apple Music 1.6</li><li>App menu item icons (only in macOS 26.0 and newer)</li><li>Clicking on the Dock icon while the app is running will bring it to the forefront but also perform a shake animation.</li><li>Listening to live radio now displays a new wave animation in the LCD indicating Live streaming.</li><li>Music Widget is 100% "hand-made." No use of AI went into designing, developing, or testing Music Widget.</li></ul>
@@ -29,17 +43,6 @@
             <sparkle:shortVersionString>1.29</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4829195" type="application/octet-stream" sparkle:edSignature="DQr3RXBR4h15VobbNfVlK/jAJxtHrfWYiXKbYukMnui+yI75OhzHx3Njrm22c1t0upWgRJYxhFiXCwVOamUNAQ=="/>
-        </item>
-        <item>
-            <title>1.28</title>
-            <description><![CDATA[
-                <ul style="font-size:10pt;"><li>Updated to display proper names for Apple Música Uno, Apple Music Chill, and Apple Music Club.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 05 Jan 2025 17:15:57 -0800</pubDate>
-            <sparkle:version>30</sparkle:version>
-            <sparkle:shortVersionString>1.28</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4560344" type="application/octet-stream" sparkle:edSignature="SOW7pVUYfODW8qr6CPnuqou1/ffURVdMM7gMsMMiP+pcyvxpSDY1LZIpBEZlJZRPqQRT8Q94RRde6KfkMZmeAQ=="/>
         </item>
         <item>
             <title>1.24</title>
