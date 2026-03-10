@@ -6,6 +6,19 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.29.3</title>
+            <description><![CDATA[
+		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
+		<p><b>New in this update:</b></p>
+                <ul style="font-size:10pt;"><li>Improves latency on play/pause, shuffle, and repeat commands when using with macOS Tahoe. (v1.29.3)</li><li>Support for macOS Tahoe and Apple Music 1.6.</li><li>App menu item icons (only in macOS 26.0 and newer).</li><li>Listening to live radio now displays a new wave animation in the LCD indicating Live streaming.</li><li>Music Widget is 100% "hand-made." No use of AI went into designing, developing, or testing Music Widget.</li></ul>
+            ]]></description>
+            <pubDate>Sun, 08 Mar 2026 11:59:45 -0700</pubDate>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>1.29.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4824554" type="application/octet-stream" sparkle:edSignature="6JNJAsV7Gk9yfrOZQqkINaOGCcsjJ+oEAp+3D8io84vpmLqZdA819qs3zLUIVA0b601MMBeRIKpf4Fufj4nvCw=="/>
+        </item>
+        <item>
             <title>1.29.2</title>
             <description><![CDATA[
 		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
@@ -30,19 +43,6 @@
             <sparkle:shortVersionString>1.29.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4827760" type="application/octet-stream" sparkle:edSignature="EWlR7sJxQbDc/FwoUbN5aIRfr0+Bax2zJpKcq/Ay0qgERop0XKj7Ws86uu5u11QFcBvHQyGbz00G3FFAMxOYAg=="/>
-        </item>
-        <item>
-            <title>1.29</title>
-            <description><![CDATA[
-		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
-		<p><b>New in this update:</b></p>
-                <ul style="font-size:10pt;"><li>Support for macOS Tahoe and Apple Music 1.6</li><li>App menu item icons (only in macOS 26.0 and newer)</li><li>Music Widget is 100% "hand-made." No use of AI went into designing, developing, or testing Music Widget.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 08 Feb 2026 15:08:18 -0800</pubDate>
-            <sparkle:version>31</sparkle:version>
-            <sparkle:shortVersionString>1.29</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4829195" type="application/octet-stream" sparkle:edSignature="DQr3RXBR4h15VobbNfVlK/jAJxtHrfWYiXKbYukMnui+yI75OhzHx3Njrm22c1t0upWgRJYxhFiXCwVOamUNAQ=="/>
         </item>
         <item>
             <title>1.24</title>
