@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="custom.css">
+		<meta property="og:title" content="Macintosh Checklist">
+		<meta property="og:type"  content="article">
+		<meta property="og:image" content="https://marioaguzman.github.io/design/macintoshchecklist/images/ogimage.png">
+		<meta property="og:description" content="A list of to-dos before you publish your Mac app.">
+		<meta name="keywords" content="macOS, HIG, Human Interface Guidelines, Sidebar, Source List, UI, UX, Design, AppKit, SwiftUI, Liquid Glass" />
+		<meta property="og:site_name" content="Mario Guzman">
+		<meta property="og:url" content="https://marioaguzman.github.io/design/macintoshchecklist" />
+		<meta property="og:locale" content="en_US" />
+		<meta name="fediverse:creator" content="@marioguzman@mastodon.social" />
+		<title>Macintosh Checklist</title>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- START Header Nav. -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
+				aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>MUSIC</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/music/"><b>Overview</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicwidget/"><b>&emsp;Music Widget</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicminiplayer/"><b>&emsp;Music MiniPlayer</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/musicremote/"><b>&emsp;Music Remote</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/quicktune/"><b>&emsp;QuickTune </b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>&emsp;PDX Transit </b>
+							<span>
+							<sup style="color: #bf4800;">
+							<small><b>NEW</b></small>
+							</sup>
+							</span></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>&emsp;PDX Transit</b> <small class="text-muted">for Mac</small></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Design</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>Macintosh</b></h6>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/"><b>Design Guidelines</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/layoutguidelines"><b>&emsp;Layout Guidelines</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/toolbarguidelines"><b>&emsp;Toolbar Guidelines</b></a>
+							<a class="dropdown-item" href="https://marioaguzman.github.io/design/sidebarguidelines"><b>&emsp;Sidebar Guidelines</b><span>
+							<sup style="color: #bf4800;">
+							<small><b> NEW</b></small>
+							</sup>
+							</span>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find Me</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<h6 class="dropdown-header"><b>Professional</b></h6>
+							<a class="dropdown-item" href="https://www.linkedin.com/in/marioguzman/"><b>&emsp;LinkedIn</b></a>
+							<a class="dropdown-item" href="https://github.com/marioaguzman"><b>&emsp;GitHub</b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>Social</b></h6>
+							<a class="dropdown-item" href="https://mastodon.social/@marioguzman"><b>&emsp;Mastodon</b></a>
+							<a class="dropdown-item" href="https://bsky.app/profile/marioguzman.bsky.social"><b>&emsp;Bluesky</b></a>
+							<div class="dropdown-divider"></div>
+							<h6 class="dropdown-header"><b>More</b></h6>
+							<a class="dropdown-item" href="https://itunes.apple.com/profile/marioguzman"><b>&emsp;Apple Music</b></a>
+						</div>
+					</li>
+					<!--<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>-->
+					<!--<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>-->
+				</ul>
+			</div>
+		</nav>
+		<!-- END Header Nav. -->
+		<div class="container"  style="margin-top: 5%; margin-bottom: 5%;">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<h1>Macintosh Checklist</h1>
+					<p>The Mac has a long tradition of thoughtful, human-centered details—small interactions and contextual touches that quietly help the user along the way. Over the years, Mac users have come to appreciate—and expect—these refinements as part of what makes an app feel truly at home on the platform.<br><br>The following is a collection of features and conventions available on macOS that can help bring that same level of polish to your own app. By embracing these long-standing Mac-isms, you can elevate the experience of your software and make it feel like a natural citizen of the Macintosh ecosystem.</p>
+				</div>
+			</div>
+			
+			<!--
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<h2>Table of Contents</h2>
+					<ul>
+						<li><a href="#Introduction">Introduction</a></li>
+						<li><a href="#DesigningASidebar">Designing a Sidebar</a></li>
+						<ul>
+							<li><a href="#ToolbarArea">Toolbar Area</a></li>
+							<li><a href="#BottomBar">Bottom Bar</a></li>
+							<li><a href="#ContextualMenus">Contextual Menus</a></li>
+							<li><a href="#SearchBar">Search Bar</a></li>
+						</ul>
+						<li><a href="#DataOrganization">Data Organization</a></li>
+						<li><a href="#AdditionalConsiderations">Additional Considerations</a></li>
+					</ul>
+				</div>
+			</div>
+			-->
+			
+			<div class="row align-items-center" style="">
+				<div class="col-lg-10 offset-lg-1">
+					<hr>
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 d-md-none">
+							<div>
+								<img 
+									srcset="images/window_frame@2x.png, 
+									images/window_frame@2x.png 2x" 
+									src="images/window_frame@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 443px;"
+									alt="">
+								<h4 class="card-text" style="margin-top: 16pt;">Window Size</h4>
+								<p class="mb-0" style="">Your application's window should have a minimum window size. Test your window's layout with sidebars (if available) open. Verify that your content is displayed as intended. Your toolbars, sidebars, and main user content should remain usable.<br><br>A good starting point is <code>480-600 pts</code> for <b>width</b> and <code>320-400 pts</code> for <b>height</b>.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<h4 class="card-text">Window Size</h4>
+								<p class="mb-0" style="">Your application's window should have a minimum window size. Test your window's layout with sidebars (if available) open. Verify that your content is displayed as intended. Your toolbars, sidebars, and main user content should remain usable.<br><br>A good starting point is <code>480-600 pts</code> for <b>width</b> and <code>320-400 pts</code> for <b>height</b>.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<img 
+									srcset="images/window_frame@2x.png, 
+									images/window_frame@2x.png 2x" 
+									src="images/window_frame@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 443px; padding-top: 24pt; padding-bottom: 24pt;"
+									alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Of Minimum Window Size -->
+			
+			<div class="my-5"></div>
+			
+			<div class="row align-items-center" style="">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 d-md-none">
+							<div>
+								<img 
+									srcset="images/window_sidebars@2x.png, 
+									images/window_sidebars@2x.png 2x" 
+									src="images/window_sidebars@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 443px;"
+									alt="">
+								<h4 class="card-text" style="margin-top: 16pt;">Sidebar Widths</h4>
+								<p class="mb-0" style="">If your application has a sidebar and/or an inspector sidebar, they need sensible minimum and maximum width limits.<br><br>A good starting point is <code>225-275 pts</code> as a minimum width and <code>350-400 pts</code> for a maximum width.<br><br></p>
+								<p class="small text-muted">Of course, some applications may require not having a maximum width, however, if this is the case, you may need to rethink your application layout.</p>
+								<p class="small text-muted"> For more information on sidebars, read <a href="https://marioaguzman.github.io/design/sidebarguidelines/">Sidebar Guidelines</a>.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<img 
+									srcset="images/window_sidebars@2x.png, 
+									images/window_sidebars@2x.png 2x" 
+									src="images/window_sidebars@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 443px; padding-top: 24pt; padding-bottom: 24pt;"
+									alt="">
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<h4 class="card-text">Sidebar Widths</h4>
+								<p class="mb-0" style="">If your application has a sidebar and/or an inspector sidebar, they need sensible minimum and maximum width limits.<br><br>A good starting point is <code>225-275 pts</code> as a minimum width and <code>350-400 pts</code> for a maximum width.<br><br></p>
+								<p class="small text-muted">Of course, some applications may require not having a maximum width, however, if this is the case, you may need to rethink your application layout.</p>
+								<p class="small text-muted"> For more information on sidebars, read <a href="https://marioaguzman.github.io/design/sidebarguidelines/">Sidebar Guidelines</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Of Sidebar Width Size -->
+			
+			<div class="my-5"></div>
+			
+			<div class="row align-items-center" style="">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 d-md-none">
+							<div>
+								<img 
+									srcset="images/tooltip.png, 
+									images/tooltip@2x.png 2x" 
+									src="images/tooltip@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 304px;"
+									alt="">
+								<h4 class="card-text" style="margin-top: 16pt;">Tooltips</h4>
+								<p class="mb-0" style="">The majority of controls in your application should have tooltips; Toolbar items, buttons, checkboxes, etc. If you are thinking about placing a label explaining your control (say, in Settings), try a tooltip instead. Tooltips should also be added to any free-standing symbols relaying temporary statuses.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<h4 class="card-text">Tooltips</h4>
+								<p class="mb-0" style="">The majority of controls in your application should have tooltips; Toolbar items, buttons, checkboxes, etc. If you are thinking about placing a label explaining your control (say, in Settings), try a tooltip instead. Tooltips should also be added to any free-standing symbols relaying temporary statuses.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<img 
+									srcset="images/tooltip@2x.png, 
+									images/tooltip@2x.png 2x" 
+									src="images/tooltip@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 304px; padding-top: 16pt; padding-bottom: 16pt;"
+									alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Of Tooltips -->
+			
+			<div class="my-5"></div>
+			
+			<div class="row align-items-center" style="">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 d-md-none">
+							<div>
+								<img 
+									srcset="images/autoexpansion_tooltip@2x.png, 
+									images/autoexpansion_tooltip@2x.png 2x" 
+									src="images/autoexpansion_tooltip@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 291px;"
+									alt="">
+								<h4 class="card-text" style="margin-top: -8pt;">Auto-Expansion Tooltips</h4>
+								<p class="mb-0" style="">Oftentimes, labels cannot wrap to multi-line labels resulting in truncation. These can be found in Lists, Tables, and Outline views. For these labels, you need to enable Auto-expansion Tooltips for the label.<br><br>Auto-expansion Tooltips are similar to standard tooltips but instead of displaying a different string, they will display their label's string in their entirety on mouse hover. Enable this option by setting <code>allowsExpansionToolTips</code> to <code>true</code> on <code>NSTextField</code>. This is not available in SwiftUI.</p>
+							</div>
+						</div>
+						<!-- <div class="col-md d-none d-md-flex align-items-center"> // Try this to vertically align image if needed --> 
+						<div class="col-md d-none d-md-block">
+							<div>
+								<img 
+									srcset="images/autoexpansion_tooltip@2x.png, 
+									images/autoexpansion_tooltip@2x.png 2x" 
+									src="images/autoexpansion_tooltip@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 292px;"
+									alt="">
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<h4 class="card-text">Auto-Expansion Tooltips</h4>
+								<p class="mb-0" style="">Oftentimes, labels cannot wrap to multi-line labels resulting in truncation. These can be found in Lists, Tables, and Outline views. For these labels, you need to enable Auto-expansion Tooltips for the label.<br><br>Auto-expansion Tooltips are similar to standard tooltips but instead of displaying a different string, they will display their label's string in their entirety on mouse hover. Enable this option by setting <code>allowsExpansionToolTips</code> to <code>true</code> on <code>NSTextField</code>. This is not available in SwiftUI.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Of Auto-Expansion Tooltips -->
+			
+			<div class="row align-items-center" style="">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 d-md-none">
+							<div>
+								<img 
+									srcset="images/about_credits@2x.png, 
+									images/about_credits@2x.png 2x" 
+									src="images/about_credits@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 391px;"
+									alt="">
+								<h4 class="card-text" style="margin-top: -16pt;">Credits.rtf</h4>
+								<p class="mb-0" style="">Did you know, if you add a Credits.rtf file to your Xcode project, the application will pick it up and display its contents in the default About window when opened?<br><br>Since it is an rtf file, any custom formatting and links will display as well. With Xcode, you can also provide localized versions.<br><br></p>
+								<p class="text-muted small">Just make sure that it is added to your project's "Copy Bundle Resources" stage under "Build Phases" in Xcode.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<h4 class="card-text">Credits.rtf</h4>
+								<p class="mb-0" style="">Did you know, if you add a Credits.rtf file to your Xcode project, the application will pick it up and display its contents in the default About window when opened?<br><br>Since it is an rtf file, any custom formatting and links will display as well. With Xcode, you can also provide localized versions.<br><br></p>
+								<p class="text-muted small">Just make sure that it is added to your project's "Copy Bundle Resources" stage under "Build Phases" in Xcode.</p>
+							</div>
+						</div>
+						<!-- <div class="col-md d-none d-md-flex align-items-center"> // Try this to vertically align image if needed --> 
+						<div class="col-md d-none d-md-block">
+							<div>
+								<img 
+									srcset="images/about_credits@2x.png, 
+									images/about_credits@2x.png 2x" 
+									src="images/about_credits@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 391px;"
+									alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Of Credits -->
+			
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<h4>Spotlight Keywords</h4>
+					<p>Spotlight is often used as an app launcher. Type the name of the app, and hit Return on your keyboard when your app comes up as a search result. However, you can add keywords to your app's <code>Info.plist</code> so that searching becomes more natural. Add <code>MDItemKeywords</code> with a string value of comma-delimited words.<br><br>Apple Music, for example, has keywords such as "Apple Music", "iTunes", and "Radio" so that Spotlight surfaces it as a result should any of these words be the query.<br><br>Someone making a client for Mastodon would probably add "Mastodon" or someone making an Email client may add "Email" to their list of keywords.<br></p>
+					<p class="small">If you want to see if an app uses <code>MDItemKeywords</code>, simply "Get Info" on the app and look under "More Info" – there will be a section called "Keywords."</p>
+				</div>
+			</div>
+			
+			<div class="my-5"></div>
+			
+			<div class="row align-items-center" style="">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 d-md-none">
+							<div>
+								<img 
+									srcset="images/helpbook_tips@2x.png, 
+									images/helpbook_tips@2x.png 2x" 
+									src="images/helpbook_tips@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 445px;"
+									alt="PDX Transit Arrival Times and Look Around for Old Tow/Chinatown MAX Station.">
+								<h4 class="card-text" style="margin-top: 8pt;">Help Book</h4>
+								<p class="mb-0" style="">Help Books provide quick and local access to useful topics for your users. Help Books aren't necessarily manuals but rather a collection of topics. Each topic corresponds to a main action your user may do in your application.<br><br>For example, in a music jukebox application, you might find a topic on "Organizing your Music into Playlists" or "Importing Music Into Your Library."<br><br>Help Books are also indexed by macOS so that they can be searched in the Help menu's search bar, Spotlight, or even within the Tips application.<br><br></p>
+								<p class="small text-muted"> For information on creating a Help Book, read <a href="https://marioaguzman.wordpress.com/2020/09/12/auth/">Authoring macOS Help Books in 2020 (and beyond)</a>.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+						<!-- <div class="col-md d-none d-md-block"> // Try this to vertically align image if needed --> 
+							<div>
+								<img 
+									srcset="images/helpbook_tips@2x.png, 
+									images/helpbook_tips@2x.png 2x" 
+									src="images/helpbook_tips@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 445px;"
+									alt="PDX Transit Arrival Times and Look Around for Old Tow/Chinatown MAX Station.">
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<h4 class="card-text">Help Book</h4>
+								<p class="mb-0" style="">Help Books provide quick and local access to useful topics for your users. Help Books aren't necessarily manuals but rather a collection of topics. Each topic corresponds to a main action your user may do in your application.<br><br>For example, in a music jukebox application, you might find a topic on "Organizing your Music into Playlists" or "Importing Music Into Your Library."<br><br>Help Books are also indexed by macOS so that they can be searched in the Help menu's search bar, Spotlight, or even within the Tips application.<br><br></p>
+								<p class="small text-muted"> For information on creating a Help Book, read <a href="https://marioaguzman.wordpress.com/2020/09/12/auth/">Authoring macOS Help Books in 2020 (and beyond)</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Of Help Book -->
+			
+			<div class="my-5"></div>
+			
+			<div class="row align-items-center" style="">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 d-md-none">
+							<div>
+								<img 
+									srcset="images/dock_menu@2x.png, 
+									images/dock_menu@2x.png 2x" 
+									src="images/dock_menu@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 324px;"
+									alt="">
+								<h4 class="card-text" style="margin-top: 8pt;">Custom Dock Menu and Icon</h4>
+								<p class="mb-0" style="">Leverage your app's Dock icon (at runtime) to give users quick access to global actions or status. Override<br><code>func applicationDockMenu(_ sender: NSApplication) -> NSMenu?</code> on <code>NSApplicationDelegate</code><br> to provide users with actions the app can perform at a global level.<br><br>For example, Mail provides "Get New Mail", "New Viewer Window", and "New Message." These are convenient commands a user can perform without having to bring Mail to the forefront first.<br><br>Additionally, you can also override the icon at runtime by setting<br><code>var applicationIconImage: NSImage!</code> on <code>NSApplication</code>.<br><br>A media playback app may display the Play, Pause, or Stop symbols overlaid the app icon depending on the player's state.<br><br></p>
+								<p class="text-muted small">This is how Calendar updates its Dock icon to show the current date.<br><br>To provide a Dock icon that updates or a Dock menu when the app is not running, read my <code>NSDockTilePlugin</code> <a href="https://github.com/marioaguzman/NSDockTilePlugIn-Example?tab=readme-ov-file">tutorial on GitHub</a>.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<h4 class="card-text">Custom Dock Menu and Icon</h4>
+								<p class="mb-0" style="">Leverage your app's Dock icon (at runtime) to give users quick access to global actions or status. Override<br><code>func applicationDockMenu(_ sender: NSApplication) -> NSMenu?</code> on <code>NSApplicationDelegate</code><br> to provide users with actions the app can perform at a global level.<br><br>For example, Mail provides "Get New Mail", "New Viewer Window", and "New Message." These are convenient commands a user can perform without having to bring Mail to the forefront first.<br><br>Additionally, you can also override the icon at runtime by setting<br><code>var applicationIconImage: NSImage!</code> on <code>NSApplication</code>.<br><br>A media playback app may display the Play, Pause, or Stop symbols overlaid the app icon depending on the player's state.<br><br></p>
+								<p class="text-muted small">This is how Calendar updates its Dock icon to show the current date.<br><br>To provide a Dock icon that updates or a Dock menu when the app is not running, read my <code>NSDockTilePlugin</code> <a href="https://github.com/marioaguzman/NSDockTilePlugIn-Example?tab=readme-ov-file">tutorial on GitHub</a>.</p>
+							</div>
+						</div>
+						<div class="col-md d-none d-md-flex align-items-center">
+							<div>
+								<img 
+									srcset="images/dock_menu@2x.png, 
+									images/dock_menu@2x.png 2x" 
+									src="images/dock_menu@2x.png"
+									class="mx-auto d-block" 
+									style="width: 100%; max-width: 324px;"
+									alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Of Dock Menu -->
+			
+			
+			
+			
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<br>
+					<div class="card">
+						<!-- <div class="card-header">
+							Have Suggestions?
+							</div> -->
+						<div class="card-body">
+							<p class="card-text">
+								I enjoy creating content that helps other Mac developers ship their best possible work. If you find this content useful and if you're able to, consider perhaps buying me a coffee. But if not, no worries! I'd appreciate you at least sharing this document with your fellow Mac developers posting it on social media! Thank you! 
+							</p>
+							<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="marioguzman" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="card">
+						<!-- <div class="card-header">
+							Have Suggestions?
+							</div> -->
+						<div class="card-body">
+							<h5 class="card-title">Have Suggestions?</h5>
+							<p class="card-text">
+								Reach out via Mastodon if you have suggestions that would improve this article. 
+							</p>
+							<a href="https://mastodon.social/@marioguzman" class="btn-sm btn-primary">Mastodon</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div class="row">
+				<div class="col-md">
+					<small class="text-muted">Mac, Macintosh, and macOS are registered trademarks of Apple Inc.</small>
+				</div>
+			</div>
+			<!-- Footer Start -->
+			<div class="row">
+				<div class="col-md">
+					<small><b>© 2019-2026 Mario A Guzman</b></small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
+					<small><b>Personal</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
+						<li><a class="text-muted" href="https://bsky.app/profile/marioguzman.bsky.social">Bluesky</a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+						<li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+						<li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+						<li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<small><b>Apps</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/">QuickTune</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Mac</small></a></li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<small><b>Downloads</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg">QuickTune <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Footer End -->
+		</div>
+	</body>
+</html>
