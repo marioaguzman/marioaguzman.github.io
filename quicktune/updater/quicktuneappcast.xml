@@ -6,6 +6,19 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.5.0</title>
+            <description><![CDATA[
+		<p style="font-size:10pt;">Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing QuickTune to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get QuickTune working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
+		<p><b>New in this update:</b></p>
+                <ul style="font-size:10pt;"><li>Support for macOS Tahoe and Apple Music 1.6.</li><li>App menu item icons (only in macOS 26.0 and newer).</li><li>QuickTune is 100% "hand-made." No use of AI went into designing, developing, or testing QuickTune.</li></ul>
+            ]]></description>
+            <pubDate>Mon, 06 Apr 2026 09:46:35 -0700</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>7.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8506423" type="application/octet-stream" sparkle:edSignature="jOsvmG0WnFZtvp+0cjQQew6r9F976Ktz9C8ungHS/UzHQmCmMKLmCgJM4VTM/bBZhPGdBZsd7EYqXaPJvvoTBA=="/>
+        </item>
+        <item>
             <title>7.4.2</title>
             <description><![CDATA[
                 <ul style="font-size: 10pt;">
@@ -34,21 +47,6 @@
             <sparkle:shortVersionString>7.4.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8567460" type="application/octet-stream" sparkle:edSignature="ba0HihjJkfO5K9kaN///O9YCWxbp+Rwqg+8pVVq/R9DOFARbEBowptXFKECwmB7RhvSffZpdBTbg+ALm1J1uCg=="/>
-        </item>
-        <item>
-            <title>7.4</title>
-            <description><![CDATA[
-                <ul style="font-size: 10pt;">
-                <li>Updated design for the enabled states for Shuffle and Repeat buttons in the Leopard theme. Thank you Tuomas Hämäläinen.</li>
-                <li>When QuickTune is minimized, its Dock tile thumbnail will now refresh to display the current Now Playing track's album cover art. Thank you Steve Troughton-Smith.</li>
-                <li>Additional enhancements to reduce the number of UI state refreshes needed to sync UI with Apple Music.</li>
-				</ul>
-            ]]></description>
-            <pubDate>Thu, 26 Sep 2024 20:51:09 -0700</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>7.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8550513" type="application/octet-stream" sparkle:edSignature="0E2h8xtnH4QrnmtAivk7Yt4/HWYIFUKj1TMSinPhTULadUIGFNx0eTHNE/BWrs/Xtjn7sxXc71o3qsAfjB8ZAw=="/>
         </item>
     </channel>
 </rss>
