@@ -319,7 +319,7 @@
 				<div class="col-lg-10 offset-lg-1">
 					<h4>Spotlight Keywords</h4>
 					<p>Spotlight is often used as an app launcher. Type the name of the app, and hit Return on your keyboard when your app comes up as a search result. However, you can add keywords to your app's <code>Info.plist</code> so that searching becomes more natural. Add <code>MDItemKeywords</code> with a string value of comma-delimited words.<br><br>Apple Music, for example, has keywords such as "Apple Music", "iTunes", and "Radio" so that Spotlight surfaces it as a result should any of these words be the query.<br><br>Someone making a client for Mastodon would probably add "Mastodon" or someone making an Email client may add "Email" to their list of keywords.<br></p>
-					<p class="small">If you want to see if an app uses <code>MDItemKeywords</code>, simply "Get Info" on the app and look under "More Info" – there will be a section called "Keywords."</p>
+					<p class="small text-muted">If you want to see if an app uses <code>MDItemKeywords</code>, simply "Get Info" on the app and look under "More Info" – there will be a section called "Keywords." If your application supports localization, <b>remember</b> to provide localized keywords in your localized Info.plist as well.</p>
 				</div>
 			</div>
 			
