@@ -115,6 +115,9 @@
 					<h2 id="Introduction">Introduction</h2>
 					<p>Inspectors, whether panels or sidebars, help reduce the clutter of a user interface by placing auxiliary information or controls that can be shown or hidden by the user.</p>
 					<p>Inspector views are also contextual and dynamic. Depending on the context (what is currently selected or has focus), the content of the inspector is shown, enabled, or completely hidden. The inspector should update its content or what is enabled as soon as the selection or focus changes.</p>
+					<p>Inspector panels float on top of the app's windows and disappear when the app is deactivated (not at the forefront).</p>
+					<p>Most Inspector panels use the standard panels UI, which means that they use the same textures in the window body and title bar that a standard window does. Also, an Inspector panel with standard UI must use small versions of the standard UI controls.</p>
+					<p>In some cases, you may need to use the HUD-style panel, which means that they use a dark, translucent background for the window body and title bar, and they use small white and gray UI elements.</p>
 					<h2 id="DesigningAnInspector">Designing an Inspector</h2>
 					<p>Inspectors often display two types of content:</p>
 					<img srcset="images/Inspector_metadata_controls@2x.png, 
@@ -156,7 +159,16 @@
 						style="width: 100%; max-width: 654px; display: block; margin-left: auto; margin-right: auto;" 
 						alt="An Inspector panel using the HUD style & a standard panel.">
 					<p class="small" style="margin-top: -8pt; text-align: center; text-wrap: balance;">An Inspector panel using the HUD style on the left.</p>
-					<p>Use the HUD style for inspector panels that may obstruct media such as video or images in a photo-editing application. HUD panels are dark in appearance with a translucent background to minimize distraction.</p>
+					<p>In general, use the standard UI for your Inspector panel. For some apps, such as highly visual, immersive, HUD-style Inspector panels are appropriate. The dark translucent background of HUD-style Inspector panels are meant to help minimize distraction in video or image editing applications.</p>
+					<p>Have a good reason to use a transparent panel instead of a standard panel. Users can be distracted or
+confused by a transparent panel when there is no logical reason for its presence. In general, you should use
+transparent panels only when at least one of the following statements is true:</p>
+					<ul>
+						<li>Your app is media-centric; focused on movies, photos, or slides.</li>
+						<li>Users use your app in a dark environment or in an immersion mode (this app is always in Dark Mode or has dark custom UI).</li>
+						<li>A standard panel would obscure the content that users need to adjust using the Inspector panel.</li>
+					</ul>
+					<p>Each Inspector panel in your app can have its own style (some standard, some HUD-style), however, always keep it consistent. The same Inspector panel should not switch between styles depending on the state or mode of your application.</p>
 					<h3 id="InspectorWidth">Inspector Minimum and Maximum Widths</h3>
 					<p>Whether your inspector is a panel or a sidebar, it needs sensible minimum and maximum width limits. A good starting point is <code>225-275 pts</code> as a <b>min</b>imum width and <code>350-400 pts</code> for a <b>max</b>imum width.</p>
 					<h3 id="Considerations">Other Considerations</h3>
@@ -171,7 +183,12 @@
 						<li><a href="https://marioaguzman.github.io/design/layoutguidelines/">Layout Guidelines</a>: Learn how to design layouts for your Inspector Sidebars or Panels that feel right at home on the Mac.</li>
 						<li><a href="https://marioaguzman.github.io/design/sidebarguidelines/">Sidebar Guidelines</a>: Since we've touched on sidebars, learn how to design standard navigational sidebars for your Mac app and all the considerations you should take.</li>
 					</ul>
-					<br>
+					<hr>
+					<h5 id="Revisions">Document Revisions</h5>
+					<ul>
+						<li>Updated June 11, 2026<br><small class="text-muted text-small">Additional information on HUD-style Inspector Panels.</small></li>
+						<li>Published June 7, 2026<br><small class="text-muted text-small">Initial release date.</small></li>
+					</ul>
 				</div>
 			</div>
 			<div class="row">
