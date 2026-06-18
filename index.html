@@ -43,6 +43,65 @@
 			.hel-text {
 			font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif;
 			}
+			/* -----------------------------
+			Marquee
+			------------------------------ */
+			.marquee {
+			overflow: hidden;
+			white-space: nowrap;
+			background: #f8f9fa;
+			border: 1px solid #dee2e6;
+			border-radius: .5rem;
+			padding: .65rem 0;
+			margin: 0 0;
+			}
+			.marquee-track {
+			display: inline-flex;
+			width: max-content;
+			animation: marquee-scroll 25s linear infinite;
+			padding-left: 0.5rem; /* 👈 adds breathing room on the left */
+			}
+			.marquee-track span {
+			display: inline-flex;
+			align-items: center;
+			color: #495057;
+			font-size: 0.95rem;
+			padding-right: 1.5rem;
+			}
+			.marquee-track strong {
+			color: #212529;
+			}
+			.marquee a {
+			color: #007bff;
+			font-weight: 600;
+			text-decoration: none;
+			margin-left: .5rem;
+			white-space: nowrap;
+			}
+			.marquee a:hover {
+			text-decoration: underline;
+			}
+			.marquee:hover .marquee-track {
+			animation-play-state: paused;
+			}
+			@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+			@media (prefers-reduced-motion: reduce) {
+			.marquee-track {
+			animation: none;
+			}
+			}
 		</style>
 	</head>
 	<body>
@@ -95,8 +154,6 @@
 							</a>
 						</div>
 					</li>
-					
-					
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find Me</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -181,7 +238,6 @@
 					</div>
 				</div>
 			</div>
-			<hr>
 			<!--
 				<div class="row">
 				   <div class="col-md aquabg">
@@ -261,6 +317,25 @@
 			<!-- 
 				// X-SMALL
 				--> 
+			<div class="marquee">
+				<div class="marquee-track">
+					<span>
+					<strong class="mx-2">New Article:</strong>
+					Inspector Guidelines — Learn how to design Inspector Sidebars & Panels that look and feel right at home on macOS.
+					<a href="https://marioaguzman.github.io/design/inspectorguidelines/">
+					Read the guide →
+					</a>
+					</span>
+					<!-- Duplicate for seamless scrolling -->
+					<span aria-hidden="true">
+					<strong class="mx-2">New Article:</strong>
+					Inspector Guidelines — Learn how to design Inspector Sidebars & Panels that look and feel right at home on macOS.
+					<a href="https://marioaguzman.github.io/design/inspectorguidelines/" tabindex="-1">
+					Read the guide →
+					</a>
+					</span>
+				</div>
+			</div>
 			<div class="row align-items-center">
 				<div class="col-md d-block d-sm-none">
 					<br>
