@@ -52,56 +52,32 @@
 			background: #f8f9fa;
 			border: 1px solid #dee2e6;
 			border-radius: .5rem;
-			padding: .65rem 0;
-			margin: 0 0;
+			padding: .65rem 0.5rem;
 			}
 			.marquee-track {
 			display: inline-flex;
+			gap: 1.25rem;
 			width: max-content;
-			animation: marquee-scroll 25s linear infinite;
-			padding-left: 0.5rem; /* 👈 adds breathing room on the left */
+			will-change: transform;
 			}
 			.marquee-track span {
 			display: inline-flex;
 			align-items: center;
-			color: #495057;
 			font-size: 0.95rem;
-			padding-right: 1.5rem;
-			}
-			.marquee-track strong {
-			color: #212529;
+			color: #495057;
 			}
 			.marquee a {
 			color: #007bff;
 			font-weight: 600;
 			text-decoration: none;
 			margin-left: .5rem;
-			white-space: nowrap;
 			}
 			.marquee a:hover {
 			text-decoration: underline;
 			}
-			.marquee:hover .marquee-track {
-			animation-play-state: paused;
-			}
-			@keyframes marquee-scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    10% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-			@media (prefers-reduced-motion: reduce) {
-			.marquee-track {
-			animation: none;
-			}
-			}
+			.marquee:hover {
+			cursor: default;
+			}	
 		</style>
 	</head>
 	<body>
@@ -318,21 +294,16 @@
 				// X-SMALL
 				--> 
 			<div class="marquee">
-				<div class="marquee-track">
+				<div class="marquee-track" id="marqueeTrack">
 					<span>
 					<strong class="mx-2">New Article:</strong>
-					Inspector Guidelines — Learn how to design Inspector Sidebars & Panels that look and feel right at home on macOS.
-					<a href="https://marioaguzman.github.io/design/inspectorguidelines/">
-					Read the guide →
-					</a>
+					Inspector Guidelines — Learn how to design Inspector Sidebars & Panels that look and feel right at home at macOS.
+					<a href="https://marioaguzman.github.io/design/inspectorguidelines/">Read the guide</a>
 					</span>
-					<!-- Duplicate for seamless scrolling -->
 					<span aria-hidden="true">
 					<strong class="mx-2">New Article:</strong>
-					Inspector Guidelines — Learn how to design Inspector Sidebars & Panels that look and feel right at home on macOS.
-					<a href="https://marioaguzman.github.io/design/inspectorguidelines/" tabindex="-1">
-					Read the guide →
-					</a>
+					Inspector Guidelines — Learn how to design Inspector Sidebars & Panels that look and feel right at home at macOS.
+					<a href="https://marioaguzman.github.io/design/inspectorguidelines/" tabindex="-1">Read the guide</a>
 					</span>
 				</div>
 			</div>
@@ -647,5 +618,43 @@
 			</div>
 			<!-- Footer End -->
 		</div>
+		<script>
+			(function () {
+			    const track = document.getElementById("marqueeTrack");
+			
+			    // Clone content once for seamless loop
+			    const clone = track.cloneNode(true);
+			    track.parentElement.appendChild(clone);
+			
+			    let position = 0;
+			    let speed = 0.5; // pixels per frame (tweak this)
+			
+			    function getWidth() {
+			        return track.offsetWidth;
+			    }
+			
+			    const width = getWidth();
+			
+			    function animate() {
+			        position -= speed;
+			
+			        // when first full group has fully scrolled out
+			        if (Math.abs(position) >= width) {
+			            position = 0; // reset perfectly (no flicker)
+			        }
+			
+			        track.style.transform = `translate3d(${position}px, 0, 0)`;
+			        clone.style.transform = `translate3d(${position}px, 0, 0)`;
+			
+			        requestAnimationFrame(animate);
+			    }
+			
+			    setTimeout(() => {
+			
+			        animate();
+			
+			    }, 1200);
+			})();
+		</script>
 	</body>
 </html>
