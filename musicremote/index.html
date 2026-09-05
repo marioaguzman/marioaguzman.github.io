@@ -1,43 +1,51 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
-        <meta property="og:title" content="Music Remote for macOS" />
-        <meta property="og:type"  content="website" />
-        <meta property="og:image" content="https://marioaguzman.github.io/musicremote/images/link_preview.png" />
-        <meta property="og:description" content="A replica of the short-lived Music Player app bundled with the first Public Beta of Mac OS X ever." />
-        <meta property="og:site_name" content="marioaguzman.github.io" />
-        <meta property="og:url" content="https://marioaguzman.github.io/musicremote/" />
-        
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@MarioGuzman">
-        <meta name="twitter:creator" content="@MarioGuzman">
-        <meta name="twitter:title" content="Music Remote for macOS">
-        <meta name="twitter:description" content="A replica of the short-lived Music Player app bundled with the first Public Beta of Mac OS X ever.">
-        <meta name="twitter:image" content="https://marioaguzman.github.io/musicremote/images/link_preview.png">
-        <title>Music Remote for macOS</title>
-        
-        <style>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<meta property="og:title" content="Music Remote for macOS" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://marioaguzman.github.io/musicremote/images/link_preview.png" />
+		<meta property="og:description" content="A replica of the short-lived Music Player app bundled with the first Public Beta of Mac OS X ever." />
+		<meta property="og:site_name" content="marioaguzman.github.io" />
+		<meta property="og:url" content="https://marioaguzman.github.io/musicremote/" />
+
+		<meta name="fediverse:creator" content="@marioguzman@mastodon.social" />
+
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@MarioGuzman">
+		<meta name="twitter:creator" content="@MarioGuzman">
+		<meta name="twitter:title" content="Music Remote for macOS">
+		<meta name="twitter:description" content="A replica of the short-lived Music Player app bundled with the first Public Beta of Mac OS X ever.">
+		<meta name="twitter:image" content="https://marioaguzman.github.io/musicremote/images/link_preview.png">
+		<title>Music Remote for macOS</title>
+
+		<style>
         	body {
         		font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", sans-serif;
-        	}
+        	}body {
+    background: repeating-linear-gradient(
+        to bottom,
+        rgb(252.5, 252.5, 252.5) 0pt,
+        rgb(252.5, 252.5, 252.5) 3pt,
+        rgb(255, 255, 255) 3pt,
+        rgb(255, 255, 255) 6pt
+    );
+}
         </style>
-    </head>
-    <body>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<!-- START Header Nav. -->
 		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="https://marioaguzman.github.io/">Mario Guzman</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" 
-				aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -54,11 +62,11 @@
 							<h6 class="dropdown-header"><b>PDX TRANSIT</b></h6>
 							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/"><b>Overview</b></a>
 							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/ios/"><b>&emsp;PDX Transit </b>
-							<span>
-							<sup style="color: #bf4800;">
-							<small><b>NEW</b></small>
-							</sup>
-							</span></a>
+								<span>
+									<sup style="color: #bf4800;">
+										<small><b>NEW</b></small>
+									</sup>
+								</span></a>
 							<a class="dropdown-item" href="https://marioaguzman.github.io/pdxtransit/macos/"><b>&emsp;PDX Transit</b> <small class="text-muted">for Mac</small></a>
 						</div>
 					</li>
@@ -71,15 +79,15 @@
 							<a class="dropdown-item" href="https://marioaguzman.github.io/design/toolbarguidelines"><b>&emsp;Toolbar Guidelines</b></a>
 							<a class="dropdown-item" href="https://marioaguzman.github.io/design/sidebarguidelines"><b>&emsp;Sidebar Guidelines</b></a>
 							<a class="dropdown-item" href="https://marioaguzman.github.io/design/inspectorguidelines"><b>&emsp;Inspector Guidelines</b><span>
-							<sup style="color: #bf4800;">
-							<small><b> NEW</b></small>
-							</sup>
-							</span>
+									<sup style="color: #bf4800;">
+										<small><b> NEW</b></small>
+									</sup>
+								</span>
 							</a>
 						</div>
 					</li>
-					
-					
+
+
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find Me</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -101,264 +109,214 @@
 			</div>
 		</nav>
 		<!-- END Header Nav. -->
-        <div class="container" style="margin-top: 0pt; margin-top: 7.5%; margin-bottom: 7.5%;">
-        
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div style="text-align: center;">
-                        <img srcset="images/app.png, 
-                            images/app@2x.png 2x, 
-                            images/app@3x.png 3x" 
-                            src="images/app.png" 
-                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
-                            alt="Music Remote App">
-                        <img srcset="images/hero_text.png, 
-                            images/hero_text@2x.png 2x, 
-                            images/hero_text@3x.png 3x" 
-                            src="musicremote/images/hero_text.png" 
-                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-                            alt="Music Remote for Macintosh">
-                        <a href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">
-                        <img srcset="images/download.png, 
-                            images/download@2x.png 2x, 
-                            images/download@3x.png 3x" 
-                            src="musicremote/images/download.png" 
-                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 16pt;"
-                            alt="Music Remote Download Button">
-                        </a>
-                        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="marioguzman" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-            		<div class="alert alert-danger" role="alert" style=" margin-top: 24pt;">
-            			<h4 class="alert-heading">macOS 26 Tahoe Support</h4>
-            			<hr>
-            			<p class="mb-0">With the release of macOS Tahoe, Music v1.6.0 no longer supplies the data required for Music Remote to operate correctly. Unfortunately, there is no technical workaround for this change. As a result, macOS Sequoia remains the last version fully supported by Music Remote.</p>
-            		</div>
-                </div>
-           	</div>
-            
-            
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div>
-                        <img srcset="images/history_header_text.png, 
+		<div class="container" style="margin-top: 0pt; margin-top: 32pt; margin-bottom: 32pt;">
+
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+
+					<!-- Small displays: centered and stacked -->
+					<div class="d-md-none text-center mb-3">
+						<img loading="lazy" srcset="images/app.png,
+                        images/app@2x.png 2x,
+                        images/app@3x.png 3x" src="images/app.png" class="img-fluid d-block mx-auto" alt="Music Remote for macOS">
+
+						<img srcset="images/hero_text.png,
+                        images/hero_text@2x.png 2x,
+                        images/hero_text@3x.png 3x" src="images/hero_text.png" class="img-fluid d-block mx-auto" alt="Music Remote for Macintosh">
+
+						<a href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">
+							<img srcset="images/download.png,
+                            images/download@2x.png 2x,
+                            images/download@3x.png 3x" src="images/download.png" class="img-fluid mb-4" alt="Download Button"  style="padding-top: 8pt;">
+						</a>
+					</div>
+
+					<!-- Medium/large displays: app on left, text/download on right -->
+					<div class="row align-items-center gx-0 d-none d-md-flex">
+						<div class="col-md-5 d-flex justify-content-end">
+							<img loading="lazy" srcset="images/app.png,
+                            images/app@2x.png 2x,
+                            images/app@3x.png 3x" src="images/app.png" class="img-fluid" alt="Music Remote for macOS">
+						</div>
+
+						<div class="col-md-7 d-flex flex-column justify-content-center align-items-start">
+							<img loading="lazy" srcset="images/hero_text_left.png,
+                            images/hero_text_left@2x.png 2x,
+                            images/hero_text_left@3x.png 3x" src="images/hero_text_left.png" class="img-fluid" alt="Music Remote for Macintosh">
+
+							<a href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg" style="margin-left: -3pt; padding-top: 2pt;">
+								<img srcset="images/download_mr.png,
+                                images/download_mr@2x.png 2x,
+                                images/download_mr@3x.png 3x" src="images/download_mr.png" class="img-fluid mb-3" alt="Download Button">
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+				<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+					<div>
+						<img srcset="images/history_header_text.png, 
                             images/history_header_text@2x.png 2x, 
-                            images/history_header_text@3x.png 3x" 
-                            src="musicremote/images/history_header_text.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="History">
-                        <p>On September 13, 2000, Apple Computer released the first Public Beta of Mac OS X ahead of its initial release in March 24, 2001. Mac users could purchase the Public Beta from Apple.com for the price of $29. This beta version of Mac OS included a music application capable of playing CDs & MP3 files, and was named <b>Music Player</b>.</p>
-                        <p>Music Remote is a tribute to that short lived, long forgotten application. However, Music Remote is a remote application for Music on modern macOS, capable of controlling playback, volume, and playlists.</p>
-                        <br>
-                        <img srcset="images/macosx_musicremote.png" 
-                            src="images/macosx_musicremote.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Mac OS X Public Beta with Music Player running in the foreground.">
-                        
-                    </div>
-                </div>
-            </div>
-                    
-            <br>
-            <hr>
-            
-            <div class="row">
-                <div class="col-md">
-                    <div>
-                        <img srcset="images/features_header.png, 
+                            images/history_header_text@3x.png 3x" src="musicremote/images/history_header_text.png" style="max-width: 100%; display: block;" alt="History">
+						<p>On September 13, 2000, Apple Computer released the first Public Beta of Mac OS X ahead of its initial release in March 24, 2001. Mac users could purchase the Public Beta from Apple.com for the price of $29. This beta version of Mac OS included a music application capable of playing CDs & MP3 files, and was named <b>Music Player</b>.</p>
+						<p>Music Remote is a tribute to that short lived, long forgotten application. However, Music Remote is a remote application for Music on modern macOS, capable of controlling playback, volume, and playlists.</p>
+						<br>
+						<img srcset="images/macosx_musicremote.png" src="images/macosx_musicremote.png" style="max-width: 100%; display: block;" alt="Mac OS X Public Beta with Music Player running in the foreground.">
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<hr>
+
+			<div class="row">
+				<div class="col-md">
+					<div>
+						<img srcset="images/features_header.png, 
                             images/features_header@2x.png 2x, 
-                            images/features_header@3x.png 3x" 
-                            src="images/features_header.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Features">
-            		</div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/hero_app.png, 
+                            images/features_header@3x.png 3x" src="images/features_header.png" style="max-width: 100%; display: block;" alt="Features">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/hero_app.png, 
                         			images/hero_app@2x.png 2x, 
-                        			images/hero_app@3x.png 3x" 
-                            src="images/hero_app.png" 
-                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-                            alt="Music Remote playing &quot;Sofa Rockers&quot; by Sofa Surfers">
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/playback_header.png, 
+                        			images/hero_app@3x.png 3x" src="images/hero_app.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" alt="Music Remote playing &quot;Sofa Rockers&quot; by Sofa Surfers">
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/playback_header.png, 
                         			images/playback_header@2x.png 2x, 
-                        			images/playback_header@3x.png 3x" 
-                            src="images/playback_header.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Playback">
-                        <br>
-                    </div>
-                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-                        <small class="text-muted">Music Remote has all the basic controls to control Apple Music and just enough information and status indicators to keep it glanceable. It’s there when you need it without need any interaction and you can even keep it floating above all your other windows.</small>
-                    </div>
-                </div>
-                
-                <div class="col-md">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/playlists.png, 
+                        			images/playback_header@3x.png 3x" src="images/playback_header.png" style="max-width: 100%; display: block;" alt="Playback">
+						<br>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">Music Remote has all the basic controls to control Apple Music and just enough information and status indicators to keep it glanceable. It’s there when you need it without need any interaction and you can even keep it floating above all your other windows.</small>
+					</div>
+				</div>
+
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/playlists.png, 
                         			images/playlists@2x.png 2x, 
-                        			images/playlists@3x.png 3x" 
-                            src="images/playlists.png" 
-                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-                            alt="Music Remote's Playlists window displaying a playlist called &quot;80s Favorites&quot;.">
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/playlists_header.png, 
+                        			images/playlists@3x.png 3x" src="images/playlists.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" alt="Music Remote's Playlists window displaying a playlist called &quot;80s Favorites&quot;.">
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/playlists_header.png, 
                         			images/playlists_header@2x.png 2x, 
-                        			images/playlists_header@3x.png 3x" 
-                            src="images/playlists_header.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Music Playlists">
-                        <br>
-                    </div>
-                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-                        <small class="text-muted">Use Music Remote to quickly switch to another playlist. Simply click on the Playlists button above the playback button, select another playlist from your library, and press Play.</small>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="row " style="padding-top: 20pt;">
-                <div class="col-md">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/app_live.png, 
+                        			images/playlists_header@3x.png 3x" src="images/playlists_header.png" style="max-width: 100%; display: block;" alt="Music Playlists">
+						<br>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">Use Music Remote to quickly switch to another playlist. Simply click on the Playlists button above the playback button, select another playlist from your library, and press Play.</small>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row " style="padding-top: 20pt;">
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/app_live.png, 
                         			images/app_live@2x.png 2x, 
-                        			images/app_live@3x.png 3x" 
-                            src="images/app_live.png" 
-                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-                            alt="Music Remote playing live radio station Channel Q.">
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/live_header.png, 
+                        			images/app_live@3x.png 3x" src="images/app_live.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" alt="Music Remote playing live radio station Channel Q.">
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/live_header.png, 
                         			images/live_header@2x.png 2x, 
-                        			images/live_header@3x.png 3x" 
-                            src="images/live_header.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Live Stations UI">
-                        <br>
-                    </div>
-                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-                        <small class="text-muted">When you’re listening to live audio such as Apple Music Hits or Channel Q, Music Remote adapts its user interface to something suitable for streaming audio.</small>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/app_design.png, 
+                        			images/live_header@3x.png 3x" src="images/live_header.png" style="max-width: 100%; display: block;" alt="Live Stations UI">
+						<br>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">When you’re listening to live audio such as Apple Music Hits or Channel Q, Music Remote adapts its user interface to something suitable for streaming audio.</small>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/app_design.png, 
                         			images/app_design@2x.png 2x, 
-                        			images/app_design@3x.png 3x" 
-                            src="images/app_design.png" 
-                            style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" 
-                            alt="Music Remote playing &quot;Pale Shelter&quot; by Tears for Fears">
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img 
-                        	loading="lazy" 
-                        	srcset="images/style_header.png, 
+                        			images/app_design@3x.png 3x" src="images/app_design.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20pt;" alt="Music Remote playing &quot;Pale Shelter&quot; by Tears for Fears">
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<img loading="lazy" srcset="images/style_header.png, 
                         			images/style_header@2x.png 2x, 
-                        			images/style_header@3x.png 3x" 
-                            src="images/style_header.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="The elements of style">
-                        <br>
-                    </div>
-                    <div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
-                        <small class="text-muted">Music Remote is a 100% native, written in both AppKit and Swift. Much of the UI is drawn in code using Core Graphics & Core Animation<span class="text-muted"><sup>0</sup></span> in order to achieve crisp details for both Retina and non-Retina displays.</small>
-                    </div>
-                </div>
-            </div>
-            
-            <hr>
-            
-            <div class="row">
-                <div class="col-md">
-                	<table class="table table-striped">
-                        <img srcset="images/reqs_header_text.png, 
+                        			images/style_header@3x.png 3x" src="images/style_header.png" style="max-width: 100%; display: block;" alt="The elements of style">
+						<br>
+					</div>
+					<div class="d-flex justify-content-between" style="padding-bottom: 20pt;">
+						<small class="text-muted">Music Remote is a 100% native, written in both AppKit and Swift. Much of the UI is drawn in code using Core Graphics & Core Animation<span class="text-muted"><sup>0</sup></span> in order to achieve crisp details for both Retina and non-Retina displays.</small>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md">
+					<table class="table table-striped">
+						<img srcset="images/reqs_header_text.png, 
                             images/reqs_header_text@2x.png 2x, 
-                            images/reqs_header_text@3x.png 3x" 
-                            src="musicremote/images/reqs_header_text.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Requirements">
-  						<tbody>
-    						<tr>
-      							<th scope="row">Software</th>
-      							<td>macOS Monterey and newer; Music.app</td>
-    						</tr>
-    						<tr>
-      							<th scope="row">Hardware</th>
-      							<td>Universal Binary for Macintosh computers with Apple Silicon and Intel processors</td>
-    						</tr>
-    						<tr>
-      							<th scope="row">Language</th>
-      							<td>English, Spanish, Italian, Finnish, German, and Polish</td>
-    						</tr>
-    						<tr>
-      							<th scope="row">Code</th>
-      							<td>100% Native. Written in Swift using AppKit.</td>
-    						</tr>
+                            images/reqs_header_text@3x.png 3x" src="musicremote/images/reqs_header_text.png" style="max-width: 100%; display: block;" alt="Requirements">
+						<tbody>
+							<tr>
+								<th scope="row">Software</th>
+								<td>macOS Monterey and newer; Music.app</td>
+							</tr>
+							<tr>
+								<th scope="row">Hardware</th>
+								<td>Universal Binary for Macintosh computers with Apple Silicon and Intel processors</td>
+							</tr>
+							<tr>
+								<th scope="row">Language</th>
+								<td>English, Spanish, Italian, Finnish, German, and Polish</td>
+							</tr>
+							<tr>
+								<th scope="row">Code</th>
+								<td>100% Native. Written in Swift using AppKit.</td>
+							</tr>
 						</tbody>
 					</table>
-                </div>
-            </div>
-            
-            <hr>
-            
-            <div class="row align-items-center">
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row align-items-center">
 				<div class="col-md">
 					<img srcset="images/related_header.png, 
                             images/related_header@2x.png 2x, 
-                            images/related_header@3x.png 3x" 
-                            src="images/related_header.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Related apps">
+                            images/related_header@3x.png 3x" src="images/related_header.png" style="max-width: 100%; display: block;" alt="Related apps">
 				</div>
 			</div>
-			                
+
 			<div class="row align-items-center" style="padding-bottom: 20px;">
 				<div class="col-md">
-					<img
-						loading="lazy" 
-						srcset="
+					<img loading="lazy" srcset="
 							../musicwidget/images/MW_LibrarySong.png, 
 							../musicwidget/images/MW_LibrarySong@2x.png 2x, 
-							../musicwidget/images/MW_LibrarySong@3x.png 3x" 
-							src="../musicwidget/images/MW_LibrarySong.png" 
-							style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" 
-							alt="Music Widget">
+							../musicwidget/images/MW_LibrarySong@3x.png 3x" src="../musicwidget/images/MW_LibrarySong.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" alt="Music Widget">
 				</div>
 				<div class="col-md">
 					<h4>Music Widget</h4>
 					<div class="d-flex justify-content-between">
-                        <small class="text-muted">Music Widget is a replica of the original iTunes Widget included with Dashboard introduced in 2005.<br>
-						<a href="https://marioaguzman.github.io/musicwidget/">Learn more about Music Widget</a></small>
-                    </div>
+						<small class="text-muted">Music Widget is a replica of the original iTunes Widget included with Dashboard introduced in 2005.<br>
+							<a href="https://marioaguzman.github.io/musicwidget/">Learn more about Music Widget</a></small>
+					</div>
 				</div>
 			</div>
-            
-			<div class="row align-items-center" style="padding-bottom: 20px;">
+
+			<!--<div class="row align-items-center" style="padding-bottom: 20px;">
 				<div class="col-md">
 					<img
 						loading="lazy" 
@@ -377,90 +335,81 @@
 						<a href="https://marioaguzman.github.io/musicminiplayer/">Learn more about Music MiniPlayer</a></small>
                     </div>
 				</div>
-			</div>
-			
+			</div> -->
+
 			<hr>
-            
-            <div class="row">
-                <div class="col-md">
-                        <img srcset="images/details_header.png, 
+
+			<div class="row">
+				<div class="col-md">
+					<img srcset="images/details_header.png, 
                             images/details_header@2x.png 2x, 
-                            images/details_header@3x.png 3x" 
-                            src="musicremote/images/details_header.png" 
-                            style="max-width: 100%; display: block;" 
-                            alt="Details">
-                    <div>
-                        <p>Music Remote uses Scripting Bridge and Distributed Notification Center to send and receive commands with Apple Music on macOS. 99%<span class="text-muted"><sup>2</sup></span> of the UI is written in Core Graphics and Core Animation to achieve crisp UI that is also optimized for non-Retina Displays. Music Remote is a completely native app; written with Swift and AppKit.</p>
-                        
-                        <p>Special thanks to <a href="https://www.kylehalevi.com/">Kyle Halevi</a> & <a href="https://novikoff.myportfolio.com/">Dmitry Novikov</a> for their time in helping me with visual guidance and image assets. I appreciate their time.</p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md">
-                    <div>
-                        <p class="text-muted">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md">
-                    <small class="text-muted">Apple Music and iTunes are registered trademarks of Apple Inc.
-                    <br><sup>0</sup> With the exception brushed metal textures and the volume knob. Images are used to render these on screen.
-                    <br><sup>1</sup> Music Remote is notarized.
-                    <br><sup>2</sup> Brushed metal textures and the volume knob are images.
-                    <br><sup>3</sup> Apple Music subscription not required. Not compatible with Spotify.</small>
-                    <br>
-                    <p> </p>
-                </div>
-            </div>
-            
-            <hr>
-         <!-- Footer Start -->
-         <div class="row">
-            <div class="col-md">
-               <small><b>© 2019-2025 Mario A Guzman</b></small>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md">
-               <small><b>Personal</b></small>
-               <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
-                  <li><a class="text-muted" href="https://bsky.app/profile/marioguzman.bsky.social">Bluesky</a></li>
-                  <li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
-                  <li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
-                  <li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
-                  <li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
-               </ul>
-            </div>
-            <div class="col-sm">
-               <small><b>Apps</b></small>
-               <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/">QuickTune</a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Mac</small></a></li>
-               </ul>
-            </div>
-            <div class="col-sm">
-               <small><b>Downloads</b></small>
-               <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg">QuickTune <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Mac</small></a></li>
-                  <li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
-               </ul>
-            </div>
-         </div>
-         <!-- Footer End -->
-        </div>
-    </body>
+                            images/details_header@3x.png 3x" src="musicremote/images/details_header.png" style="max-width: 100%; display: block;" alt="Details">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
+					<div>
+						<p class="text-muted">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md">
+					<small class="text-muted">Apple Music and iTunes are registered trademarks of Apple Inc.
+						<br><sup>0</sup> With the exception brushed metal textures and the volume knob. Images are used to render these on screen.
+						<br><sup>1</sup> Music Remote is notarized.
+						<br><sup>2</sup> Brushed metal textures and the volume knob are images.
+						<br><sup>3</sup> Apple Music subscription not required. Not compatible with Spotify.</small>
+					<br>
+					<p> </p>
+				</div>
+			</div>
+
+			<hr>
+			<!-- Footer Start -->
+			<div class="row">
+				<div class="col-md">
+					<small><b>© 2019-2026 Mario A Guzman</b></small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
+					<small><b>Personal</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" rel="me" href="https://mastodon.social/@marioguzman">Mastodon</a></li>
+						<li><a class="text-muted" href="https://bsky.app/profile/marioguzman.bsky.social">Bluesky</a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/profile/marioguzman">Apple Music</a></li>
+						<li><a class="text-muted" href="https://github.com/marioaguzman">GitHub</a></li>
+						<li><a class="text-muted" href="https://www.linkedin.com/in/marioguzman/">LinkedIn</a></li>
+						<li><a class="text-muted" href="https://stackoverflow.com/users/2020101/mario-a-guzman">Stack Overflow</a></li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<small><b>Apps</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://marioaguzman.github.io/music/">Music<small class="text-muted"> Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/">Music Widget</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/">Music MiniPlayer</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/">Music Remote</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/">QuickTune</a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/ios/">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/pdxtransit/macos/">PDX Transit <small class="text-muted">Mac</small></a></li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<small><b>Downloads</b></small>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg">Music Widget <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg">Music MiniPlayer <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/musicremote/updater/Music%20Remote.dmg">Music Remote <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg">QuickTune <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1446232545?mt=12">PDX Transit <small class="text-muted">Mac</small></a></li>
+						<li><a class="text-muted" href="https://itunes.apple.com/us/app/pdx-transit/id1010532756?mt=8">PDX Transit <small class="text-muted">iOS, watchOS</small></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Footer End -->
+		</div>
+	</body>
 </html>
