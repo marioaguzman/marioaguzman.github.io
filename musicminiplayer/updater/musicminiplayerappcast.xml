@@ -6,6 +6,17 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.2</title>
+            <description><![CDATA[
+                <ul style="font-size:10pt;"><li>Support for macOS Tahoe and macOS Golden Gate.</li></ul>
+            ]]></description>
+            <pubDate>Mon, 07 Sep 2026 09:42:24 -0700</pubDate>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg" length="4473517" type="application/octet-stream" sparkle:edSignature="+wDG8qVqwpzBN6gHwZLt3xGigHxJkvUKh+HW9S9qZuDu1sz7wEa9+6p3Hy6olt4xn33RfVbrxOkJd4jNtq02BA=="/>
+        </item>
+        <item>
             <title>1.13</title>
             <description><![CDATA[
                 <ul style="font-size:10pt;"><li>Updated to display proper names for Apple Música Uno, Apple Music Chill, and Apple Music Club.</li></ul>
@@ -26,17 +37,6 @@
             <sparkle:shortVersionString>1.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg" length="4466128" type="application/octet-stream" sparkle:edSignature="kI/U0I3BexYTNOM0PPxRMaYtfhAbfzyz+JEPnspuhDipvBwsKNLM4rICf5Cg3vEufva52Zrv7xN9p0K3Y9iHAQ=="/>
-        </item>
-        <item>
-            <title>1.11</title>
-            <description><![CDATA[
-                <ul style="font-size:13px;"><li>Fixed: If you're playing a live station in Music, launching Music MiniPlayer no longer leaves the audio paused.</li></ul>
-            ]]></description>
-            <pubDate>Sun, 07 Jan 2024 20:23:08 -0800</pubDate>
-            <sparkle:version>33</sparkle:version>
-            <sparkle:shortVersionString>1.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicminiplayer/updater/Music%20MiniPlayer.dmg" length="4460928" type="application/octet-stream" sparkle:edSignature="29DbXf9uvRPcieFIPqteusL+ouiTUuRrJvny6Ej0UzZbHWU2J1wG1ebiX4+blweRb0SN9RLFLSzVgHvv5OIHDw=="/>
         </item>
         <item>
             <title>1.8</title>
