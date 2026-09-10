@@ -6,6 +6,18 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>1.30.0</title>
+            <description><![CDATA[
+				<p><b>New in this update:</b></p>
+                <ul style="font-size:10pt;"><li>Now compatible with macOS Golden Gate</li></ul>
+            ]]></description>
+            <pubDate>Wed, 09 Sep 2026 22:55:24 -0700</pubDate>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>1.30.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4826110" type="application/octet-stream" sparkle:edSignature="LIZzh2mEgn5ULudDANdx+L+6DgcmLbcK61LEmh7AV+u8g/3o8VTwIs1YGU3gqpOkHK1SdPdunG2MWy0sptWeBg=="/>
+        </item>
+        <item>
             <title>1.29.3</title>
             <description><![CDATA[
 		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
@@ -30,19 +42,6 @@
             <sparkle:shortVersionString>1.29.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4823975" type="application/octet-stream" sparkle:edSignature="/y3qvaS93iYLr8aJLMe+rAHW68zUVQVYggnsAK1fbuSVxfkEfE8oiZrCmDtQlcYb7dYISAGsAdURWbaXq1VWDA=="/>
-        </item>
-        <item>
-            <title>1.29.1</title>
-            <description><![CDATA[
-		<p>Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing Music Widget to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get Music Widget working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
-		<p><b>New in this update:</b></p>
-                <ul style="font-size:10pt;"><li>Support for macOS Tahoe and Apple Music 1.6</li><li>App menu item icons (only in macOS 26.0 and newer)</li><li>Clicking on the Dock icon while the app is running will bring it to the forefront but also perform a shake animation.</li><li>Listening to live radio now displays a new wave animation in the LCD indicating Live streaming.</li><li>Music Widget is 100% "hand-made." No use of AI went into designing, developing, or testing Music Widget.</li></ul>
-            ]]></description>
-            <pubDate>Thu, 12 Feb 2026 19:59:10 -0800</pubDate>
-            <sparkle:version>32</sparkle:version>
-            <sparkle:shortVersionString>1.29.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://marioaguzman.github.io/musicwidget/updater/Music%20Widget.dmg" length="4827760" type="application/octet-stream" sparkle:edSignature="EWlR7sJxQbDc/FwoUbN5aIRfr0+Bax2zJpKcq/Ay0qgERop0XKj7Ws86uu5u11QFcBvHQyGbz00G3FFAMxOYAg=="/>
         </item>
         <item>
             <title>1.24</title>
