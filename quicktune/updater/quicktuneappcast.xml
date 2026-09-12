@@ -6,6 +6,30 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>7.6.1</title>
+            <description><![CDATA[
+		<p><b>New in this update:</b></p>
+                <ul style="font-size:10pt;"><li>Support for macOS Golden Gate.</li><li>Requires macOS Sonoma or newer.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 12 Sep 2026 13:51:19 -0700</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>7.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8503389" type="application/octet-stream" sparkle:edSignature="jmRrxSlZIlVo3/e2Ta2O13bpyUMJa1s284wlqNztIR0Muu2afwnK3OmFHyPdHlV//IRqnvZ4F5v082FDltlwBQ=="/>
+        </item>
+        <item>
+            <title>7.6.0</title>
+            <description><![CDATA[
+		<p><b>New in this update:</b></p>
+                <ul style="font-size:10pt;"><li>Support for macOS Golden Gate.</li><li>Requires macOS Sonoma or newer.</li></ul>
+            ]]></description>
+            <pubDate>Sat, 12 Sep 2026 07:58:04 -0700</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>7.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://marioaguzman.github.io/quicktune/updater/QuickTune.dmg" length="8490290" type="application/octet-stream" sparkle:edSignature="xhnZZSwjmnQdf0EsHplJ5VkNz7/dIDZMtb8IxQU9SD9kHemf7Z9EW98KPIZWlJIutwhEjdV3BCjo8wVqFrpGAw=="/>
+        </item>
+        <item>
             <title>7.5.1</title>
             <description><![CDATA[
 		<p style="font-size:10pt;">Apple Music 1.6, bundled with macOS Tahoe, changed the data set sent with inter-app communication. Expected information when track or player state changed was no longer sent, causing QuickTune to behave incorrectly. Although Apple never reverted to the old behavior, it took some investigation to figure out how to get QuickTune working again, while continuing to keep compatibility with previous versions of macOS. Thank you for your patience during this time.</p>
